@@ -1,4 +1,4 @@
 export class RouteConstants {
-    public static HOME_PAGE: string = "/home";
-    public static INDEX_PAGE: string = "/";
+    public static INDEX_ROUTE: string = "/home";
+    public static ACADEMIC_ROUTE: string = "/academic";
 }

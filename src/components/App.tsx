@@ -17,7 +17,8 @@ import {MuiThemeProvider} from "@material-ui/core";
 import {createHashHistory} from 'history'
 import {HomePageContainer} from "../pages/HomePageContainer";
 import {DashboardContainer} from "../pages/DashboardContainer";
-
+import {AcademicPage} from "../pages/AcademicPage";
+import {AcademicContainer} from "../pages/AcademicContainer";
 
 export const history = createHashHistory();
 
@@ -60,7 +61,8 @@ export class App extends React.Component<{}, {}> {
                         <Router history={history}>
                             <div>
                                 <HomePageContainer/>
-                                <Route path={RouteConstants.HOME_PAGE} component={DashboardContainer}/>
+                                <Route exacts path={RouteConstants.INDEX_ROUTE} component={DashboardContainer}/>
+                                <Route path={RouteConstants.ACADEMIC_ROUTE} component={AcademicContainer}/>
                             </div>
                         </Router>
                         {this.props.children}

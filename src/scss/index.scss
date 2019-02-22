@@ -1,9 +1,4 @@
-$md-primary-color: #63acb2;
-$md-secondary-color: #daadd0;
 $md-colors-warn-md: false;
-/*$md-primary-background-text-color: #000000;
-$md-secondary-background-text-color: #000000;*/
-
 .MuiBottomNavigation-root-1 {
   height: 56px;
   display: flex;
@@ -38,4 +33,37 @@ $md-secondary-background-text-color: #000000;*/
   color: #e6e6e6;
   text-align: center;
   background-color: transparent;
+}
+
+.academic {
+  display: flex;
+}
+
+.body-background {
+  background: #e6e6e6;
+}
+
+
+.central-div {
+
+}
+
+  .central-div {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+
+.title-paper {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 50px;
+  background: #ffffff;
+}
+
+.title {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }

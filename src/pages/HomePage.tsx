@@ -26,7 +26,6 @@ export class HomePage extends React.Component<IPropsHomePage & IDispatchPropsHom
         this.props.pushRouter(value);
     }
 
-
     public render() {
         return (
             <div>

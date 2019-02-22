@@ -26,7 +26,7 @@ export class DashboardPage extends React.Component<IPropsDashboardPage & IDispat
     public render() {
         return (
             <div>
-                <div className="row container-fluid">
+                <div className="row">
                 <Media>
                     <MediaOverlay>
                         <CardTitle className="title-style" title="John Doe" />
