@@ -9,12 +9,18 @@ import * as english from "react-intl/locale-data/en";
 import reducers from "../reducers/IndexReducers";
 import {composeWithDevTools} from 'redux-devtools-extension';
 import logger from 'redux-logger';
-import {ConnectedRouter, connectRouter, routerMiddleware} from 'connected-react-router/immutable';
+import {HashRouter, Route, Router} from 'react-router-dom'
+import {ConnectedRouter, connectRouter, routerMiddleware} from 'connected-react-router/immutable'
+import {RouteConstants} from "../common/RouteConstants";
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 import {MuiThemeProvider} from "@material-ui/core";
-import {createHashHistory} from 'history';
+import {createHashHistory} from 'history'
+import {HomePageContainer} from "../pages/HomePageContainer";
+import {DashboardContainer} from "../pages/DashboardContainer";
+
 
 export const history = createHashHistory();
+
 addLocaleData([...spanish, ...english]);
 
 const reducer = combineReducers({
@@ -45,20 +51,20 @@ const theme = createMuiTheme({
 });
 
 export class App extends React.Component<{}, {}> {
+
     public render(): JSX.Element {
 
         return <Provider store={store}>
             <IntlProvider>
-                <div className="container-fluid">
                     <MuiThemeProvider theme={theme}>
-                {/*    <ConnectedRouter history={history}>*/}
-                        <div>
-                            <h1></h1>
-                        </div>
-                    {/*</ConnectedRouter>*/}
-                    {this.props.children}
+                        <Router history={history}>
+                            <div>
+                                <HomePageContainer/>
+                                <Route path={RouteConstants.HOME_PAGE} component={DashboardContainer}/>
+                            </div>
+                        </Router>
+                        {this.props.children}
                     </MuiThemeProvider>
-                </div>
             </IntlProvider>
         </Provider>;
     }

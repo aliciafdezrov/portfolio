@@ -49,6 +49,7 @@
     "react-google-recaptcha": "0.12.0",
     "react-intl": "2.4.0",
     "react-intl-redux": "2.0.0",
+    "react-md": "1.6.1",
     "react-router-dom": "4.2.2",
     "react-trello": "1.33.0",
     "redux": "4.0.1",
