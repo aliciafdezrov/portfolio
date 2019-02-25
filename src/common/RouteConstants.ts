@@ -1,4 +1,6 @@
 export class RouteConstants {
     public static INDEX_ROUTE: string = "/home";
     public static ACADEMIC_ROUTE: string = "/academic";
+    public static EXPERIENCE_ROUTE: string = "/experience";
+    public static KNOWLEDGE_ROUTE: string = "/knowledge";
 }

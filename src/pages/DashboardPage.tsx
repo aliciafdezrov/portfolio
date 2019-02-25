@@ -2,7 +2,6 @@ import * as React from "react";
 import {Media} from "react-md";
 import MediaOverlay from "react-md/lib/Media/MediaOverlay";
 import CardTitle from "react-md/lib/Cards/CardTitle";
-import Button from "react-md/lib/Buttons";
 import InjectedIntlProps = ReactIntl.InjectedIntlProps;
 
 const backgroundImage = require("../../docs/ash-edmonds-510566-unsplash.jpg")

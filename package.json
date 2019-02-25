@@ -43,6 +43,7 @@
     "js-file-download": "0.4.1",
     "moment": "2.22.2",
     "moment-timezone": "0.5.21",
+    "rc-progress": "^2.3.0",
     "react": "16.5.2",
     "react-async-script": "1.0.0",
     "react-dom": "16.5.2",

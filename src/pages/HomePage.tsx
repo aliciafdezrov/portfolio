@@ -35,8 +35,9 @@ export class HomePage extends React.Component<IPropsHomePage & IDispatchPropsHom
                     showLabels>
 
                     <BottomNavigationAction label="Home"/>
-                    <BottomNavigationAction label="Experience"/>
                     <BottomNavigationAction label="Academic"/>
+                    <BottomNavigationAction label="Experience"/>
+                    <BottomNavigationAction label="Conocimientos"/>
                     <BottomNavigationAction label="Contact"/>
                 </BottomNavigation>
             </div>
