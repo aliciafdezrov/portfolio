@@ -55,13 +55,17 @@ export class ContactPage extends React.Component<IPropsContactPage & IDispatchPr
                                                         primary="666-666-666"
                                                     />
                                                 </ListItem>
+
                                                 <ListItem>
                                                     <ListItemIcon>
                                                         <EmailIcon/>
                                                     </ListItemIcon>
+                                                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Petición%20desde%20cv&to=johnDoe@gmail.com&body=Escribeme+desde+aqui"
+                                                       target="_blank">
                                                     <ListItemText
                                                         primary="johnDoe@gmail.com"
                                                     />
+                                                    </a>
                                                 </ListItem>
                                                 <ListItem>
                                                     <ListItemIcon>

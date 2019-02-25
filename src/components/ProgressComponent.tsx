@@ -26,7 +26,7 @@ export class ProgressComponent extends React.Component<IPropsProgressComponent &
     };
 
     componentDidMount() {
-        this.timer = setInterval(this.progress, 500);
+        this.timer = setInterval(this.progress, 80);
     }
 
     componentWillUnmount() {

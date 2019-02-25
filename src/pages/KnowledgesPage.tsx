@@ -28,7 +28,7 @@ export class KnowledgePage extends React.Component<IPropsKnowledgePage & IDispat
                         <Paper className="title-paper" zDepth={2}>
                             <div className="row container-fluid">
                                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <h3>Front-end</h3>
+                                    <h3>Frontend</h3>
                                     <div className="row">
                                         <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                             <label>React</label>
@@ -63,7 +63,7 @@ export class KnowledgePage extends React.Component<IPropsKnowledgePage & IDispat
                                 </div>
 
                                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <h3>Backen-end</h3>
+                                    <h3>Backend</h3>
                                     <div className="row">
                                         <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                             <label>J2EE</label>
@@ -168,7 +168,7 @@ export class KnowledgePage extends React.Component<IPropsKnowledgePage & IDispat
 
                             <div className="row container-fluid">
                                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <h3>Gestión de bases de datos</h3>
+                                    <h3>Gestión bases de datos</h3>
                                     <div className="row">
                                         <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                             <label>MySQL</label>
