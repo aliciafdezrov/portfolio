@@ -30,7 +30,7 @@ export class DashboardPage extends React.Component<IPropsDashboardPage & IDispat
                     <MediaOverlay>
                         <CardTitle className="title-style" title="John Doe" />
                     </MediaOverlay>
-                    <img className="image-style" src={backgroundImage} alt="Working...s" />
+                    <img className="image-style" src={backgroundImage} alt="Working..." />
                 </Media>
                 </div>
             </div>
