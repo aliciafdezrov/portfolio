@@ -16,6 +16,9 @@ export function ChangeRouteActionThunk(id) {
 
         } else if (id === 3) {
             history.push(RouteConstants.KNOWLEDGE_ROUTE);
+
+        } else if (id === 4) {
+            history.push(RouteConstants.CONTACT_ROUTE);
         }
     }
 }

@@ -20,6 +20,7 @@ import {AcademicPage} from "../pages/AcademicPage";
 import {DashboardPage} from "../pages/DashboardPage";
 import {ExperiencePage} from "../pages/ExperiencePage";
 import {KnowledgePage} from "../pages/KnowledgesPage";
+import {ContactPage} from "../pages/ContactPage";
 
 export const history = createHashHistory();
 
@@ -66,6 +67,7 @@ export class App extends React.Component<{}, {}> {
                                 <Route path={RouteConstants.ACADEMIC_ROUTE} component={AcademicPage}/>
                                 <Route path={RouteConstants.EXPERIENCE_ROUTE} component={ExperiencePage}/>
                                 <Route path={RouteConstants.KNOWLEDGE_ROUTE} component={KnowledgePage}/>
+                                <Route path={RouteConstants.CONTACT_ROUTE} component={ContactPage}/>
                             </div>
                         </Router>
                         {this.props.children}
