@@ -1,4 +1,8 @@
 $md-colors-warn-md: false;
+@import '~react-md/src/scss/react-md';
+@include react-md-everything;
+@import "bootstrapResponds";
+
 .MuiBottomNavigation-root-1 {
   height: 56px;
   display: flex;
@@ -48,17 +52,34 @@ $md-colors-warn-md: false;
 
 }
 
+@include respond-above(lg) {
   .central-div {
     padding-left: 300px;
     padding-right: 300px;
   }
+}
 
+@include respond-below(md) {
+  .central-div {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 
 .title-paper {
   margin-top: 15px;
   margin-bottom: 15px;
   height: auto;
   background: #ffffff;
+}
+
+@include respond-below(md) {
+  .title-paper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: auto;
+    background: #ffffff;
+  }
 }
 
 .title {
@@ -77,10 +98,21 @@ $md-colors-warn-md: false;
   margin-right: 30px;
 }
 
-.avatar {
-  margin-top: 50px;
-  height: 500px;
-  width: 400px;
+@include respond-above(lg) {
+  .avatar {
+    margin-top: 50px;
+    height: 500px;
+    width: 400px;
+  }
+}
+
+@include respond-below(md) {
+  .avatar {
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    margin-left: 70px;
+  }
 }
 
 .contact-title {
