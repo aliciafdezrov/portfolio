@@ -3,7 +3,6 @@ import InjectedIntlProps = ReactIntl.InjectedIntlProps;
 import {BottomNavigation} from "@material-ui/core";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 
-
 export interface IPropsHomePage {
     intl?: ReactIntl.InjectedIntl;
     currentRoute: number;
@@ -35,10 +34,10 @@ export class HomePage extends React.Component<IPropsHomePage & IDispatchPropsHom
                     showLabels>
 
                     <BottomNavigationAction label="Home"/>
-                    <BottomNavigationAction label="Academic"/>
-                    <BottomNavigationAction label="Experience"/>
+                    <BottomNavigationAction label="Formación"/>
+                    <BottomNavigationAction label="Experiencia"/>
                     <BottomNavigationAction label="Conocimientos"/>
-                    <BottomNavigationAction label="Contact"/>
+                    <BottomNavigationAction label="Contacto"/>
                 </BottomNavigation>
             </div>
         );
