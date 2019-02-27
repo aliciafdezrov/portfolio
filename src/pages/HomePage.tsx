@@ -2,6 +2,7 @@ import * as React from "react";
 import InjectedIntlProps = ReactIntl.InjectedIntlProps;
 import {BottomNavigation} from "@material-ui/core";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
+const file = require("../../docs/ZonasCorporales.pdf")
 
 export interface IPropsHomePage {
     intl?: ReactIntl.InjectedIntl;
@@ -26,6 +27,7 @@ export class HomePage extends React.Component<IPropsHomePage & IDispatchPropsHom
     }
 
     public render() {
+
         return (
             <div>
                 <BottomNavigation
@@ -34,10 +36,10 @@ export class HomePage extends React.Component<IPropsHomePage & IDispatchPropsHom
                     showLabels>
 
                     <BottomNavigationAction label="Home"/>
-                    <BottomNavigationAction label="Formación"/>
                     <BottomNavigationAction label="Experiencia"/>
                     <BottomNavigationAction label="Conocimientos"/>
-                    <BottomNavigationAction label="Contacto"/>
+                    <BottomNavigationAction label="Sobre mi"/>
+                    <BottomNavigationAction label="Descarga" href="ZonasCorporales.pdf" download/>
                 </BottomNavigation>
             </div>
         );

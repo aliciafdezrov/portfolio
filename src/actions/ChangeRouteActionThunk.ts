@@ -9,15 +9,12 @@ export function ChangeRouteActionThunk(id) {
             history.push(RouteConstants.INDEX_ROUTE);
 
         } else if (id === 1) {
-            history.push(RouteConstants.ACADEMIC_ROUTE);
-
-        } else if (id === 2) {
             history.push(RouteConstants.EXPERIENCE_ROUTE);
 
-        } else if (id === 3) {
+        } else if (id === 2) {
             history.push(RouteConstants.KNOWLEDGE_ROUTE);
 
-        } else if (id === 4) {
+        } else if (id === 3) {
             history.push(RouteConstants.CONTACT_ROUTE);
         }
     }

@@ -140,7 +140,7 @@ module.exports = {
                 loader: 'url-loader?limit=10000&mimetype=image/png'
             },
             {
-                test: /\.jpe?g$|\.ico$|\.gif$|\.svg$|\.woff$|\.ttf$|\.mp4$|\.wav$|\.mp3$/,
+                test: /\.jpe?g$|\.ico$|\.gif$|\.svg$|\.woff$|\.ttf$|\.mp4$|\.wav$|\.mp3$|\.pdf$/,
                 use: 'file-loader?name=[name].[ext]'
             }
         ]
