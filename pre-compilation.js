@@ -108,14 +108,6 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(less)$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    "css-loader",
-                    "less-loader"
-                ]
-            },
-            {
                 test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
                 use: "url-loader"
             },

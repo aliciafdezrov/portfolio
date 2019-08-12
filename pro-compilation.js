@@ -4,8 +4,6 @@ let HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const BrotliPlugin = require("brotli-webpack-plugin");
 let FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-/*const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
-const WebpackPwaManifest = require('webpack-pwa-manifest');*/
 let basePath = __dirname;
 
 module.exports = {
@@ -91,14 +89,6 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(less)$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    "css-loader",
-                    "less-loader"
-                ]
-            },
-            {
                 test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
                 loader: 'url-loader?limit=10000&mimetype=application/font-woff'
             },
@@ -115,7 +105,7 @@ module.exports = {
                 loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
             },
             {
-                test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.mp4$|\.wav$|\.mp3$/,
+                test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.mp4$|\.wav$|\.mp3$|\.pdf$/,
                 use: 'file-loader?name=[name].[ext]'
             }
         ]
@@ -151,13 +141,7 @@ module.exports = {
                 removeComments: true,
                 removeRedundantAttributes: true
             }
-        }),
-        new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery"
-        }),
-
-        new FaviconsWebpackPlugin('../favicon.ico'),
+        })
 
 /*        new SWPrecacheWebpackPlugin(
             {
