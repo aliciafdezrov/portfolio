@@ -6,6 +6,7 @@ import {KnowledgePage} from "./KnowledgesPage";
 import {AcademicPage} from "./AcademicPage";
 import {ContactPage} from "./ContactPage";
 import {BottomNavigation} from "react-md/lib/BottomNavigations";
+
 const file = require("../../docs/CV.pdf");
 
 export interface IPropsDashboardPage {
@@ -23,8 +24,8 @@ const components = [
     <AcademicPage key="academic"/>,
     <ExperiencePage key="experience"/>,
     <KnowledgePage key="knowledge"/>,
-    <ContactPage  key="contact"/>
-    ];
+    <ContactPage key="contact"/>
+];
 const themes = ['home', 'academic', 'experience', 'knowledge', 'contact'];
 
 export class DashboardPage extends React.Component<IPropsDashboardPage & IDispatchPropsDashboardPage, IStateDashboardPage> {
@@ -63,13 +64,15 @@ export class DashboardPage extends React.Component<IPropsDashboardPage & IDispat
                     components[this.state.activeIndex]
                 }
 
-                <BottomNavigation
-                    dynamic
-                    links={links}
-                    colored
-                    activeIndex={this.state.activeIndex}
-                    onNavChange={(activeIndex) => this.setState({activeIndex: activeIndex})}
-                />
+                <div className="dashboard-section">
+                    <BottomNavigation
+                        dynamic
+                        links={links}
+                        colored
+                        activeIndex={this.state.activeIndex}
+                        onNavChange={(activeIndex) => this.setState({activeIndex: activeIndex})}
+                    />
+                </div>
             </div>
         );
     }

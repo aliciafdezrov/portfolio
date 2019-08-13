@@ -1,5 +1,9 @@
 import * as React from "react";
 import {Paper} from "react-md";
+import {Avatar} from "react-md/lib/Avatars";
+import List from "react-md/lib/Lists";
+import ListItem from "react-md/lib/Lists/ListItem";
+import FontIcon from "react-md/lib/FontIcons";
 
 const uma = require("../../docs/avatars/logo-universidad-de-malaga.png");
 const photo = require("../../docs/avatars/download.jpeg")
@@ -42,24 +46,21 @@ export class ContactPage extends React.Component<IPropsContactPage & IDispatchPr
         return (
             <div>
                 <div className="central-div">
-                    {/*<Paper className="title-paper" zDepth={2}>
+                    <Paper className="title-paper" zDepth={2}>
                         <div className="row container-fluid">
                             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 white-background">
                                 <div className="row container-fluid">
                                     <div className="contact-title">
-                                        <Typography variant="title">
-                                            Un poco más de información...
-                                        </Typography>
+                                        <h4>Un poco más de información...</h4>
                                     </div>
                                     <div>
                                         <List>
-                                            <ListItem>
+                                            <ListItem
+                                                primaryText="Estudié el Grado Ingeniería de la Salud (Universidad de Málaga)"
+                                                secondaryText="Sept 2013 - Sept 2017">
                                                 <Avatar>
                                                     <img src={uma} alt="uma" height="40px" width={"50px"}/>
                                                 </Avatar>
-                                                <ListItemText
-                                                    primary="Estudié el Grado Ingeniería de la Salud (Universidad de Málaga)"
-                                                    secondary="Sept 2013 - Sept 2017"/>
                                             </ListItem>
                                         </List>
                                     </div>
@@ -67,57 +68,28 @@ export class ContactPage extends React.Component<IPropsContactPage & IDispatchPr
 
                                 <div className="row container-fluid">
                                     <div className="contact-title">
-                                        <Typography variant="title">
-                                            Información de contacto
-                                        </Typography>
+                                        <h4>Información de contacto</h4>
                                     </div>
                                     <div className="contact-title">
-                                        <List dense={true}>
-                                            <a href="tel://666111222"
-                                               target="_blank">
-                                                <ListItem>
-                                                    <ListItemIcon>
-                                                        <PhoneIcon/>
-                                                    </ListItemIcon>
-                                                    <ListItemText
-                                                        primary="666-666-666"
-                                                    />
-                                                </ListItem>
-                                            </a>
-
-
-                                            <ListItem>
-                                                <ListItemIcon>
-                                                    <EmailIcon/>
-                                                </ListItemIcon>
-                                                <a href={this.getMailLink()} target="_blank">
-                                                    <ListItemText
-                                                        primary="johnDoe@gmail.com"
-                                                    />
-                                                </a>
+                                        <List>
+                                            <ListItem primaryText="666-666-666"
+                                                      href="tel://666111222"
+                                                      leftIcon={<FontIcon>phone</FontIcon>}
+                                                      target="_blank">
                                             </ListItem>
-                                            <ListItem>
-                                                <ListItemIcon>
-                                                    <a href="https://www.linkedin.com/in/alicia-fernández-rovira-70885811a"
-                                                       target="_blank">
-                                                    </a>
-                                                </ListItemIcon>
-                                                <a href="https://www.linkedin.com/in/alicia-fernández-rovira-70885811a"
-                                                   target="_blank">
-                                                    <ListItemText
-                                                        primary="https://www.linkedin.com/in/alicia-fernández-rovira-70885811a"
-                                                    />
-                                                </a>
+                                            <ListItem primaryText="johnDoe@gmail.com"
+                                                      href={this.getMailLink()}
+                                                      leftIcon={<FontIcon>mail</FontIcon>}
+                                                      target="_blank">
                                             </ListItem>
-                                            <a href="https://www.google.es/maps/place/29012+M%C3%A1laga/@36.7279999,-4.4146106,17z/data=!3m1!4b1!4m5!3m4!1s0xd72f7c6c4d4df2b:0x1c03d27be17d4780!8m2!3d36.7279999!4d-4.4124219"
-                                               target="_blank">
-                                                <ListItem>
-                                                    <ListItemIcon>
-                                                        <PlaceIcon/>
-                                                    </ListItemIcon>
-                                                    <ListItemText primary="Málaga, 29012 (Spain)"/>
-                                                </ListItem>
-                                            </a>
+                                            <ListItem primaryText="Málaga, 29012 (Spain)"
+                                                      leftIcon={<FontIcon>place</FontIcon>}>
+                                            </ListItem>
+                                            <ListItem
+                                                primaryText="https://www.linkedin.com/in/alicia-fernández-rovira-70885811a"
+                                                href="https://www.linkedin.com/in/alicia-fernández-rovira-70885811a"
+                                                target="_blank">
+                                            </ListItem>
                                         </List>
                                     </div>
                                 </div>
@@ -131,7 +103,7 @@ export class ContactPage extends React.Component<IPropsContactPage & IDispatchPr
                                 />
                             </div>
                         </div>
-                    </Paper>*/}
+                    </Paper>
                 </div>
             </div>
         );
