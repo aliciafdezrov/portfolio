@@ -170,4 +170,8 @@ $md-colors-warn-md: false;
   &--home {
     @include react-md-theme-bottom-navigations-colored($md-primary-color);
   }
+
+  &--cv {
+    @include react-md-theme-bottom-navigations-colored($md-teal-300);
+  }
 }

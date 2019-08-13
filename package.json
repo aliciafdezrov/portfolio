@@ -26,6 +26,7 @@
     "react-async-script": "1.0.0",
     "react-dom": "16.5.2",
     "react-md": "1.6.1",
+    "react-pdf": "^4.1.0",
     "ttf-loader": "^1.0.2"
   },
   "devDependencies": {

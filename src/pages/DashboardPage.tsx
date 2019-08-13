@@ -6,8 +6,7 @@ import {KnowledgePage} from "./KnowledgesPage";
 import {AcademicPage} from "./AcademicPage";
 import {ContactPage} from "./ContactPage";
 import {BottomNavigation} from "react-md/lib/BottomNavigations";
-
-const file = require("../../docs/CV.pdf");
+import {MyDocument} from "../components/MyDocument";
 
 export interface IPropsDashboardPage {
 }
@@ -24,9 +23,10 @@ const components = [
     <AcademicPage key="academic"/>,
     <ExperiencePage key="experience"/>,
     <KnowledgePage key="knowledge"/>,
-    <ContactPage key="contact"/>
+    <ContactPage key="contact"/>,
+    <MyDocument key="cv"/>
 ];
-const themes = ['home', 'academic', 'experience', 'knowledge', 'contact'];
+const themes = ['home', 'academic', 'experience', 'knowledge', 'contact', 'cv'];
 
 export class DashboardPage extends React.Component<IPropsDashboardPage & IDispatchPropsDashboardPage, IStateDashboardPage> {
     public constructor(props: IPropsDashboardPage & IDispatchPropsDashboardPage) {
