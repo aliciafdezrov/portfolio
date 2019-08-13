@@ -3,6 +3,9 @@ $md-colors-warn-md: false;
 @include react-md-everything;
 @import "bootstrapResponds";
 
+$md-primary-color: #272727;
+$md-secondary-color: #a0a0a0;
+
 .MuiBottomNavigation-root-1 {
   height: 56px;
   display: flex;

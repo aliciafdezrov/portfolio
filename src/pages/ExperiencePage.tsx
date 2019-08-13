@@ -1,9 +1,5 @@
 import * as React from "react";
-import {Collapse, Divider, List, ListItem, ListItemText} from "@material-ui/core";
 import {Paper} from "react-md";
-import ExpandMore from '@material-ui/icons/KeyboardArrowRight';
-import ExpandLess from '@material-ui/icons/KeyboardArrowDown';
-
 const uma = require("../../docs/avatars/logo-universidad-de-malaga.png");
 
 export interface IPropsExperiencePage {
@@ -42,7 +38,7 @@ export class ExperiencePage extends React.Component<IPropsExperiencePage & IDisp
                     <Paper className="title-paper" zDepth={2}>
                         <div className="row">
                             <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                                <List>
+                                {/*<List>
                                     <ListItem button onClick={(e) => this.handleClick(1)}>
                                         <ListItemText primary="Desarrollador Full-Stack (GSL)"
                                                       secondary="Abr 2018 - Actualidad"/>
@@ -151,7 +147,7 @@ export class ExperiencePage extends React.Component<IPropsExperiencePage & IDisp
                                             </div>
                                         </Collapse>
                                     </div>
-                                </List>
+                                </List>*/}
                             </div>
                         </div>
                     </Paper>

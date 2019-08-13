@@ -1,9 +1,5 @@
 import * as React from "react";
 import {Paper} from "react-md";
-import {Avatar, List, ListItem, ListItemIcon, ListItemText, Typography} from "@material-ui/core";
-import PhoneIcon from "@material-ui/icons/Phone";
-import EmailIcon from "@material-ui/icons/Email";
-import PlaceIcon from "@material-ui/icons/Place";
 
 const uma = require("../../docs/avatars/logo-universidad-de-malaga.png");
 const photo = require("../../docs/avatars/download.jpeg")
@@ -46,7 +42,7 @@ export class ContactPage extends React.Component<IPropsContactPage & IDispatchPr
         return (
             <div>
                 <div className="central-div">
-                    <Paper className="title-paper" zDepth={2}>
+                    {/*<Paper className="title-paper" zDepth={2}>
                         <div className="row container-fluid">
                             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 white-background">
                                 <div className="row container-fluid">
@@ -135,7 +131,7 @@ export class ContactPage extends React.Component<IPropsContactPage & IDispatchPr
                                 />
                             </div>
                         </div>
-                    </Paper>
+                    </Paper>*/}
                 </div>
             </div>
         );

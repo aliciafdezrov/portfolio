@@ -1,7 +1,5 @@
 import * as React from "react";
 import {Paper} from "react-md";
-import {ProgressComponent} from "../components/ProgressComponent";
-
 export interface IPropsKnowledgePage {
 }
 
@@ -22,7 +20,7 @@ export class KnowledgePage extends React.Component<IPropsKnowledgePage & IDispat
         return (
             <div>
                 <div className="central-div">
-                    <Paper className="title-paper" zDepth={2}>
+                   {/* <Paper className="title-paper" zDepth={2}>
                         <div className="row container-fluid">
                             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <h3>Frontend</h3>
@@ -228,7 +226,7 @@ export class KnowledgePage extends React.Component<IPropsKnowledgePage & IDispat
                                 </div>
                             </div>
                         </div>
-                    </Paper>
+                    </Paper>*/}
                 </div>
             </div>
         );

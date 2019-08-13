@@ -1,6 +1,9 @@
 import * as React from "react";
-import {Avatar, Divider, List, ListItem, ListItemText} from "@material-ui/core";
 import {Paper} from "react-md";
+import List from "react-md/lib/Lists";
+import ListItem from "react-md/lib/Lists/ListItem";
+import {Avatar} from "react-md/lib/Avatars";
+import Divider from "react-md/lib/Dividers";
 
 const uma = require("../../docs/avatars/logo-universidad-de-malaga.png");
 
@@ -27,25 +30,22 @@ export class AcademicPage extends React.Component<IPropsAcademicPage & IDispatch
                     <Paper className="title-paper" zDepth={2}>
                         <div>
                             <List>
-                                <ListItem>
+                                <ListItem primaryText="Grado Ingeniería de la Salud (Universidad de Málaga)"
+                                            secondaryText="Sept 2013 - Sept 2017">
                                     <Avatar>
                                         <img src={uma} alt="uma" height="40px" width={"50px"}/>
                                     </Avatar>
-                                    <ListItemText primary="Grado Ingeniería de la Salud (Universidad de Málaga)"
-                                                  secondary="Sept 2013 - Sept 2017"/>
                                 </ListItem>
                             </List>
                         </div>
                         <Divider/>
                         <div>
                             <List>
-                                <ListItem>
+                                <ListItem primaryText="Curso inferencia de redes de genes regulatorios usando inteligencia artificial"
+                                            secondaryText="Jul 2015">
                                     <Avatar>
                                         <img src={uma} alt="uma" height="40px" width={"50px"}/>
                                     </Avatar>
-                                    <ListItemText
-                                        primary="Curso inferencia de redes de genes regulatorios usando inteligencia artificial"
-                                        secondary="Jul 2015"/>
                                 </ListItem>
                             </List>
                         </div>
