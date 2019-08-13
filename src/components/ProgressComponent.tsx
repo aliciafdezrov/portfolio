@@ -15,14 +15,14 @@ export class ProgressComponent extends React.Component<IProgressComponentProps, 
     state = {
         percent: 0,
         color: '#108ee9'
-    }
+    };
 
     componentDidMount() {
         this.increase();
     }
 
     private increase() {
-        let newPercent = this.state.percent + 1;
+        let newPercent = this.state.percent + 4;
         let scale = chroma.scale(['#108ee9', '#87d068']);
         this.setState({color: scale(this.state.percent/100).hex()});
         if (newPercent >= this.props.percent) {

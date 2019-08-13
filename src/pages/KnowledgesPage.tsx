@@ -1,6 +1,7 @@
 import * as React from "react";
 import {Paper} from "react-md";
 import {ProgressComponent} from "../components/ProgressComponent";
+import Divider from "react-md/lib/Dividers";
 
 export class KnowledgePage extends React.Component<{}, {}> {
     public constructor(props) {
@@ -12,6 +13,10 @@ export class KnowledgePage extends React.Component<{}, {}> {
             <div>
                 <div className="central-div">
                     <Paper className="title-paper" zDepth={2}>
+                        <div className="academic-titles">
+                            <h4>Tecnologías y herramientas</h4>
+                        </div>
+                        <Divider/>
                         <div className="row container-fluid">
                             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <h3>Frontend</h3>

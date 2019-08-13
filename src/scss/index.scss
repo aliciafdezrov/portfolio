@@ -188,3 +188,17 @@ $md-colors-warn-md: false;
   padding-right: 1vw;
   padding-top: 1vh;
 }
+
+.fab-style {
+  display: flex;
+  justify-content: space-around;
+}
+
+.avatar-style {
+  padding-bottom: 4vh;
+  padding-right: 10vw !important;
+}
+
+.contact-text-div {
+  padding-top: 10vh;
+}

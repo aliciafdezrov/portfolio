@@ -2,7 +2,7 @@ import * as React from "react";
 import {Document, Page} from 'react-pdf';
 import {toast, ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import ClimbingBoxLoader from 'react-spinners/ClimbingBoxLoader';
+import {Button} from "react-md";
 const file = require("../../docs/CV.pdf");
 
 const notify = () => toast('⚠️ ¿Te gustaría descargarlo? ', {
@@ -32,6 +32,18 @@ export class MyDocument extends React.Component<{}, {}> {
         notify();
     };
 
+    private nextPage() {
+        if (this.state.pageNumber < this.state.numPages) {
+            this.setState({pageNumber: this.state.pageNumber+1})
+        }
+    }
+
+    private prevPage() {
+        if(this.state.pageNumber > 1) {
+            this.setState({pageNumber: this.state.pageNumber-1})
+        }
+    }
+
     public render() {
         return (
             <div className="container-fluid">
@@ -42,19 +54,24 @@ export class MyDocument extends React.Component<{}, {}> {
                                         position={toast.POSITION.TOP_LEFT}/>
                     </div>
                 </div>
-                <div>
+                <div style={{display: "flex", justifyContent: "center"}}>
                     <Document
                         file={file}
                         error="Algo fue mal al cargar el cv. Envíame un correo al email de contacto y puedo enviartelo personalmente."
-                        loading={<ClimbingBoxLoader color={'#4DB6AC'}
-                                                    size={40}
-                                                    css="climbing-loader"
-                                                    loading={this.state.loading}/>}
+                        loading="Cargando el archivo..."
                         onLoadSuccess={this.onDocumentLoadSuccess}
                     >
                         <Page pageNumber={this.state.pageNumber}/>
                     </Document>
-                    <p>Página {this.state.pageNumber} de {this.state.numPages}</p>
+                </div>
+                <div className="fab-style">
+                    <Button floating primary onClick={() => this.prevPage()}>
+                        arrow_left
+                    </Button>
+
+                    <Button floating primary onClick={() => this.nextPage()}>
+                        arrow_right
+                    </Button>
                 </div>
             </div>
         );
