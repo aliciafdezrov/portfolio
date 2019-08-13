@@ -16,12 +16,10 @@
   "license": "ISC",
   "homepage": "",
   "dependencies": {
-    "axios": "0.17.1",
     "bootstrap": "3.3.7",
     "chroma-js": "^2.0.4",
     "core-js": "2.5.3",
     "font-awesome": "4.7.0",
-    "js-file-download": "^0.4.1",
     "rc-progress": "^2.5.1",
     "rc-steps": "^3.5.0",
     "react": "16.5.2",
@@ -29,8 +27,7 @@
     "react-dom": "16.5.2",
     "react-md": "1.6.1",
     "react-pdf": "^4.1.0",
-    "react-toastify": "^5.3.2",
-    "ttf-loader": "^1.0.2"
+    "react-toastify": "^5.3.2"
   },
   "devDependencies": {
     "@types/core-js": "0.9.46",
