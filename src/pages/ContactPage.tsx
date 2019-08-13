@@ -4,9 +4,7 @@ import {Avatar} from "react-md/lib/Avatars";
 import List from "react-md/lib/Lists";
 import ListItem from "react-md/lib/Lists/ListItem";
 import FontIcon from "react-md/lib/FontIcons";
-
-const uma = require("../../docs/avatars/logo-universidad-de-malaga.png");
-const photo = require("../../docs/avatars/download.jpeg")
+const photo = require("../../docs/avatars/download.jpeg");
 
 export interface IPropsContactPage {
 }
@@ -49,23 +47,6 @@ export class ContactPage extends React.Component<IPropsContactPage & IDispatchPr
                     <Paper className="title-paper" zDepth={2}>
                         <div className="row container-fluid">
                             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 white-background">
-                                <div className="row container-fluid">
-                                    <div className="contact-title">
-                                        <h4>Un poco más de información...</h4>
-                                    </div>
-                                    <div>
-                                        <List>
-                                            <ListItem
-                                                primaryText="Estudié el Grado Ingeniería de la Salud (Universidad de Málaga)"
-                                                secondaryText="Sept 2013 - Sept 2017">
-                                                <Avatar>
-                                                    <img src={uma} alt="uma" height="40px" width={"50px"}/>
-                                                </Avatar>
-                                            </ListItem>
-                                        </List>
-                                    </div>
-                                </div>
-
                                 <div className="row container-fluid">
                                     <div className="contact-title">
                                         <h4>Información de contacto</h4>
