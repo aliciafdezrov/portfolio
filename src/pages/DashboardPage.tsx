@@ -18,7 +18,14 @@ export interface IStateDashboardPage {
 
 }
 
-const components = [HomePage, ExperiencePage, KnowledgePage, AcademicPage, ContactPage];
+const components = [
+    <HomePage key="home"/>,
+    <AcademicPage key="academic"/>,
+    <ExperiencePage key="experience"/>,
+    <KnowledgePage key="knowledge"/>,
+    <ContactPage  key="contact"/>
+    ];
+const themes = ['home', 'academic', 'experience', 'knowledge', 'contact'];
 
 export class DashboardPage extends React.Component<IPropsDashboardPage & IDispatchPropsDashboardPage, IStateDashboardPage> {
     public constructor(props: IPropsDashboardPage & IDispatchPropsDashboardPage) {
@@ -26,31 +33,34 @@ export class DashboardPage extends React.Component<IPropsDashboardPage & IDispat
     }
 
     state = {
-        activeIndex: 1,
+        activeIndex: 0,
     };
 
     public render() {
         let links = [{
             label: 'Home',
-            icon: <FontIcon>access_time</FontIcon>,
+            icon: <FontIcon>home</FontIcon>,
+        }, {
+            label: 'Académico',
+            icon: <FontIcon>school</FontIcon>,
         }, {
             label: 'Experiencia',
-            icon: <FontIcon>favorite</FontIcon>,
+            icon: <FontIcon>laptop</FontIcon>,
         }, {
             label: 'Tecnologías',
-            icon: <FontIcon>place</FontIcon>,
+            icon: <FontIcon>star_border</FontIcon>,
         }, {
             label: 'Sobre mi',
-            icon: <FontIcon>place</FontIcon>,
+            icon: <FontIcon>person_outline</FontIcon>,
         }, {
             label: 'Descarga',
-            icon: <FontIcon>place</FontIcon>,
+            icon: <FontIcon>cloud_download</FontIcon>,
         }];
         return (
-            <div>
+            <div className={`bottom-navigations__dynamic--${themes[this.state.activeIndex]}`}>
 
                 {
-                    components[this.state.activeIndex+1]
+                    components[this.state.activeIndex]
                 }
 
                 <BottomNavigation
