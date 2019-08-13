@@ -104,8 +104,8 @@ $md-colors-warn-md: false;
 
 @include respond-below(md) {
   .title-paper {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     height: auto;
     background: #ffffff;
   }

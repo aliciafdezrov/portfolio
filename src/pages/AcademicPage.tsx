@@ -1,28 +1,12 @@
 import * as React from "react";
 import {Paper} from "react-md";
-import List from "react-md/lib/Lists";
-import ListItem from "react-md/lib/Lists/ListItem";
-import {Avatar} from "react-md/lib/Avatars";
 import Divider from "react-md/lib/Dividers";
 import Steps, {Step} from 'rc-steps';
 import 'rc-steps/assets/index.css';
 import 'rc-steps/assets/iconfont.css';
 
-const uma = require("../../docs/avatars/logo-universidad-de-malaga.png");
-
-export interface IPropsAcademicPage {
-}
-
-export interface IDispatchPropsAcademicPage {
-
-}
-
-export interface IStateAcademicPage {
-
-}
-
-export class AcademicPage extends React.Component<IPropsAcademicPage & IDispatchPropsAcademicPage, IStateAcademicPage> {
-    public constructor(props: IPropsAcademicPage & IDispatchPropsAcademicPage) {
+export class AcademicPage extends React.Component<{}, {}> {
+    public constructor(props) {
         super(props);
     }
 
