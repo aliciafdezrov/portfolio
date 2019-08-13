@@ -1,22 +1,14 @@
 import * as React from "react";
-import InjectedIntlProps = ReactIntl.InjectedIntlProps;
 import {Paper} from "react-md";
-import {Avatar, Divider, Grid, List, ListItem, ListItemIcon, ListItemText, Typography} from "@material-ui/core";
+import {Avatar, List, ListItem, ListItemIcon, ListItemText, Typography} from "@material-ui/core";
 import PhoneIcon from "@material-ui/icons/Phone";
 import EmailIcon from "@material-ui/icons/Email";
 import PlaceIcon from "@material-ui/icons/Place";
-import {library} from '@fortawesome/fontawesome-svg-core';
-import {faCalendar} from '@fortawesome/free-solid-svg-icons';
-import {faLinkedin, faGoogleDrive} from "@fortawesome/free-brands-svg-icons"
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-
-library.add(faGoogleDrive, faLinkedin, faCalendar);
 
 const uma = require("../../docs/avatars/logo-universidad-de-malaga.png");
 const photo = require("../../docs/avatars/download.jpeg")
 
 export interface IPropsContactPage {
-    intl?: ReactIntl.InjectedIntl;
 }
 
 export interface IDispatchPropsContactPage {
@@ -27,8 +19,8 @@ export interface IStateContactPage {
 
 }
 
-export class ContactPage extends React.Component<IPropsContactPage & IDispatchPropsContactPage & InjectedIntlProps, IStateContactPage> {
-    public constructor(props: IPropsContactPage & IDispatchPropsContactPage & InjectedIntlProps) {
+export class ContactPage extends React.Component<IPropsContactPage & IDispatchPropsContactPage, IStateContactPage> {
+    public constructor(props: IPropsContactPage & IDispatchPropsContactPage) {
         super(props);
     }
 
@@ -112,11 +104,6 @@ export class ContactPage extends React.Component<IPropsContactPage & IDispatchPr
                                                 <ListItemIcon>
                                                     <a href="https://www.linkedin.com/in/alicia-fernández-rovira-70885811a"
                                                        target="_blank">
-                                                        <FontAwesomeIcon
-                                                            icon={['fab', 'linkedin']}
-                                                            size="2x"
-                                                            className={"icons-colors"}
-                                                        />
                                                     </a>
                                                 </ListItemIcon>
                                                 <a href="https://www.linkedin.com/in/alicia-fernández-rovira-70885811a"

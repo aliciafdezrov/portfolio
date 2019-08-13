@@ -1,12 +1,10 @@
 import * as React from "react";
-import InjectedIntlProps = ReactIntl.InjectedIntlProps;
-import {Avatar, Divider, List, ListItem, ListItemAvatar, ListItemText} from "@material-ui/core";
+import {Avatar, Divider, List, ListItem, ListItemText} from "@material-ui/core";
 import {Paper} from "react-md";
 
 const uma = require("../../docs/avatars/logo-universidad-de-malaga.png");
 
 export interface IPropsAcademicPage {
-    intl?: ReactIntl.InjectedIntl;
 }
 
 export interface IDispatchPropsAcademicPage {
@@ -17,8 +15,8 @@ export interface IStateAcademicPage {
 
 }
 
-export class AcademicPage extends React.Component<IPropsAcademicPage & IDispatchPropsAcademicPage & InjectedIntlProps, IStateAcademicPage> {
-    public constructor(props: IPropsAcademicPage & IDispatchPropsAcademicPage & InjectedIntlProps) {
+export class AcademicPage extends React.Component<IPropsAcademicPage & IDispatchPropsAcademicPage, IStateAcademicPage> {
+    public constructor(props: IPropsAcademicPage & IDispatchPropsAcademicPage) {
         super(props);
     }
 

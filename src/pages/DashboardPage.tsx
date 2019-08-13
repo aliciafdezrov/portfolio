@@ -1,11 +1,9 @@
 import * as React from "react";
-import InjectedIntlProps = ReactIntl.InjectedIntlProps;
 import {BottomNavigation} from "@material-ui/core";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 const file = require("../../docs/CV.pdf")
 
 export interface IPropsDashboardPage {
-    intl?: ReactIntl.InjectedIntl;
     currentRoute: number;
 }
 
@@ -17,8 +15,8 @@ export interface IStateDashboardPage {
 
 }
 
-export class DashboardPage extends React.Component<IPropsDashboardPage & IDispatchPropsDashboardPage & InjectedIntlProps, IStateDashboardPage> {
-    public constructor(props: IPropsDashboardPage & IDispatchPropsDashboardPage & InjectedIntlProps) {
+export class DashboardPage extends React.Component<IPropsDashboardPage & IDispatchPropsDashboardPage, IStateDashboardPage> {
+    public constructor(props: IPropsDashboardPage & IDispatchPropsDashboardPage) {
         super(props);
     }
 

@@ -1,6 +1,5 @@
 import * as React from "react";
-import InjectedIntlProps = ReactIntl.InjectedIntlProps;
-import {Avatar, Collapse, Divider, IconButton, List, ListItem, ListItemAvatar, ListItemText} from "@material-ui/core";
+import {Collapse, Divider, List, ListItem, ListItemText} from "@material-ui/core";
 import {Paper} from "react-md";
 import ExpandMore from '@material-ui/icons/KeyboardArrowRight';
 import ExpandLess from '@material-ui/icons/KeyboardArrowDown';
@@ -8,7 +7,6 @@ import ExpandLess from '@material-ui/icons/KeyboardArrowDown';
 const uma = require("../../docs/avatars/logo-universidad-de-malaga.png");
 
 export interface IPropsExperiencePage {
-    intl?: ReactIntl.InjectedIntl;
 }
 
 export interface IDispatchPropsExperiencePage {
@@ -19,8 +17,8 @@ export interface IStateExperiencePage {
 
 }
 
-export class ExperiencePage extends React.Component<IPropsExperiencePage & IDispatchPropsExperiencePage & InjectedIntlProps, IStateExperiencePage> {
-    public constructor(props: IPropsExperiencePage & IDispatchPropsExperiencePage & InjectedIntlProps) {
+export class ExperiencePage extends React.Component<IPropsExperiencePage & IDispatchPropsExperiencePage, IStateExperiencePage> {
+    public constructor(props: IPropsExperiencePage & IDispatchPropsExperiencePage) {
         super(props);
     }
 

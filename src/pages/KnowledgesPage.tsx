@@ -1,10 +1,8 @@
 import * as React from "react";
-import InjectedIntlProps = ReactIntl.InjectedIntlProps;
 import {Paper} from "react-md";
 import {ProgressComponent} from "../components/ProgressComponent";
 
 export interface IPropsKnowledgePage {
-    intl?: ReactIntl.InjectedIntl;
 }
 
 export interface IDispatchPropsKnowledgePage {
@@ -15,8 +13,8 @@ export interface IStateKnowledgePage {
 
 }
 
-export class KnowledgePage extends React.Component<IPropsKnowledgePage & IDispatchPropsKnowledgePage & InjectedIntlProps, IStateKnowledgePage> {
-    public constructor(props: IPropsKnowledgePage & IDispatchPropsKnowledgePage & InjectedIntlProps) {
+export class KnowledgePage extends React.Component<IPropsKnowledgePage & IDispatchPropsKnowledgePage, IStateKnowledgePage> {
+    public constructor(props: IPropsKnowledgePage & IDispatchPropsKnowledgePage) {
         super(props);
     }
 

@@ -1,10 +1,8 @@
 import * as React from "react";
 import {Media} from "react-md";
-import InjectedIntlProps = ReactIntl.InjectedIntlProps;
+const backgroundImage = require("../../docs/ash-edmonds-510566-unsplash.jpg");
 
-const backgroundImage = require("../../docs/ash-edmonds-510566-unsplash.jpg")
 export interface IPropsHomePage {
-    intl?: ReactIntl.InjectedIntl;
 }
 
 export interface IDispatchPropsHomePage {
@@ -15,8 +13,8 @@ export interface IStateHomePage {
 
 }
 
-export class HomePage extends React.Component<IPropsHomePage & IDispatchPropsHomePage & InjectedIntlProps, IStateHomePage> {
-    public constructor(props: IPropsHomePage & IDispatchPropsHomePage & InjectedIntlProps) {
+export class HomePage extends React.Component<IPropsHomePage & IDispatchPropsHomePage, IStateHomePage> {
+    public constructor(props: IPropsHomePage & IDispatchPropsHomePage) {
         super(props);
     }
 
