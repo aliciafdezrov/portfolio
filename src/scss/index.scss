@@ -5,7 +5,6 @@ $md-colors-warn-md: false;
 @include react-md-everything;
 @import "bootstrapResponds";
 
-
 .image-style {
   filter: blur(4px);
   -webkit-filter: blur(4px);
@@ -68,6 +67,12 @@ $md-colors-warn-md: false;
   display: flex;
 }
 
+.academic-titles {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 2vh;
+}
+
 .body-background {
   background: #e6e6e6;
 }
@@ -76,21 +81,17 @@ $md-colors-warn-md: false;
   background: #ffffff;
 }
 
-.central-div {
-
-}
-
 @include respond-above(lg) {
   .central-div {
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 }
 
 @include respond-below(md) {
   .central-div {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 2vw;
+    padding-right: 2vw;
   }
 }
 
