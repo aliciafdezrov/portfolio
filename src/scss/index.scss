@@ -143,6 +143,13 @@ $md-colors-warn-md: false;
   margin-top: 20px;
 }
 
+.dashboard-section {
+  a:focus, a:hover, a:active {
+    color: #ffffff !important;
+    text-decoration: none !important;
+  }
+}
+
 .bottom-navigations__dynamic {
   &--contact {
     @include react-md-theme-bottom-navigations-colored($md-cyan-300);
