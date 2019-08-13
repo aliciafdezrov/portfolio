@@ -176,3 +176,9 @@ $md-colors-warn-md: false;
     @include react-md-theme-bottom-navigations-colored($md-teal-300);
   }
 }
+
+.climbing-loader {
+  align-content: center;
+  align-items: center;
+  display: block;
+}
