@@ -1,18 +1,18 @@
 import {connect} from "react-redux";
 import {injectIntl} from "react-intl";
-import {HomePage, IDispatchPropsHomePage, IPropsHomePage} from "./HomePage";
+import {DashboardPage, IDispatchPropsDashboardPage, IPropsDashboardPage} from "./DashboardPage";
 import {IReducers} from "../reducers/IndexReducers";
 import {ChangeRouteActionThunk} from "../actions/ChangeRouteActionThunk";
 
-const mapStateToProps = (state: IReducers): IPropsHomePage => ({
+const mapStateToProps = (state: IReducers): IPropsDashboardPage => ({
     currentRoute: state['reducers'].HomeReducer.currentRoute
 });
 
-const mapDispatchToProps = (dispatch): IDispatchPropsHomePage => ({
+const mapDispatchToProps = (dispatch): IDispatchPropsDashboardPage => ({
     pushRouter: (id) => dispatch(ChangeRouteActionThunk(id))
 });
 
-export const HomePageContainer = connect<IPropsHomePage, IDispatchPropsHomePage, {}>(
+export const DashboardContainer = connect<IPropsDashboardPage, IDispatchPropsDashboardPage, {}>(
     mapStateToProps,
     mapDispatchToProps
-)(injectIntl(HomePage));
+)(injectIntl(DashboardPage));

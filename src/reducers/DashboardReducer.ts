@@ -1,7 +1,7 @@
 import {Action} from "redux";
 import {ActionConstants} from "../actions/ActionConstants";
 
-export class HomeState {
+export class DashboardState {
     currentRoute: number;
 
     public constructor() {
@@ -9,8 +9,8 @@ export class HomeState {
     }
 }
 
-export function HomeReducer(state: HomeState = new HomeState(), action: Action): HomeState {
-    let newState: HomeState;
+export function DashboardReducer(state: DashboardState = new DashboardState(), action: Action): DashboardState {
+    let newState: DashboardState;
 
     switch (action.type) {
         case ActionConstants.CHANGE_ROUTE:

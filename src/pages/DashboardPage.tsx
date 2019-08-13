@@ -1,14 +1,16 @@
 import * as React from "react";
-import {Media} from "react-md";
 import InjectedIntlProps = ReactIntl.InjectedIntlProps;
+import {BottomNavigation} from "@material-ui/core";
+import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
+const file = require("../../docs/CV.pdf")
 
-const backgroundImage = require("../../docs/ash-edmonds-510566-unsplash.jpg")
 export interface IPropsDashboardPage {
     intl?: ReactIntl.InjectedIntl;
+    currentRoute: number;
 }
 
 export interface IDispatchPropsDashboardPage {
-
+    pushRouter: (id: number) => any;
 }
 
 export interface IStateDashboardPage {
@@ -20,17 +22,25 @@ export class DashboardPage extends React.Component<IPropsDashboardPage & IDispat
         super(props);
     }
 
+    private handleChange (event, value) {
+        this.props.pushRouter(value);
+    }
+
     public render() {
+
         return (
             <div>
-                <Media>
-                    <div className="title-style">
-                        <h1>Alicia Fernández Rovira</h1>
-                        <h4>Full-Stack Developer on Málaga</h4>
-                    </div>
+                <BottomNavigation
+                    value={this.props.currentRoute}
+                    onChange={this.handleChange.bind(this)}
+                    showLabels>
 
-                    <img className="image-style" height={'80vh'} src={backgroundImage} alt="Laptop" />
-                </Media>
+                    <BottomNavigationAction label="Home"/>
+                    <BottomNavigationAction label="Experiencia"/>
+                    <BottomNavigationAction label="Conocimientos"/>
+                    <BottomNavigationAction label="Sobre mi"/>
+                    <BottomNavigationAction label="Descarga" href="CV.pdf" download/>
+                </BottomNavigation>
             </div>
         );
     }
