@@ -3,7 +3,7 @@ import Steps, {Step} from 'rc-steps';
 import 'rc-steps/assets/index.css';
 import 'rc-steps/assets/iconfont.css';
 import {Paper} from "react-md";
-
+import Divider from "react-md/lib/Dividers";
 
 export class ExperiencePage extends React.Component<{}, {}> {
     public constructor(props) {
@@ -18,7 +18,12 @@ export class ExperiencePage extends React.Component<{}, {}> {
         return (
             <div className="central-div">
                 <Paper className="title-paper" zDepth={2}>
-                    <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <div className="academic-titles">
+                        <h4>Experiencia profesional</h4>
+                    </div>
+                    <Divider/>
+
+                    <div className="steps-style">
                         <Steps direction="vertical" current={this.state.currentStep}
                                onChange={(current) => this.setState({currentStep: current})}>
 

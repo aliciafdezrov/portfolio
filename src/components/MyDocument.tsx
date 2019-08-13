@@ -3,8 +3,8 @@ import {Document, Page} from 'react-pdf';
 import {toast, ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import ClimbingBoxLoader from 'react-spinners/ClimbingBoxLoader';
-
 const file = require("../../docs/CV.pdf");
+
 const notify = () => toast('⚠️ ¿Te gustaría descargarlo? ', {
     position: "top-right",
     autoClose: 15000,
@@ -38,14 +38,13 @@ export class MyDocument extends React.Component<{}, {}> {
                 <div>
                     <div>
                         <ToastContainer containerId={'Download'}
-                                        onClick={() => {window.location=file}}
+                                        onClick={() => {window.location.href=file}}
                                         position={toast.POSITION.TOP_LEFT}/>
                     </div>
                 </div>
                 <div>
                     <Document
                         file={file}
-                        onItemClick={this.setState({pageNumber: this.state.pageNumber+1})}
                         error="Algo fue mal al cargar el cv. Envíame un correo al email de contacto y puedo enviartelo personalmente."
                         loading={<ClimbingBoxLoader color={'#4DB6AC'}
                                                     size={40}

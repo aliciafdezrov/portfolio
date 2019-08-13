@@ -33,9 +33,9 @@ export class ContactPage extends React.Component<IPropsContactPage & IDispatchPr
     private getMailLink() {
         let link: string;
         if (this.checkIsMobile()) {
-            link = "mailto:johnDoe@gmail.com?subject=Petición%20desde%20cv&body=Cuerpo+del+mensaje";
+            link = "mailto:aliciafdezrov@gmail.com?subject=Petición%20desde%20cv&body=Cuerpo+del+mensaje";
         } else {
-            link = "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Petición%20desde%20cv&to=johnDoe@gmail.com&body=Cuerpo+del+mensaje"
+            link = "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Petición%20desde%20cv&to=aliciafdezrov@gmail.com&body=Cuerpo+del+mensaje"
         }
         return link;
     }
@@ -53,12 +53,7 @@ export class ContactPage extends React.Component<IPropsContactPage & IDispatchPr
                                     </div>
                                     <div className="contact-title">
                                         <List>
-                                            <ListItem primaryText="666-666-666"
-                                                      href="tel://666111222"
-                                                      leftIcon={<FontIcon>phone</FontIcon>}
-                                                      target="_blank">
-                                            </ListItem>
-                                            <ListItem primaryText="johnDoe@gmail.com"
+                                            <ListItem primaryText="aliciafdezrov@gmail.com"
                                                       href={this.getMailLink()}
                                                       leftIcon={<FontIcon>mail</FontIcon>}
                                                       target="_blank">
