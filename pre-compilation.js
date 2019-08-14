@@ -102,8 +102,10 @@ module.exports = {
                         }
                     },
                     {
-                        loader: "sass-loader",
-                        options: {}
+                        loader: 'sass-loader',
+                        options: {
+                            implementation: require('sass'),
+                        },
                     }
                 ]
             },
@@ -138,17 +140,6 @@ module.exports = {
         ]
     },
     plugins: [
-/*        new CleanWebpackPlugin(['./dist'], {
-            //root: basePath,
-            verbose: true,   // Write logs to console
-            dry: false,     // Use boolean "true" to test/emulate delete. (will not remove files).
-            // (Default: "false", remove files)
-            watch: true     // If true, remove files on recompile. (Default: false)
-            //exclude: ['RunExpress.js']
-        }),*/
-
-        //new FaviconsWebpackPlugin('../favicon.ico'),
-
         new MiniCssExtractPlugin({
             // Options similar to the same lineChartOptions in webpackOptions.output
             // both lineChartOptions are optional
@@ -164,33 +155,5 @@ module.exports = {
             $: "jquery",
             jQuery: "jquery"
         }),
-        //new FaviconsWebpackPlugin('../favicon.ico'),
-        /*        new SWPrecacheWebpackPlugin(
-                    {
-                        cacheId: 'my-domain-cache-id',
-                        dontCacheBustUrlsMatching: /\.\w{8}\./,
-                        filename: 'service-worker.js',
-                        minify: true,
-                        navigateFallback: 'index.html',
-                        staticFileGlobsIgnorePatterns: [/\.map$/, /manifest\.json$/]
-                    }
-                ),*/
-        /*        new WebpackPwaManifest({
-                    name: 'Asclepios',
-                    short_name: 'Asclepios',
-                    description: 'Asclepios frontend project',
-                    display: "standalone",
-                    background_color: '#63acb2',
-                    theme_color: '#63acb2',
-                    'theme-color': '#63acb2',
-                    start_url: '/',
-                    icons: [
-                        {
-                            src: path.resolve('favicon.ico'),
-                            sizes: [96, 128, 192, 256, 384, 512],
-                            destination: path.join('assets', 'icons')
-                        }
-                    ]
-                })*/
     ]
 };

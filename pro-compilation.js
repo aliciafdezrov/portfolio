@@ -83,8 +83,10 @@ module.exports = {
                         }
                     },
                     {
-                        loader: "sass-loader",
-                        options: {}
+                        loader: 'sass-loader',
+                        options: {
+                            implementation: require('sass'),
+                        },
                     }
                 ]
             },
@@ -142,33 +144,5 @@ module.exports = {
                 removeRedundantAttributes: true
             }
         })
-
-/*        new SWPrecacheWebpackPlugin(
-            {
-                cacheId: 'asclepios-cache-id',
-                dontCacheBustUrlsMatching: /\.\w{8}\./,
-                filename: 'service-worker.js',
-                minify: true,
-                navigateFallback: 'index.html',
-                staticFileGlobsIgnorePatterns: [/\.map$/, /manifest\.json$/]
-            }
-        ),
-        new WebpackPwaManifest({
-            name: 'Asclepios',
-            short_name: 'Asclepios',
-            description: 'Asclepios frontend project',
-            display: "standalone",
-            background_color: '#63acb2',
-            theme_color: '#63acb2',
-            'theme-color': '#63acb2',
-            start_url: '/',
-            icons: [
-                {
-                    src: path.resolve('favicon.ico'),
-                    sizes: [96, 128, 192, 256, 384, 512],
-                    destination: path.join('assets', 'icons')
-                }
-            ]
-        })*/
     ]
 };
