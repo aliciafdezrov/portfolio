@@ -1,6 +1,7 @@
 $md-primary-color: #272727;
 $md-secondary-color: #a0a0a0;
 $md-colors-warn-md: false;
+$md-ink-border-radius: 0%;
 @import '~react-md/src/scss/react-md';
 @include react-md-everything;
 @import "bootstrapResponds";
@@ -27,7 +28,7 @@ $md-colors-warn-md: false;
 .title-style {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
+  color: white !important;
   position: fixed;
   font-weight: bold;
   border: 3px solid #f1f1f1;
@@ -38,24 +39,6 @@ $md-colors-warn-md: false;
   width: 80%;
   padding: 20px;
   text-align: center;
-}
-
-@include respond-below(md) {
-  .title-style {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-  }
 }
 
 @include respond-below(md) {
@@ -97,18 +80,21 @@ $md-colors-warn-md: false;
 }
 
 .title-paper {
-  margin-top: 15px;
-  margin-bottom: 15px;
   height: auto;
   background: #ffffff;
+}
+
+@include respond-above(md) {
+  .title-paper {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }
 
 @include respond-below(md) {
   .title-paper {
     margin-top: 1vh;
     margin-bottom: 1vh;
-    height: auto;
-    background: #ffffff;
   }
 }
 
@@ -149,6 +135,7 @@ $md-colors-warn-md: false;
   a:focus, a:hover, a:active {
     color: #ffffff !important;
     text-decoration: none !important;
+    outline: none;
   }
 }
 
@@ -176,12 +163,6 @@ $md-colors-warn-md: false;
   &--cv {
     @include react-md-theme-bottom-navigations-colored($md-teal-300);
   }
-}
-
-.climbing-loader {
-  align-content: center;
-  align-items: center;
-  display: block;
 }
 
 .steps-style {
@@ -215,15 +196,18 @@ $md-colors-warn-md: false;
   display: flex;
   align-items: stretch;
   max-height: 90vh;
+  -webkit-tap-highlight-color: snow !important;
 }
 
 .page-wrapper {
   height: 90vh !important;
 }
 
-.avatar-style {
-  padding-bottom: 4vh;
-  padding-right: 10vw !important;
+@include respond-above(md) {
+  .avatar-style {
+    padding-bottom: 4vh;
+    padding-right: 10vw !important;
+  }
 }
 
 .contact-text-div {

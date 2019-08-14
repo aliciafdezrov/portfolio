@@ -39,7 +39,7 @@ const components = [
                 alignItems: "center",
                 justifyContent: "center",
                 height: '100vh',
-                width: '100vw'
+                marginLeft: '15vw'
             }}>
                 <Button primary raised href={cv} download>
                     ¡Pulsa para descargar!
