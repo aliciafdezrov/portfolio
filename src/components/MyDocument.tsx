@@ -3,7 +3,7 @@ import {Document, Page} from 'react-pdf';
 import {toast, ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import {Button} from "react-md";
-const file = require("../../docs/test-pdf.pdf");
+const file = require("../../docs/CV.pdf");
 
 const notify = () => toast('⚠️ ¿Te gustaría descargarlo? ', {
     position: "top-right",
