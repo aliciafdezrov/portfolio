@@ -147,7 +147,7 @@ export class KnowledgePage extends React.Component<{}, {}> {
 
                                 <div className="row">
                                     <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                                        <label>EcmaScript6</label>
+                                        <label>ES6</label>
                                     </div>
 
                                     <div className="col-lg-9 col-md-9 col-sm-9 col-xs-9">

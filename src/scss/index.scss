@@ -203,11 +203,16 @@ $md-ink-border-radius: 0%;
   height: 90vh !important;
 }
 
-@include respond-above(md) {
-  .avatar-style {
+.avatar-style {
     padding-bottom: 4vh;
-    padding-right: 10vw !important;
-  }
+}
+
+@include respond-above(md) {
+  padding-right: 10vw !important;
+}
+
+@include respond-below(md) {
+  padding-right: 15vw !important;
 }
 
 .contact-text-div {
