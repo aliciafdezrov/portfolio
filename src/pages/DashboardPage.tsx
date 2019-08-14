@@ -32,7 +32,7 @@ const components = [
             <MyDocument key="cv"/>
         </BrowserView>
         <MobileView>
-            <div style={{display: "flex", alignItems: "center", justifyContent: "center", height: '100vh'}}>
+            <div style={{display: "flex", alignItems: "center", justifyContent: "center", height: '100vh', width:'100vw'}}>
                 <Button primary raised href={cv} download>
                     ¡Pulsa para descargar!
                 </Button>
