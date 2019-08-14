@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --config=pre-compilation --hot --inline --devtool=inline-source-map --progress",
     "compile": "webpack --config=./pro-compilation.js",
-    "compile:pre": "webpack --config=./pre-compilation.js"
+    "compile:pre": "webpack --config=./pre-compilation.js",
+    "start:pro": "webpack-dev-server  --port 3002 --config=pro-compilation"
   },
   "repository": {
     "type": "git",
