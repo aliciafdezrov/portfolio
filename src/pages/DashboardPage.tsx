@@ -7,6 +7,9 @@ import {AcademicPage} from "./AcademicPage";
 import {ContactPage} from "./ContactPage";
 import {BottomNavigation} from "react-md/lib/BottomNavigations";
 import {MyDocument} from "../components/MyDocument";
+import { BrowserView, MobileView } from 'react-device-detect';
+import Button from "react-md/lib/Buttons";
+const cv = require('../../docs/CV.pdf');
 
 export interface IPropsDashboardPage {
 }
@@ -24,7 +27,18 @@ const components = [
     <ExperiencePage key="experience"/>,
     <KnowledgePage key="knowledge"/>,
     <ContactPage key="contact"/>,
-    <MyDocument key="cv"/>
+    <div>
+        <BrowserView>
+            <MyDocument key="cv"/>
+        </BrowserView>
+        <MobileView>
+            <div style={{display: "flex", alignItems: "center", justifyContent: "center", height: '100vh'}}>
+                <Button primary raised href={cv} download>
+                    ¡Pulsa para descargar!
+                </Button>
+            </div>
+        </MobileView>
+    </div>
 ];
 const themes = ['home', 'academic', 'experience', 'knowledge', 'contact', 'cv'];
 
@@ -58,20 +72,20 @@ export class DashboardPage extends React.Component<IPropsDashboardPage & IDispat
             icon: <FontIcon>cloud_download</FontIcon>,
         }];
         return (
-            <div className={`bottom-navigations__dynamic--${themes[this.state.activeIndex]}`}>
-
+            <div className="wrapper">
                 {
                     components[this.state.activeIndex]
                 }
-
-                <div className="dashboard-section">
-                    <BottomNavigation
-                        dynamic
-                        links={links}
-                        colored
-                        activeIndex={this.state.activeIndex}
-                        onNavChange={(activeIndex) => this.setState({activeIndex: activeIndex})}
-                    />
+                <div className={`bottom-navigations__dynamic--${themes[this.state.activeIndex]}`}>
+                    <div className="dashboard-section">
+                        <BottomNavigation
+                            dynamic
+                            links={links}
+                            colored
+                            activeIndex={this.state.activeIndex}
+                            onNavChange={(activeIndex) => this.setState({activeIndex: activeIndex})}
+                        />
+                    </div>
                 </div>
             </div>
         );
