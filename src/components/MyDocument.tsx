@@ -3,7 +3,8 @@ import {Document, Page} from 'react-pdf';
 import {toast, ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import {Button} from "react-md";
-const file = require("../../docs/CV.pdf");
+
+const file = require("../../docs/test-pdf.pdf");
 
 const notify = () => toast('⚠️ ¿Te gustaría descargarlo? ', {
     position: "top-right",
@@ -34,44 +35,51 @@ export class MyDocument extends React.Component<{}, {}> {
 
     private nextPage() {
         if (this.state.pageNumber < this.state.numPages) {
-            this.setState({pageNumber: this.state.pageNumber+1})
+            this.setState({pageNumber: this.state.pageNumber + 1})
         }
     }
 
     private prevPage() {
-        if(this.state.pageNumber > 1) {
-            this.setState({pageNumber: this.state.pageNumber-1})
+        if (this.state.pageNumber > 1) {
+            this.setState({pageNumber: this.state.pageNumber - 1})
         }
     }
 
     public render() {
         return (
-            <div className="container-fluid">
+            <div style={{display: "flex", justifyContent: "center"}}>
                 <div>
                     <div>
                         <ToastContainer containerId={'Download'}
-                                        onClick={() => {window.location.href=file}}
+                                        onClick={() => {
+                                            window.location.href = file
+                                        }}
                                         position={toast.POSITION.TOP_LEFT}/>
                     </div>
                 </div>
-                <div style={{display: "flex", justifyContent: "center"}}>
-                    <Document
-                        file={file}
-                        error="Algo fue mal al cargar el cv. Envíame un correo al email de contacto y puedo enviartelo personalmente."
-                        loading="Cargando el archivo..."
-                        onLoadSuccess={this.onDocumentLoadSuccess}
-                    >
-                        <Page pageNumber={this.state.pageNumber}/>
-                    </Document>
-                </div>
                 <div className="fab-style">
-                    <Button floating primary onClick={() => this.prevPage()}>
-                        arrow_left
-                    </Button>
+                    <div className="fab-left">
+                        <Button floating primary onClick={() => this.prevPage()}>
+                            arrow_left
+                        </Button>
+                    </div>
 
-                    <Button floating primary onClick={() => this.nextPage()}>
-                        arrow_right
-                    </Button>
+                    <div className="document-wrapper">
+                        <Document
+                            file={file}
+                            error="Algo fue mal al cargar el cv. Envíame un correo al email de contacto y puedo enviartelo personalmente."
+                            loading="Cargando el archivo..."
+                            onLoadSuccess={this.onDocumentLoadSuccess}
+                        >
+                            <Page className="page-wrapper" renderMode='svg' pageNumber={this.state.pageNumber}/>
+                        </Document>
+                    </div>
+
+                    <div className="fab-right">
+                        <Button floating primary onClick={() => this.nextPage()}>
+                            arrow_right
+                        </Button>
+                    </div>
                 </div>
             </div>
         );
