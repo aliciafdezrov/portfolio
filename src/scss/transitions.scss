@@ -1,0 +1,38 @@
+.slide-forward-enter {
+  transform: translate3d(100%, 0, 0);
+  visibility: visible;
+  opacity: 0;
+}
+.slide-forward-enter-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: transform 300ms, opacity 500ms ease-in;
+}
+.slide-forward-exit {
+  opacity: 1;
+}
+.slide-forward-exit-active {
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 300ms, opacity 500ms ease-in;
+}
+
+.slide-reverse-enter {
+  transform: translate3d(-100%, 0, 0);
+  visibility: hidden;
+  opacity: 0;
+}
+.slide-reverse-enter-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: transform 300ms, opacity 500ms ease-in;
+}
+.slide-reverse-exit {
+  opacity: 1;
+  visibility: visible;
+}
+.slide-reverse-exit-active {
+  opacity: 0;
+  transform: translate3d(100%, 0, 0);
+  transition: transform 300ms, opacity 500ms ease-in;
+}

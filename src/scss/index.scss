@@ -4,6 +4,7 @@ $md-colors-warn-md: false;
 @import '~react-md/src/scss/react-md';
 @include react-md-everything;
 @import "bootstrapResponds";
+@import "transitions";
 
 .image-style {
   filter: blur(4px);

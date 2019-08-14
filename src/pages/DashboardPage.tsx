@@ -7,9 +7,11 @@ import {AcademicPage} from "./AcademicPage";
 import {ContactPage} from "./ContactPage";
 import {BottomNavigation} from "react-md/lib/BottomNavigations";
 import {MyDocument} from "../components/MyDocument";
-import { BrowserView, MobileView } from 'react-device-detect';
+import {BrowserView, MobileView} from 'react-device-detect';
 import Button from "react-md/lib/Buttons";
+
 const cv = require('../../docs/CV.pdf');
+import {SwitchTransition, CSSTransition} from "react-transition-group";
 
 export interface IPropsDashboardPage {
 }
@@ -32,7 +34,13 @@ const components = [
             <MyDocument key="cv"/>
         </BrowserView>
         <MobileView>
-            <div style={{display: "flex", alignItems: "center", justifyContent: "center", height: '100vh', width:'100vw'}}>
+            <div style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                height: '100vh',
+                width: '100vw'
+            }}>
                 <Button primary raised href={cv} download>
                     ¡Pulsa para descargar!
                 </Button>
@@ -49,7 +57,20 @@ export class DashboardPage extends React.Component<IPropsDashboardPage & IDispat
 
     state = {
         activeIndex: 0,
+        transition: 'slide-forward'
     };
+
+    private onChangeIndex(newIndex) {
+        if (this.state.activeIndex < newIndex) {
+            this.setState({transition: 'slide-forward'});
+        } else {
+            this.setState({transition: 'slide-reverse'});
+        }
+
+        setTimeout(() => {
+            this.setState({activeIndex: newIndex});
+        }, 0);
+    }
 
     public render() {
         let links = [{
@@ -73,9 +94,19 @@ export class DashboardPage extends React.Component<IPropsDashboardPage & IDispat
         }];
         return (
             <div className="wrapper">
-                {
-                    components[this.state.activeIndex]
-                }
+                <div>
+                    <SwitchTransition>
+                        <CSSTransition key={this.state.activeIndex}
+                                       timeout={300}
+                                       classNames={this.state.transition}>
+                            <div className="container-fluid md-cell md-cell--12">
+                                {
+                                    components[this.state.activeIndex]
+                                }
+                            </div>
+                        </CSSTransition>
+                    </SwitchTransition>
+                </div>
                 <div className={`bottom-navigations__dynamic--${themes[this.state.activeIndex]}`}>
                     <div className="dashboard-section">
                         <BottomNavigation
@@ -83,7 +114,7 @@ export class DashboardPage extends React.Component<IPropsDashboardPage & IDispat
                             links={links}
                             colored
                             activeIndex={this.state.activeIndex}
-                            onNavChange={(activeIndex) => this.setState({activeIndex: activeIndex})}
+                            onNavChange={this.onChangeIndex.bind(this)}
                         />
                     </div>
                 </div>
