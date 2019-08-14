@@ -3,7 +3,6 @@ import {Document, Page} from 'react-pdf';
 import {toast, ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import {Button} from "react-md";
-
 const file = require("../../docs/test-pdf.pdf");
 
 const notify = () => toast('⚠️ ¿Te gustaría descargarlo? ', {
@@ -45,15 +44,20 @@ export class MyDocument extends React.Component<{}, {}> {
         }
     }
 
+    private downloadFile(){
+        let link=document.createElement('a');
+        link.href = file;
+        link.download = file;
+        link.click();
+    }
+
     public render() {
         return (
             <div style={{display: "flex", justifyContent: "center"}}>
                 <div>
                     <div>
                         <ToastContainer containerId={'Download'}
-                                        onClick={() => {
-                                            window.location.href = file
-                                        }}
+                                        onClick={() => this.downloadFile()}
                                         position={toast.POSITION.TOP_LEFT}/>
                     </div>
                 </div>
