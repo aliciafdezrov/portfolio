@@ -42,7 +42,7 @@ const components = [
                 marginLeft: '15vw'
             }}>
                 <Button primary raised href={cv} download>
-                    ¡Pulsa para descargar!
+                    ¡Descargar cv!
                 </Button>
             </div>
         </MobileView>

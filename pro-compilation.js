@@ -31,7 +31,7 @@ module.exports = {
     output: {
         path: path.join(basePath, './dist'),
         filename: '[hash].[name].js',
-        publicPath: '/'//'/portfolio/'
+        publicPath: '/portfolio/'
     },
 
     performance: {
