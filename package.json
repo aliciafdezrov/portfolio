@@ -9,9 +9,8 @@
     "compile": "webpack --config=./pro-compilation.js",
     "compile:pre": "webpack --config=./pre-compilation.js",
     "start:pro": "webpack-dev-server  --port 3002 --config=pro-compilation",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "webpack --config=./pro-compilation.js"
+    "predeploy": "npm run compile",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -46,7 +45,6 @@
     "brotli-webpack-plugin": "1.0.0",
     "clean-webpack-plugin": "0.1.19",
     "css-loader": "0.28.11",
-    "favicons-webpack-plugin": "0.0.9",
     "file-loader": "1.1.11",
     "html-loader": "0.5.5",
     "html-webpack-plugin": "3.0.7",
