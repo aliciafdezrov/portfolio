@@ -21,7 +21,7 @@ export class HomePage extends React.Component<IPropsHomePage & IDispatchPropsHom
     public render() {
         return (
             <div>
-                <Media>
+                <Media style={{margin: '0px'}}>
                     <div className="title-style">
                         <h1>Alicia Fernández Rovira</h1>
                         <h4>Full-Stack Developer on Málaga</h4>

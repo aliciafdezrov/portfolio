@@ -3,7 +3,6 @@ let webpack = require("webpack");
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const BrotliPlugin = require("brotli-webpack-plugin");
-let FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 let basePath = __dirname;
 
 module.exports = {
@@ -32,7 +31,7 @@ module.exports = {
     output: {
         path: path.join(basePath, './dist'),
         filename: '[hash].[name].js',
-        publicPath: '/'
+        publicPath: '/'//'/portfolio/'
     },
 
     performance: {

@@ -10,18 +10,17 @@ $md-ink-border-radius: 0%;
 .image-style {
   filter: blur(4px);
   -webkit-filter: blur(4px);
+  position: fixed !important;
 }
 
 @include respond-below(md) {
   .image-style {
-    position: fixed !important;
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     z-index: -1;
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
+    margin: 0 !important;
   }
 }
 
@@ -171,6 +170,7 @@ $md-ink-border-radius: 0%;
 }
 
 .steps-style {
+  text-align: left;
   padding-left: 1vw;
   padding-right: 1vw;
   padding-top: 1vh;
@@ -238,7 +238,15 @@ $md-ink-border-radius: 0%;
 
 .wrapper {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   font-weight: bold;
   text-align: center;
+  width: 100vw;
+}
+
+@include respond-above(md) {
+  .contact-list {
+    text-align: left;
+    padding-left: 12vw;
+  }
 }

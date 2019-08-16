@@ -99,11 +99,9 @@ export class DashboardPage extends React.Component<IPropsDashboardPage & IDispat
                         <CSSTransition key={this.state.activeIndex}
                                        timeout={300}
                                        classNames={this.state.transition}>
-                            <div className="container-fluid md-cell md-cell--12">
-                                {
-                                    components[this.state.activeIndex]
-                                }
-                            </div>
+                            {
+                                components[this.state.activeIndex]
+                            }
                         </CSSTransition>
                     </SwitchTransition>
                 </div>

@@ -36,13 +36,13 @@ export class ContactPage extends React.Component<IPropsContactPage & IDispatchPr
             <div className="central-div">
                 <Paper className="title-paper white-background" zDepth={2}>
                     <div className="row">
-                        <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div className="contact-title contact-text-div">
                                 <h4>Información de contacto</h4>
                             </div>
 
                             <Divider/>
-                            <div className="contact-title">
+                            <div className="contact-title contact-list">
                                 <List>
                                     <div>
                                         <BrowserView>
@@ -79,12 +79,12 @@ export class ContactPage extends React.Component<IPropsContactPage & IDispatchPr
                             </div>
                         </div>
 
-                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 avatar-style">
-                            <Avatar
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 avatar-style">
+                            {/*<Avatar
                                 alt="Me"
                                 src={photo}
                                 className="avatar"
-                            />
+                            />*/}
                         </div>
                     </div>
                 </Paper>
