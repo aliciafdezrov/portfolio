@@ -1,0 +1,56 @@
+.avatar-style {
+  padding-bottom: 4vh;
+}
+
+@include respond-above(md) {
+  .avatar-style {
+    padding-right: 10vw !important;
+  }
+}
+
+@include respond-below(md) {
+  .avatar-style {
+    padding-right: 15vw !important;
+  }
+}
+
+@include respond-above(lg) {
+  .avatar {
+    margin-top: 50px;
+    height: 500px;
+    width: 400px;
+  }
+}
+
+@include respond-below(md) {
+  .avatar {
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    margin-left: 70px;
+  }
+}
+
+.contact-title {
+  margin-top: 20px;
+}
+
+@include respond-above(md) {
+  .contact-list {
+    text-align: left;
+    padding-left: 12vw;
+  }
+}
+
+@include respond-above(md) {
+  .contact-text-div {
+    padding-top: 10vh;
+  }
+}
+
+@include respond-below(md) {
+  .contact-text-div {
+    padding-top: 2vh;
+  }
+}
+

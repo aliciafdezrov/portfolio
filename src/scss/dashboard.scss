@@ -1,0 +1,34 @@
+
+.dashboard-section {
+  a:focus, a:hover, a:active {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    outline: none;
+  }
+}
+
+.bottom-navigations__dynamic {
+  &--contact {
+    @include react-md-theme-bottom-navigations-colored($md-cyan-300);
+  }
+
+  &--academic {
+    @include react-md-theme-bottom-navigations-colored($md-teal-500);
+  }
+
+  &--experience {
+    @include react-md-theme-bottom-navigations-colored($md-pink-300);
+  }
+
+  &--knowledge {
+    @include react-md-theme-bottom-navigations-colored($md-purple-300);
+  }
+
+  &--home {
+    @include react-md-theme-bottom-navigations-colored($md-primary-color);
+  }
+
+  &--cv {
+    @include react-md-theme-bottom-navigations-colored($md-teal-300);
+  }
+}

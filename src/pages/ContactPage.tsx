@@ -80,11 +80,11 @@ export class ContactPage extends React.Component<IPropsContactPage & IDispatchPr
                         </div>
 
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 avatar-style">
-                            {/*<Avatar
+                            <Avatar
                                 alt="Me"
                                 src={photo}
                                 className="avatar"
-                            />*/}
+                            />
                         </div>
                     </div>
                 </Paper>

@@ -1,0 +1,32 @@
+
+.fab-style {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5vh;
+  width: 100vw;
+}
+
+.fab-right {
+  margin-bottom: 50vh;
+  padding-left: 2vw;
+  display: flex;
+  align-items: flex-end;
+}
+
+.fab-left {
+  margin-bottom: 50vh;
+  padding-right: 2vw;
+  display: flex;
+  align-items: flex-end;
+}
+
+.document-wrapper {
+  display: flex;
+  align-items: stretch;
+  max-height: 90vh;
+  -webkit-tap-highlight-color: snow !important;
+}
+
+.page-wrapper {
+  height: 90vh !important;
+}

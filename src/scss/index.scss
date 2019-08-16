@@ -6,58 +6,16 @@ $md-ink-border-radius: 0%;
 @include react-md-everything;
 @import "bootstrapResponds";
 @import "transitions";
-
-.image-style {
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-  position: fixed !important;
-}
-
-@include respond-below(md) {
-  .image-style {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    margin: 0 !important;
-  }
-}
-
-.title-style {
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  position: fixed;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-
-  h1, h4 {
-    color: white;
-  }
-}
+@import "home";
+@import "dashboard";
+@import "academic";
+@import "knowledges";
+@import "document";
 
 @include respond-below(md) {
   .md-media--16-9 {
     padding-bottom: 0;
   }
-}
-
-.academic {
-  display: flex;
-}
-
-.academic-titles {
-  text-align: center;
-  font-weight: bold;
-  padding-top: 2vh;
 }
 
 .body-background {
@@ -114,126 +72,11 @@ $md-ink-border-radius: 0%;
   margin-right: 30px;
 }
 
-@include respond-above(lg) {
-  .avatar {
-    margin-top: 50px;
-    height: 500px;
-    width: 400px;
-  }
-}
-
-@include respond-below(md) {
-  .avatar {
-    margin-top: 20px;
-    height: 200px;
-    width: 200px;
-    margin-left: 70px;
-  }
-}
-
-.contact-title {
-  margin-top: 20px;
-}
-
-.dashboard-section {
-  a:focus, a:hover, a:active {
-    color: #ffffff !important;
-    text-decoration: none !important;
-    outline: none;
-  }
-}
-
-.bottom-navigations__dynamic {
-  &--contact {
-    @include react-md-theme-bottom-navigations-colored($md-cyan-300);
-  }
-
-  &--academic {
-    @include react-md-theme-bottom-navigations-colored($md-teal-500);
-  }
-
-  &--experience {
-    @include react-md-theme-bottom-navigations-colored($md-pink-300);
-  }
-
-  &--knowledge {
-    @include react-md-theme-bottom-navigations-colored($md-purple-300);
-  }
-
-  &--home {
-    @include react-md-theme-bottom-navigations-colored($md-primary-color);
-  }
-
-  &--cv {
-    @include react-md-theme-bottom-navigations-colored($md-teal-300);
-  }
-}
-
 .steps-style {
   text-align: left;
   padding-left: 1vw;
   padding-right: 1vw;
   padding-top: 1vh;
-}
-
-.fab-style {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 5vh;
-  width: 100vw;
-}
-
-.fab-right {
-  margin-bottom: 50vh;
-  padding-left: 2vw;
-  display: flex;
-  align-items: flex-end;
-}
-
-.fab-left {
-  margin-bottom: 50vh;
-  padding-right: 2vw;
-  display: flex;
-  align-items: flex-end;
-}
-
-.document-wrapper {
-  display: flex;
-  align-items: stretch;
-  max-height: 90vh;
-  -webkit-tap-highlight-color: snow !important;
-}
-
-.page-wrapper {
-  height: 90vh !important;
-}
-
-.avatar-style {
-  padding-bottom: 4vh;
-}
-
-@include respond-above(md) {
-  .avatar-style {
-    padding-right: 10vw !important;
-  }
-}
-
-@include respond-below(md) {
-  .avatar-style {
-    padding-right: 15vw !important;
-  }
-}
-
-@include respond-above(md) {
-  .contact-text-div {
-    padding-top: 10vh;
-  }
-}
-
-@include respond-below(md) {
-  .contact-text-div {
-    padding-top: 2vh;
-  }
 }
 
 .wrapper {
@@ -242,11 +85,4 @@ $md-ink-border-radius: 0%;
   font-weight: bold;
   text-align: center;
   width: 100vw;
-}
-
-@include respond-above(md) {
-  .contact-list {
-    text-align: left;
-    padding-left: 12vw;
-  }
 }
