@@ -7,7 +7,7 @@ import FontIcon from "react-md/lib/FontIcons";
 import {Divider} from "react-md/lib/Dividers";
 import {BrowserView, MobileView} from 'react-device-detect';
 
-const photo = require("../../docs/avatars/photo.jpg");
+const photo = require("../../assets/avatars/photo.jpg");
 
 export interface IPropsContactPage {
 }

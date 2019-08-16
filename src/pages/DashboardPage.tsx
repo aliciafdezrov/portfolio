@@ -10,7 +10,7 @@ import {MyDocument} from "../components/MyDocument";
 import {BrowserView, MobileView} from 'react-device-detect';
 import Button from "react-md/lib/Buttons";
 
-const cv = require('../../docs/CV.pdf');
+const cv = require('../../assets/CV.pdf');
 import {SwitchTransition, CSSTransition} from "react-transition-group";
 
 export interface IPropsDashboardPage {

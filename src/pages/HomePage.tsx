@@ -1,6 +1,6 @@
 import * as React from "react";
 import {Media} from "react-md";
-const backgroundImage = require("../../docs/ash-edmonds-510566-unsplash.jpg");
+const backgroundImage = require("../../assets/ash-edmonds-510566-unsplash.jpg");
 
 export interface IPropsHomePage {
 }
