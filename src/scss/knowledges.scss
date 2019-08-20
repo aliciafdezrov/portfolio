@@ -1,0 +1,41 @@
+.knowledges-page-container {
+  //width: 80vw;
+  justify-content: center;
+}
+
+.knowledges-title {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.blocks-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 80vw;
+}
+
+.technology-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: center;
+  min-width: 30vw;
+}
+
+.technology-label {
+  display: flex;
+  align-self: flex-start;
+  flex: 1;
+  margin-right: 1vw;
+}
+
+.technology-progress {
+  align-self: baseline;
+  flex: 10;
+}
