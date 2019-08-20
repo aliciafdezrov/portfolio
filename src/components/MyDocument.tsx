@@ -61,7 +61,7 @@ export class MyDocument extends React.Component<{}, {}> {
                                         position={toast.POSITION.TOP_LEFT}/>
                     </div>
                 </div>
-                <div className="fab-style">
+                <div className="container-fluid fab-style">
                     <div className="fab-left">
                         <Button floating primary onClick={() => this.prevPage()}>
                             arrow_left
