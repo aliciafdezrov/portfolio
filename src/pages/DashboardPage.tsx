@@ -36,13 +36,15 @@ const components = [
         <MobileView>
             <div style={{
                 display: "flex",
+                flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "center",
+                alignContent: "center",
                 height: '100vh',
-                marginLeft: '15vw'
+                width: '100vw'
             }}>
                 <Button primary raised href={cv} download>
-                    ¡Descargar cv!
+                    ¡Pulsa para descargar!
                 </Button>
             </div>
         </MobileView>
