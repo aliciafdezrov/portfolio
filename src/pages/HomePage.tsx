@@ -24,7 +24,7 @@ export class HomePage extends React.Component<IPropsHomePage & IDispatchPropsHom
                 <Media style={{margin: '0px'}}>
                     <div className="title-style">
                         <h1>Alicia Fernández Rovira</h1>
-                        <h4>Full-Stack Developer on Málaga</h4>
+                        <h4>Desarrollador Full-Stack en Málaga</h4>
                     </div>
 
                     <img className="image-style" src={backgroundImage} alt="Laptop" />
