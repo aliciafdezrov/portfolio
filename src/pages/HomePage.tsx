@@ -27,7 +27,7 @@ export class HomePage extends React.Component<IPropsHomePage & IDispatchPropsHom
                         <h4>Full-Stack Developer on Málaga</h4>
                     </div>
 
-                    <img className="image-style" height={'100vh'} src={backgroundImage} alt="Laptop" />
+                    <img className="image-style" src={backgroundImage} alt="Laptop" />
                 </Media>
             </div>
         );
