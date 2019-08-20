@@ -24,20 +24,21 @@ export class KnowledgePage extends React.Component<{}, {}> {
                             <TechnologyRow percent={90} label="React"/>
                             <TechnologyRow percent={80} label="Redux"/>
                             <TechnologyRow percent={75} label="Webpack"/>
+                            <TechnologyRow percent={65} label="Morphia"/>
+                            <TechnologyRow percent={75} label="Jest"/>
+                            <TechnologyRow percent={70} label="Enzyme"/>
                         </div>
 
                         <div>
                             <h3>Backend</h3>
-
                             <TechnologyRow percent={95} label="J2EE"/>
                             <TechnologyRow percent={95} label="Java"/>
-                            <TechnologyRow percent={90} label="Maven"/>
-                            <TechnologyRow percent={90} label="Wildfly"/>
                             <TechnologyRow percent={70} label="Apache Spark"/>
                             <TechnologyRow percent={45} label="GraphQL"/>
                             <TechnologyRow percent={95} label="RestFull"/>
-                            <TechnologyRow percent={75} label="Express"/>
                             <TechnologyRow percent={80} label="NodeJS"/>
+                            <TechnologyRow percent={80} label="JUnit"/>
+                            <TechnologyRow percent={80} label="Mockito"/>
                         </div>
 
                         <div>
@@ -53,8 +54,14 @@ export class KnowledgePage extends React.Component<{}, {}> {
 
                             <TechnologyRow percent={100} label="Git"/>
                             <TechnologyRow percent={80} label="Docker"/>
+                            <TechnologyRow percent={80} label="Docker Compose"/>
+                            <TechnologyRow percent={80} label="Docker Swarm"/>
                             <TechnologyRow percent={80} label="Jenkins"/>
                             <TechnologyRow percent={90} label="ES6"/>
+                            <TechnologyRow percent={75} label="Express"/>
+                            <TechnologyRow percent={90} label="Maven"/>
+                            <TechnologyRow percent={90} label="Wildfly"/>
+                            <TechnologyRow percent={75} label="Nginx"/>
                         </div>
                     </div>
                 </Paper>
