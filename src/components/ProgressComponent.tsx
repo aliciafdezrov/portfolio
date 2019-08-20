@@ -11,6 +11,7 @@ export interface IProgressComponentProps {
 export class ProgressComponent extends React.Component<IProgressComponentProps, {}> {
     public constructor(props: IProgressComponentProps) {
         super(props);
+        this.increase();
     }
 
     state = {
@@ -18,14 +19,10 @@ export class ProgressComponent extends React.Component<IProgressComponentProps, 
         color: '#108ee9'
     };
 
-    componentDidMount() {
-        this.increase();
-    }
-
     private increase() {
         let newPercent = this.state.percent + 4;
         let scale = chroma.scale(['#108ee9', '#87d068']);
-        this.setState({color: scale(this.state.percent/100).hex()});
+        this.setState({color: scale(this.state.percent / 100).hex()});
         if (newPercent >= this.props.percent) {
             clearTimeout();
             return;
@@ -40,18 +37,10 @@ export class ProgressComponent extends React.Component<IProgressComponentProps, 
     public render() {
         return (
             <div>
-                <BrowserView>
-                    <Line percent={this.state.percent}
-                          strokeLinecap="round"
-                          strokeWidth={2}
-                          strokeColor={this.state.color}/>
-                </BrowserView>
-                <MobileView>
-                    <Line percent={this.state.percent}
-                          strokeLinecap="round"
-                          strokeWidth={4}
-                          strokeColor={this.state.color}/>
-                </MobileView>
+                <Line percent={this.state.percent}
+                      strokeLinecap="round"
+                      strokeWidth={4}
+                      strokeColor={this.state.color}/>
             </div>
         );
     }
