@@ -37,10 +37,18 @@ export class ProgressComponent extends React.Component<IProgressComponentProps, 
     public render() {
         return (
             <div>
+                <BrowserView>
                 <Line percent={this.state.percent}
                       strokeLinecap="round"
-                      strokeWidth={4}
+                      strokeWidth={2}
                       strokeColor={this.state.color}/>
+                </BrowserView>
+                <MobileView>
+                    <Line percent={this.state.percent}
+                          strokeLinecap="round"
+                          strokeWidth={4}
+                          strokeColor={this.state.color}/>
+                </MobileView>
             </div>
         );
     }
