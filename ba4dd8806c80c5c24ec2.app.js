@@ -64,7 +64,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + "a17a67f67b8b3a5fec97" + "." + ({"4":"vendors~pdfjsWorker"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + "ba4dd8806c80c5c24ec2" + "." + ({"4":"vendors~pdfjsWorker"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -203,7 +203,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "/portfolio/";
 /******/
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
@@ -247,124 +247,46 @@ module.exports = __webpack_require__.p + "photo.jpg";
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__("mXGw");
 const react_md_1 = __webpack_require__("3iwl");
-const ProgressComponent_1 = __webpack_require__("cTR+");
 const Dividers_1 = __webpack_require__("bg2r");
+const TechnologyRow_1 = __webpack_require__("zGwV");
 class KnowledgePage extends React.Component {
     constructor(props) {
         super(props);
     }
     render() {
-        return (React.createElement("div", null,
-            React.createElement("div", { className: "central-div" },
-                React.createElement(react_md_1.Paper, { className: "title-paper", zDepth: 2 },
-                    React.createElement("div", { className: "academic-titles" },
-                        React.createElement("h4", null, "Tecnolog\u00EDas y herramientas")),
-                    React.createElement(Dividers_1.default, null),
-                    React.createElement("div", { className: "row container-fluid" },
-                        React.createElement("div", { className: "col-lg-6 col-md-6 col-sm-12 col-xs-12" },
-                            React.createElement("h3", null, "Frontend"),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "React")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 80 }))),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "Redux")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 80 }))),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "Webpack")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 70 })))),
-                        React.createElement("div", { className: "col-lg-6 col-md-6 col-sm-12 col-xs-12" },
-                            React.createElement("h3", null, "Backend"),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "J2EE")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 95 }))),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "Java")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 100 }))),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "Maven")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 90 }))),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "WildFly")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 90 }))),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "Apache Spark")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 70 }))),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "GraphQL")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 40 }))),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "RestFull")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 100 }))),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "Express")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 70 }))),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "NodeJS")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 80 }))),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "ES6")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 90 }))))),
-                    React.createElement("div", { className: "row container-fluid" },
-                        React.createElement("div", { className: "col-lg-6 col-md-6 col-sm-12 col-xs-12" },
-                            React.createElement("h3", null, "Gesti\u00F3n bases de datos"),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "MySQL")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 90 }))),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "Oracle")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 70 }))),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "MongoDB")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 90 })))),
-                        React.createElement("div", { className: "col-lg-6 col-md-6 col-sm-12 col-xs-12" },
-                            React.createElement("h3", null, "Otros"),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "Git")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 100 }))),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "Docker")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 80 }))),
-                            React.createElement("div", { className: "row" },
-                                React.createElement("div", { className: "col-lg-3 col-md-3 col-sm-3 col-xs-3" },
-                                    React.createElement("label", null, "Jenkins")),
-                                React.createElement("div", { className: "col-lg-9 col-md-9 col-sm-9 col-xs-9" },
-                                    React.createElement(ProgressComponent_1.ProgressComponent, { percent: 80 })))))))));
+        return (React.createElement("div", { className: "central-div" },
+            React.createElement(react_md_1.Paper, { className: "title-paper", zDepth: 2 },
+                React.createElement("div", { className: "knowledges-title" },
+                    React.createElement("h4", null, "Tecnolog\u00EDas y herramientas"),
+                    React.createElement(Dividers_1.default, null)),
+                React.createElement("div", { className: "blocks-container" },
+                    React.createElement("div", null,
+                        React.createElement("h3", null, "Frontend"),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "React" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 80, label: "Redux" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 75, label: "Webpack" })),
+                    React.createElement("div", null,
+                        React.createElement("h3", null, "Backend"),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 95, label: "J2EE" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 95, label: "Java" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "Maven" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "Wildfly" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 70, label: "Apache Spark" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 45, label: "GraphQL" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 95, label: "RestFull" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 75, label: "Express" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 80, label: "NodeJS" })),
+                    React.createElement("div", null,
+                        React.createElement("h3", null, "Bases de datos"),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "MySQL" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 70, label: "Oracle" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "MongoDB" })),
+                    React.createElement("div", null,
+                        React.createElement("h3", null, "Otros"),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 100, label: "Git" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 80, label: "Docker" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 80, label: "Jenkins" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "ES6" }))))));
     }
 }
 exports.KnowledgePage = KnowledgePage;
@@ -401,11 +323,11 @@ class HomePage extends React.Component {
     }
     render() {
         return (React.createElement("div", null,
-            React.createElement(react_md_1.Media, null,
+            React.createElement(react_md_1.Media, { style: { margin: '0px' } },
                 React.createElement("div", { className: "title-style" },
                     React.createElement("h1", null, "Alicia Fern\u00E1ndez Rovira"),
                     React.createElement("h4", null, "Full-Stack Developer on M\u00E1laga")),
-                React.createElement("img", { className: "image-style", height: '100vh', src: backgroundImage, alt: "Laptop" }))));
+                React.createElement("img", { className: "image-style", src: backgroundImage, alt: "Laptop" }))));
     }
 }
 exports.HomePage = HomePage;
@@ -446,26 +368,25 @@ class ContactPage extends React.Component {
     }
     render() {
         return (React.createElement("div", { className: "central-div" },
-            React.createElement(react_md_1.Paper, { className: "title-paper white-background", zDepth: 2 },
-                React.createElement("div", { className: "row" },
-                    React.createElement("div", { className: "col-lg-8 col-md-8 col-sm-12 col-xs-12" },
-                        React.createElement("div", { className: "contact-title contact-text-div" },
-                            React.createElement("h4", null, "Informaci\u00F3n de contacto")),
-                        React.createElement(Dividers_1.Divider, null),
-                        React.createElement("div", { className: "contact-title" },
-                            React.createElement(Lists_1.default, null,
-                                React.createElement("div", null,
-                                    React.createElement(react_device_detect_1.BrowserView, null,
-                                        React.createElement(ListItem_1.default, { primaryText: "aliciafdezrov@gmail.com", onClick: () => this.openLink("https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Petición%20desde%20cv&to=aliciafdezrov@gmail.com&body=Cuerpo+del+mensaje"), leftIcon: React.createElement(FontIcons_1.default, null, "mail") })),
-                                    React.createElement(react_device_detect_1.MobileView, null,
-                                        React.createElement(ListItem_1.default, { primaryText: "aliciafdezrov@gmail.com", onClick: () => this.openLink("mailto:aliciafdezrov@gmail.com?subject=Petición%20desde%20cv"), leftIcon: React.createElement(FontIcons_1.default, null, "mail") }))),
-                                React.createElement(ListItem_1.default, { primaryText: "M\u00E1laga, 29012 (Spain)", leftIcon: React.createElement(FontIcons_1.default, null, "place") })),
-                            React.createElement("div", { style: { paddingTop: '2vh' } },
-                                React.createElement("a", { href: "https://www.linkedin.com/in/alicia-fern\u00E1ndez-rovira-70885811a", target: "_blank" }, "https://www.linkedin.com/in/alicia-fern\u00E1ndez-rovira-70885811a")),
-                            React.createElement("div", { style: { paddingTop: '2vh' } },
-                                React.createElement("a", { href: "https://github.com/aliciafdezrov", target: "_blank" }, "https://github.com/aliciafdezrov")))),
-                    React.createElement("div", { className: "col-lg-4 col-md-4 col-sm-12 col-xs-12 avatar-style" },
-                        React.createElement(Avatars_1.Avatar, { alt: "Me", src: photo, className: "avatar" }))))));
+            React.createElement(react_md_1.Paper, { className: "title-paper white-background contact-page-container", zDepth: 2 },
+                React.createElement("div", null,
+                    React.createElement("div", { className: "contact-title contact-text-div" },
+                        React.createElement("h4", null, "Informaci\u00F3n de contacto"),
+                        React.createElement(Dividers_1.Divider, null)),
+                    React.createElement("div", { className: "contact-title contact-list" },
+                        React.createElement(Lists_1.default, null,
+                            React.createElement("div", null,
+                                React.createElement(react_device_detect_1.BrowserView, null,
+                                    React.createElement(ListItem_1.default, { primaryText: "aliciafdezrov@gmail.com", onClick: () => this.openLink("https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Petición%20desde%20cv&to=aliciafdezrov@gmail.com&body=Cuerpo+del+mensaje"), leftIcon: React.createElement(FontIcons_1.default, null, "mail") })),
+                                React.createElement(react_device_detect_1.MobileView, null,
+                                    React.createElement(ListItem_1.default, { primaryText: "aliciafdezrov@gmail.com", onClick: () => this.openLink("mailto:aliciafdezrov@gmail.com?subject=Petición%20desde%20cv"), leftIcon: React.createElement(FontIcons_1.default, null, "mail") }))),
+                            React.createElement(ListItem_1.default, { primaryText: "M\u00E1laga, 29012 (Spain)", leftIcon: React.createElement(FontIcons_1.default, null, "place") })),
+                        React.createElement("div", { style: { paddingTop: '2vh' } },
+                            React.createElement("a", { href: "https://www.linkedin.com/in/alicia-fern\u00E1ndez-rovira-70885811a", target: "_blank" }, "https://www.linkedin.com/in/alicia-fern\u00E1ndez-rovira-70885811a")),
+                        React.createElement("div", { style: { paddingTop: '2vh' } },
+                            React.createElement("a", { href: "https://github.com/aliciafdezrov", target: "_blank" }, "https://github.com/aliciafdezrov")))),
+                React.createElement("div", { className: "avatar-style" },
+                    React.createElement(Avatars_1.Avatar, { alt: "Me", src: photo, className: "avatar" })))));
     }
 }
 exports.ContactPage = ContactPage;
@@ -523,7 +444,7 @@ const components = [
                     height: '100vh',
                     marginLeft: '15vw'
                 } },
-                React.createElement(Buttons_1.default, { primary: true, raised: true, href: cv, download: true }, "\u00A1Pulsa para descargar!"))))
+                React.createElement(Buttons_1.default, { primary: true, raised: true, href: cv, download: true }, "\u00A1Descargar cv!"))))
 ];
 const themes = ['home', 'academic', 'experience', 'knowledge', 'contact', 'cv'];
 class DashboardPage extends React.Component {
@@ -568,8 +489,7 @@ class DashboardPage extends React.Component {
         return (React.createElement("div", { className: "wrapper" },
             React.createElement("div", null,
                 React.createElement(react_transition_group_1.SwitchTransition, null,
-                    React.createElement(react_transition_group_1.CSSTransition, { key: this.state.activeIndex, timeout: 300, classNames: this.state.transition },
-                        React.createElement("div", { className: "container-fluid md-cell md-cell--12" }, components[this.state.activeIndex])))),
+                    React.createElement(react_transition_group_1.CSSTransition, { key: this.state.activeIndex, timeout: 300, classNames: this.state.transition }, components[this.state.activeIndex]))),
             React.createElement("div", { className: `bottom-navigations__dynamic--${themes[this.state.activeIndex]}` },
                 React.createElement("div", { className: "dashboard-section" },
                     React.createElement(BottomNavigations_1.BottomNavigation, { dynamic: true, links: links, colored: true, activeIndex: this.state.activeIndex, onNavChange: this.onChangeIndex.bind(this) })))));
@@ -702,7 +622,7 @@ class MyDocument extends React.Component {
             React.createElement("div", null,
                 React.createElement("div", null,
                     React.createElement(react_toastify_1.ToastContainer, { containerId: 'Download', onClick: () => this.downloadFile(), position: react_toastify_1.toast.POSITION.TOP_LEFT }))),
-            React.createElement("div", { className: "fab-style" },
+            React.createElement("div", { className: "container-fluid fab-style" },
                 React.createElement("div", { className: "fab-left" },
                     React.createElement(react_md_1.Button, { floating: true, primary: true, onClick: () => this.prevPage() }, "arrow_left")),
                 React.createElement("div", { className: "document-wrapper" },
@@ -727,6 +647,7 @@ __webpack_require__("1sm7");
 const React = __webpack_require__("mXGw");
 const rc_progress_1 = __webpack_require__("WyKr");
 const chroma = __webpack_require__("+G64");
+const react_device_detect_1 = __webpack_require__("5rOX");
 class ProgressComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -753,7 +674,10 @@ class ProgressComponent extends React.Component {
     }
     render() {
         return (React.createElement("div", null,
-            React.createElement(rc_progress_1.Line, { percent: this.state.percent, strokeLinecap: "round", strokeWidth: 4, strokeColor: this.state.color })));
+            React.createElement(react_device_detect_1.BrowserView, null,
+                React.createElement(rc_progress_1.Line, { percent: this.state.percent, strokeLinecap: "round", strokeWidth: 2, strokeColor: this.state.color })),
+            React.createElement(react_device_detect_1.MobileView, null,
+                React.createElement(rc_progress_1.Line, { percent: this.state.percent, strokeLinecap: "round", strokeWidth: 4, strokeColor: this.state.color }))));
     }
 }
 exports.ProgressComponent = ProgressComponent;
@@ -819,6 +743,32 @@ class ExperiencePage extends React.Component {
     }
 }
 exports.ExperiencePage = ExperiencePage;
+
+
+/***/ }),
+
+/***/ "zGwV":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+__webpack_require__("1sm7");
+const React = __webpack_require__("mXGw");
+const ProgressComponent_1 = __webpack_require__("cTR+");
+class TechnologyRow extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (React.createElement("div", { className: "technology-container" },
+            React.createElement("div", { className: "technology-label" },
+                React.createElement("label", null, this.props.label)),
+            React.createElement("div", { className: "technology-progress" },
+                React.createElement(ProgressComponent_1.ProgressComponent, { percent: this.props.percent }))));
+    }
+}
+exports.TechnologyRow = TechnologyRow;
 
 
 /***/ })
