@@ -64,7 +64,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + "2e18352cf19ab272f387" + "." + ({"4":"vendors~pdfjsWorker"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + "dde28ecb634a95793143" + "." + ({"4":"vendors~pdfjsWorker"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -217,14 +217,14 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push([1,0]);
+/******/ 	deferredModules.push([0,0]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 1:
+/***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("Ret3");
@@ -232,10 +232,10 @@ module.exports = __webpack_require__("Ret3");
 
 /***/ }),
 
-/***/ "1PHS":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 1:
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "photo.jpg";
+/* (ignored) */
 
 /***/ }),
 
@@ -261,44 +261,56 @@ class KnowledgePage extends React.Component {
                     React.createElement(Dividers_1.default, null)),
                 React.createElement("div", { className: "blocks-container" },
                     React.createElement("div", null,
-                        React.createElement("h3", null, "Frontend"),
+                        React.createElement("h3", null, "MERN Stack"),
                         React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "React" }),
                         React.createElement(TechnologyRow_1.TechnologyRow, { percent: 80, label: "Redux" }),
                         React.createElement(TechnologyRow_1.TechnologyRow, { percent: 75, label: "Webpack" }),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 65, label: "Morphia" }),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 75, label: "Jest" }),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 70, label: "Enzyme" })),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 80, label: "NodeJS" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "Jest" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "ES6" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 75, label: "Express" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 75, label: "Nginx" })),
                     React.createElement("div", null,
-                        React.createElement("h3", null, "Backend"),
+                        React.createElement("h3", null, "J2EE Stack"),
                         React.createElement(TechnologyRow_1.TechnologyRow, { percent: 95, label: "J2EE" }),
                         React.createElement(TechnologyRow_1.TechnologyRow, { percent: 95, label: "Java" }),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 70, label: "Apache Spark" }),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 45, label: "GraphQL" }),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 95, label: "RestFull" }),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 80, label: "NodeJS" }),
                         React.createElement(TechnologyRow_1.TechnologyRow, { percent: 80, label: "JUnit" }),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 80, label: "Mockito" })),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 80, label: "Mockito" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "Maven" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "Wildfly" })),
                     React.createElement("div", null,
-                        React.createElement("h3", null, "Bases de datos"),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "MySQL" }),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 70, label: "Oracle" }),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "MongoDB" })),
-                    React.createElement("div", null,
-                        React.createElement("h3", null, "Otros"),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 100, label: "Git" }),
+                        React.createElement("h3", null, "Devops"),
                         React.createElement(TechnologyRow_1.TechnologyRow, { percent: 80, label: "Docker" }),
                         React.createElement(TechnologyRow_1.TechnologyRow, { percent: 80, label: "Docker Compose" }),
                         React.createElement(TechnologyRow_1.TechnologyRow, { percent: 80, label: "Docker Swarm" }),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 80, label: "Jenkins" }),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "ES6" }),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 75, label: "Express" }),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "Maven" }),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "Wildfly" }),
-                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 75, label: "Nginx" }))))));
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 80, label: "Jenkins" })),
+                    React.createElement("div", null,
+                        React.createElement("h3", null, "Otros"),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 45, label: "GraphQL" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 95, label: "RestFull" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 100, label: "Git" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "MySQL" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 70, label: "Oracle" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "MongoDB" }),
+                        React.createElement(TechnologyRow_1.TechnologyRow, { percent: 90, label: "Clean Code" }))))));
     }
 }
 exports.KnowledgePage = KnowledgePage;
 
+
+/***/ }),
+
+/***/ 2:
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 3:
+/***/ (function(module, exports) {
+
+/* (ignored) */
 
 /***/ }),
 
@@ -309,7 +321,14 @@ module.exports = __webpack_require__.p + "CV.pdf";
 
 /***/ }),
 
-/***/ 5:
+/***/ "3Jfs":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "repository-open-graph-template.png";
+
+/***/ }),
+
+/***/ 4:
 /***/ (function(module, exports) {
 
 /* (ignored) */
@@ -343,13 +362,6 @@ exports.HomePage = HomePage;
 
 /***/ }),
 
-/***/ 6:
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
 /***/ "6zlt":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -363,8 +375,8 @@ const Lists_1 = __webpack_require__("7CSj");
 const ListItem_1 = __webpack_require__("SjVu");
 const FontIcons_1 = __webpack_require__("B7Yq");
 const Dividers_1 = __webpack_require__("bg2r");
-const react_device_detect_1 = __webpack_require__("5rOX");
-const photo = __webpack_require__("1PHS");
+const react_device_detect_1 = __webpack_require__("4Ebc");
+const photo = __webpack_require__("3Jfs");
 class ContactPage extends React.Component {
     constructor(props) {
         super(props);
@@ -375,44 +387,54 @@ class ContactPage extends React.Component {
         link.click();
     }
     render() {
-        return (React.createElement("div", { className: "central-div" },
-            React.createElement(react_md_1.Paper, { className: "title-paper white-background contact-page-container", zDepth: 2 },
-                React.createElement("div", null,
-                    React.createElement("div", { className: "contact-title contact-text-div" },
-                        React.createElement("h4", null, "Informaci\u00F3n de contacto"),
-                        React.createElement(Dividers_1.Divider, null)),
-                    React.createElement("div", { className: "contact-title contact-list" },
-                        React.createElement(Lists_1.default, null,
-                            React.createElement("div", null,
-                                React.createElement(react_device_detect_1.BrowserView, null,
-                                    React.createElement(ListItem_1.default, { primaryText: "aliciafdezrov@gmail.com", onClick: () => this.openLink("https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Petición%20desde%20cv&to=aliciafdezrov@gmail.com&body=Cuerpo+del+mensaje"), leftIcon: React.createElement(FontIcons_1.default, null, "mail") })),
-                                React.createElement(react_device_detect_1.MobileView, null,
-                                    React.createElement(ListItem_1.default, { primaryText: "aliciafdezrov@gmail.com", onClick: () => this.openLink("mailto:aliciafdezrov@gmail.com?subject=Petición%20desde%20cv"), leftIcon: React.createElement(FontIcons_1.default, null, "mail") }))),
-                            React.createElement(ListItem_1.default, { primaryText: "M\u00E1laga, 29012 (Spain)", leftIcon: React.createElement(FontIcons_1.default, null, "place") })),
-                        React.createElement("div", { style: { paddingTop: '2vh' } },
-                            React.createElement("a", { href: "https://www.linkedin.com/in/alicia-fern\u00E1ndez-rovira-70885811a", target: "_blank" }, "https://www.linkedin.com/in/alicia-fern\u00E1ndez-rovira-70885811a")),
-                        React.createElement("div", { style: { paddingTop: '2vh' } },
-                            React.createElement("a", { href: "https://github.com/aliciafdezrov", target: "_blank" }, "https://github.com/aliciafdezrov")))),
-                React.createElement("div", { className: "avatar-style" },
-                    React.createElement(Avatars_1.Avatar, { alt: "Me", src: photo, className: "avatar" })))));
+        return (React.createElement(React.Fragment, null,
+            React.createElement(react_device_detect_1.BrowserView, null,
+                React.createElement("div", { className: "central-div" },
+                    React.createElement(react_md_1.Paper, { className: "title-paper white-background contact-page-container", zDepth: 2 },
+                        React.createElement("div", null,
+                            React.createElement(React.Fragment, null,
+                                React.createElement("div", { className: "contact-title contact-text-div" },
+                                    React.createElement("h4", null, "Informaci\u00F3n de contacto"),
+                                    React.createElement(Dividers_1.Divider, null)),
+                                React.createElement("div", { className: "contact-title contact-list" },
+                                    React.createElement(Lists_1.default, null,
+                                        React.createElement(ListItem_1.default, { primaryText: "aliciafdezrov@gmail.com", onClick: () => this.openLink("https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Petición%20desde%20cv&to=aliciafdezrov@gmail.com&body=Cuerpo+del+mensaje"), leftIcon: React.createElement(FontIcons_1.default, null, "mail") }),
+                                        React.createElement(ListItem_1.default, { primaryText: "M\u00E1laga, 29012 (Spain)", leftIcon: React.createElement(FontIcons_1.default, null, "place") })),
+                                    React.createElement("div", { style: { paddingTop: '2vh' } },
+                                        React.createElement("a", { href: "https://www.linkedin.com/in/alicia-fern\u00E1ndez-rovira-70885811a", target: "_blank" }, "https://www.linkedin.com/in/alicia-fern\u00E1ndez-rovira-70885811a")),
+                                    React.createElement("div", { style: { paddingTop: '2vh' } },
+                                        React.createElement("a", { href: "https://github.com/aliciafdezrov", target: "_blank" }, "https://github.com/aliciafdezrov")))),
+                            React.createElement(React.Fragment, null,
+                                React.createElement("div", null,
+                                    React.createElement("h4", null, "Un poco m\u00E1s sobre mi"),
+                                    React.createElement(Dividers_1.Divider, null),
+                                    React.createElement("p", null, "Llevo desde 2016 trabajando, primero con una beca compagin\u00E1ndolo con mis estudios y m\u00E1s tarde contratada.Desde ese momento he estado trabajando como Desarrolladora Full-Stack. Siempre participando activamente en el dise\u00F1o, creaci\u00F3n y gesti\u00F3n de bases de datos, backend y frontend.")))),
+                        React.createElement("div", { className: "avatar-style" },
+                            React.createElement(Avatars_1.Avatar, { alt: "Me", src: photo, className: "avatar" }))))),
+            React.createElement(react_device_detect_1.MobileView, null,
+                React.createElement("div", { className: "central-div" },
+                    React.createElement(react_md_1.Paper, { className: "title-paper white-background contact-page-container", zDepth: 2 },
+                        React.createElement("div", null,
+                            React.createElement("div", { className: "contact-title contact-text-div" },
+                                React.createElement("h4", null, "Informaci\u00F3n de contacto"),
+                                React.createElement(Dividers_1.Divider, null)),
+                            React.createElement("div", { className: "contact-title contact-list" },
+                                React.createElement(Lists_1.default, null,
+                                    React.createElement(ListItem_1.default, { primaryText: "aliciafdezrov@gmail.com", onClick: () => this.openLink("mailto:aliciafdezrov@gmail.com?subject=Petición%20desde%20cv"), leftIcon: React.createElement(FontIcons_1.default, null, "mail") })),
+                                React.createElement("div", { style: { paddingTop: '1vh' } },
+                                    React.createElement("a", { href: "https://www.linkedin.com/in/alicia-fern\u00E1ndez-rovira-70885811a", target: "_blank" }, "linkedin/alicia-fern\u00E1ndez-rovira")),
+                                React.createElement("div", { style: { paddingTop: '1vh' } },
+                                    React.createElement("a", { href: "https://github.com/aliciafdezrov", target: "_blank" }, "github.com/aliciafdezrov"))),
+                            React.createElement("div", { className: "contact-title contact-text-div" },
+                                React.createElement("h4", null, "Un poco m\u00E1s sobre mi"),
+                                React.createElement(Dividers_1.Divider, null),
+                                React.createElement("p", null, "Llevo desde 2016 trabajando, primero con una beca compagin\u00E1ndolo con mis estudios y m\u00E1s tarde contratada.Desde ese momento he estado trabajando como Desarrolladora Full-Stack. Siempre participando activamente en el dise\u00F1o, creaci\u00F3n y gesti\u00F3n de bases de datos, backend y frontend."))),
+                        React.createElement("div", { className: "avatar-style" },
+                            React.createElement(Avatars_1.Avatar, { alt: "Me", src: photo, className: "avatar" })))))));
     }
 }
 exports.ContactPage = ContactPage;
 
-
-/***/ }),
-
-/***/ 7:
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 8:
-/***/ (function(module, exports) {
-
-/* (ignored) */
 
 /***/ }),
 
@@ -431,7 +453,7 @@ const AcademicPage_1 = __webpack_require__("M4Ng");
 const ContactPage_1 = __webpack_require__("6zlt");
 const BottomNavigations_1 = __webpack_require__("ph+7");
 const MyDocument_1 = __webpack_require__("cD4s");
-const react_device_detect_1 = __webpack_require__("5rOX");
+const react_device_detect_1 = __webpack_require__("4Ebc");
 const Buttons_1 = __webpack_require__("OyIr");
 const cv = __webpack_require__("3JQV");
 const react_transition_group_1 = __webpack_require__("3sBZ");
@@ -522,34 +544,74 @@ const Dividers_1 = __webpack_require__("bg2r");
 const rc_steps_1 = __webpack_require__("93Te");
 __webpack_require__("h+vt");
 __webpack_require__("ikrR");
+const react_device_detect_1 = __webpack_require__("4Ebc");
 class AcademicPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             currentStudiesStep: 0,
             currentProjectStep: 0,
+            currentLanguageStep: 0,
         };
     }
     render() {
-        return (React.createElement("div", { className: "central-div" },
-            React.createElement(react_md_1.Paper, { className: "title-paper", zDepth: 2 },
-                React.createElement("div", null,
-                    React.createElement("div", { className: "academic-titles" },
-                        React.createElement("h4", null, "Estudios")),
-                    React.createElement(Dividers_1.default, null),
-                    React.createElement("div", { className: "steps-style" },
-                        React.createElement(rc_steps_1.default, { direction: "vertical", current: this.state.currentStudiesStep, onChange: (current) => this.setState({ currentStudiesStep: current }) },
-                            React.createElement(rc_steps_1.Step, { title: "Sept 2013 - Sept 2017", description: "Grado Ingenier\u00EDa de la Salud (Universidad de M\u00E1laga)" })))),
-                React.createElement("div", null,
-                    React.createElement("div", { className: "academic-titles" },
-                        React.createElement("h4", null, "Proyectos acad\u00E9micos")),
-                    React.createElement(Dividers_1.default, null),
-                    React.createElement("div", { className: "steps-style" },
-                        React.createElement(rc_steps_1.default, { direction: "vertical", current: this.state.currentProjectStep, onChange: (current) => this.setState({ currentProjectStep: current }) },
-                            React.createElement(rc_steps_1.Step, { title: "Seminario en optimizacio\u0301n para la reconstruccio\u0301n de redes ge\u0301nicas (Universidad de Ma\u0301laga) (2015)", description: "Asistencia a un seminario proporcionado por la Universidad de Ma\u0301laga 2015(3 meses)\n                                                        Seminario realizado con una duracio\u0301n de tres meses relacionado con la optimizacio\u0301n en la reconstruccio\u0301n de redes ge\u0301nicas haciendo uso de metaheuri\u0301stica" }),
-                            React.createElement(rc_steps_1.Step, { title: "Desarrollo de una aplicacio\u0301n Android (Universidad de Ma\u0301laga) (2016)", description: "Aplicacio\u0301n Android para pacientes con EPOC 2016(4 meses)\n                                                    Se participo\u0301 en el desarrollo de una aplicacio\u0301n Android destinada a mejorar la adhesio\u0301n al tratamiento en paciente con Enfermedad Pulmonar Obstructiva Cro\u0301nica (EPOC). Posteriormente se present\u00F3 dicha aplicacio\u0301n en el Reto Salud Andaluci\u0301a." }),
-                            React.createElement(rc_steps_1.Step, { title: "Proyecto Innovacio\u0301n educativa en Biologi\u0301a y Ciencias O\u0301micas (Universidad de Ma\u0301laga) (2016)", description: "Estudio sobre problemas de inferencia filogene\u0301tica realizado para la Universidad de Ma\u0301laga 2016(2 meses)" }),
-                            React.createElement(rc_steps_1.Step, { title: "Aplicacio\u0301n para la generacio\u0301n de mapas de calor (Universidad de Ma\u0301laga) (2017-2018)", description: "Desarrollo de una aplicacio\u0301n iniciado a partir de un Proyecto de Investigacio\u0301n.\nA partir de la Beca realizada surgio\u0301 el disen\u0303o, desarrollo y mantenimiento de una aplicacio\u0301n destinada a la generacio\u0301n de mapas de calor a partir de datos de expresio\u0301n ge\u0301nica para cualquier tipo de ana\u0301lisis cli\u0301nico posterior a realizar." })))))));
+        return (React.createElement(React.Fragment, null,
+            React.createElement(react_device_detect_1.BrowserView, null,
+                React.createElement("div", { className: "central-div" },
+                    React.createElement(react_md_1.Paper, { className: "title-paper", zDepth: 2 },
+                        React.createElement("div", null,
+                            React.createElement("div", { className: "academic-titles" },
+                                React.createElement("h4", null, "Estudios")),
+                            React.createElement(Dividers_1.default, null),
+                            React.createElement("div", { className: "steps-style" },
+                                React.createElement(rc_steps_1.default, { direction: "vertical", current: this.state.currentStudiesStep, onChange: (current) => this.setState({ currentStudiesStep: current }) },
+                                    React.createElement(rc_steps_1.Step, { title: "Sept 2013 - Sept 2017", description: "Grado Ingenier\u00EDa de la Salud (Universidad de M\u00E1laga)" })))),
+                        React.createElement("div", null,
+                            React.createElement("div", { className: "academic-titles" },
+                                React.createElement("h4", null, "Proyectos acad\u00E9micos")),
+                            React.createElement(Dividers_1.default, null),
+                            React.createElement("div", { className: "steps-style" },
+                                React.createElement(rc_steps_1.default, { direction: "vertical", current: this.state.currentProjectStep, onChange: (current) => this.setState({ currentProjectStep: current }) },
+                                    React.createElement(rc_steps_1.Step, { title: "Seminario en optimizacio\u0301n para la reconstruccio\u0301n de redes ge\u0301nicas (Universidad de Ma\u0301laga) (2015)", description: "Asistencia a un seminario proporcionado por la Universidad de Ma\u0301laga 2015(3 meses)\n                                                        Seminario realizado con una duracio\u0301n de tres meses relacionado con la optimizacio\u0301n en la reconstruccio\u0301n de redes ge\u0301nicas haciendo uso de metaheuri\u0301stica" }),
+                                    React.createElement(rc_steps_1.Step, { title: "Desarrollo de una aplicacio\u0301n Android (Universidad de Ma\u0301laga) (2016)", description: "Aplicacio\u0301n Android para pacientes con EPOC 2016(4 meses)\n                                                    Se participo\u0301 en el desarrollo de una aplicacio\u0301n Android destinada a mejorar la adhesio\u0301n al tratamiento en paciente con Enfermedad Pulmonar Obstructiva Cro\u0301nica (EPOC). Posteriormente se present\u00F3 dicha aplicacio\u0301n en el Reto Salud Andaluci\u0301a." }),
+                                    React.createElement(rc_steps_1.Step, { title: "Proyecto Innovacio\u0301n educativa en Biologi\u0301a y Ciencias O\u0301micas (Universidad de Ma\u0301laga) (2016)", description: "Estudio sobre problemas de inferencia filogene\u0301tica realizado para la Universidad de Ma\u0301laga 2016(2 meses)" }),
+                                    React.createElement(rc_steps_1.Step, { title: "Aplicacio\u0301n para la generacio\u0301n de mapas de calor (Universidad de Ma\u0301laga) (2017-2018)", description: "Desarrollo de una aplicacio\u0301n iniciado a partir de un Proyecto de Investigacio\u0301n.\nA partir de la Beca realizada surgio\u0301 el disen\u0303o, desarrollo y mantenimiento de una aplicacio\u0301n destinada a la generacio\u0301n de mapas de calor a partir de datos de expresio\u0301n ge\u0301nica para cualquier tipo de ana\u0301lisis cli\u0301nico posterior a realizar." })))),
+                        React.createElement("div", null,
+                            React.createElement("div", { className: "academic-titles" },
+                                React.createElement("h4", null, "Idiomas")),
+                            React.createElement(Dividers_1.default, null),
+                            React.createElement("div", { className: "steps-style" },
+                                React.createElement(rc_steps_1.default, { direction: "vertical", current: this.state.currentLanguageStep, onChange: (current) => this.setState({ currentLanguageStep: current }) },
+                                    React.createElement(rc_steps_1.Step, { title: "Espa\u00F1ol", description: "Lengua materna" }),
+                                    React.createElement(rc_steps_1.Step, { title: "Ingl\u00E9s", description: "En proceso de obtenci\u00F3n del certificado B2 de Cambridge" }))))))),
+            React.createElement(react_device_detect_1.MobileView, null,
+                React.createElement("div", { className: "central-div" },
+                    React.createElement(react_md_1.Paper, { className: "title-paper", zDepth: 2 },
+                        React.createElement("div", null,
+                            React.createElement("div", { className: "academic-titles" },
+                                React.createElement("h4", null, "Estudios")),
+                            React.createElement(Dividers_1.default, null),
+                            React.createElement("div", { className: "steps-style" },
+                                React.createElement(rc_steps_1.default, { direction: "vertical", current: this.state.currentStudiesStep, onChange: (current) => this.setState({ currentStudiesStep: current }) },
+                                    React.createElement(rc_steps_1.Step, { title: "Sept 2013 - Sept 2017", description: "Grado Ingenier\u00EDa de la Salud (Universidad de M\u00E1laga)" })))),
+                        React.createElement("div", null,
+                            React.createElement("div", { className: "academic-titles" },
+                                React.createElement("h4", null, "Proyectos acad\u00E9micos")),
+                            React.createElement(Dividers_1.default, null),
+                            React.createElement("div", { className: "steps-style" },
+                                React.createElement(rc_steps_1.default, { direction: "vertical", current: this.state.currentProjectStep, onChange: (current) => this.setState({ currentProjectStep: current }) },
+                                    React.createElement(rc_steps_1.Step, { title: "Seminario en optimizacio\u0301n para la reconstruccio\u0301n de redes ge\u0301nicas (Universidad de Ma\u0301laga) (2015)" }),
+                                    React.createElement(rc_steps_1.Step, { title: "Desarrollo de una aplicacio\u0301n Android (Universidad de Ma\u0301laga) (2016)" }),
+                                    React.createElement(rc_steps_1.Step, { title: "Proyecto Innovacio\u0301n educativa en Biologi\u0301a y Ciencias O\u0301micas (Universidad de Ma\u0301laga) (2016)" }),
+                                    React.createElement(rc_steps_1.Step, { title: "Aplicacio\u0301n para la generacio\u0301n de mapas de calor (Universidad de Ma\u0301laga) (2017-2018)" })))),
+                        React.createElement("div", null,
+                            React.createElement("div", { className: "academic-titles" },
+                                React.createElement("h4", null, "Idiomas")),
+                            React.createElement(Dividers_1.default, null),
+                            React.createElement("div", { className: "steps-style" },
+                                React.createElement(rc_steps_1.default, { direction: "vertical", current: this.state.currentLanguageStep, onChange: (current) => this.setState({ currentLanguageStep: current }) },
+                                    React.createElement(rc_steps_1.Step, { title: "Espa\u00F1ol", description: "Lengua materna" }),
+                                    React.createElement(rc_steps_1.Step, { title: "Ingl\u00E9s", description: "En proceso de obtenci\u00F3n del certificado B2 de Cambridge" })))))))));
     }
 }
 exports.AcademicPage = AcademicPage;
@@ -628,7 +690,7 @@ class MyDocument extends React.Component {
         link.click();
     }
     render() {
-        return (React.createElement("div", { style: { display: "flex", justifyContent: "center" } },
+        return (React.createElement("div", { style: { display: "flex", marginLeft: "30vw" } },
             React.createElement("div", null,
                 React.createElement("div", null,
                     React.createElement(react_toastify_1.ToastContainer, { containerId: 'Download', onClick: () => this.downloadFile(), position: react_toastify_1.toast.POSITION.TOP_LEFT }))),
@@ -657,7 +719,7 @@ __webpack_require__("1sm7");
 const React = __webpack_require__("mXGw");
 const rc_progress_1 = __webpack_require__("WyKr");
 const chroma = __webpack_require__("+G64");
-const react_device_detect_1 = __webpack_require__("5rOX");
+const react_device_detect_1 = __webpack_require__("4Ebc");
 class ProgressComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -712,6 +774,7 @@ __webpack_require__("h+vt");
 __webpack_require__("ikrR");
 const react_md_1 = __webpack_require__("3iwl");
 const Dividers_1 = __webpack_require__("bg2r");
+const react_device_detect_1 = __webpack_require__("4Ebc");
 class ExperiencePage extends React.Component {
     constructor(props) {
         super(props);
@@ -720,34 +783,47 @@ class ExperiencePage extends React.Component {
         };
     }
     render() {
-        return (React.createElement("div", { className: "central-div" },
-            React.createElement(react_md_1.Paper, { className: "title-paper", zDepth: 2 },
-                React.createElement("div", { className: "academic-titles" },
-                    React.createElement("h4", null, "Experiencia profesional")),
-                React.createElement(Dividers_1.default, null),
-                React.createElement("div", { className: "steps-style" },
-                    React.createElement(rc_steps_1.default, { direction: "vertical", current: this.state.currentStep, onChange: (current) => this.setState({ currentStep: current }) },
-                        React.createElement(rc_steps_1.Step, { title: "Desarrollador Full-Stack (GSL)", subtitle: "[Abr 2018 - Actualidad]", description: React.createElement("div", { className: "paragraph" },
-                                React.createElement("p", null,
-                                    "Desarrollo de una aplicaci\u00F3n web de gesti\u00F3n cl\u00EDnica. Desarrollo del sistema al completo incluyendo gesti\u00F3n de servidores usando Docker Swarm y de las bases de datos con el motor MySQL.",
-                                    React.createElement("br", null),
-                                    "Un backend y frontend diferenciados, usando en ambos casos JavaScript y Rest. El frontend se desarroll\u00F3 usando React, Redux y Webpack. El backend usando nodeJS con un servidor express y webpack.")) }),
-                        React.createElement(rc_steps_1.Step, { title: "Desarrollador (Grupo AL)", subtitle: "[Ene 2017 - Abr 2018]", description: React.createElement("div", { className: "paragraph" },
-                                React.createElement("p", null,
-                                    "Se han desarrollado proyectos en colaboraci\u00F3n con el Ayuntamiento de Alicante. La creaci\u00F3n de dichos proyectos tiene como objetivo la refactorizaci\u00F3n de servicios ya existentes del Portal de Administrinaci\u00F3n Electr\u00F3nica pudiendo migrar su uso a un entorno tecnol\u00F3gico m\u00E1s actualizado y accesible. Se migraron servicios SOAP a servicios REST haciendo uso de J2EE, autenticaci\u00F3n con JWT, base de datos MySQL y gesti\u00F3n de certificados electr\u00F3nicos en servidores de aplicaciones Wildfly.",
-                                    React.createElement("br", null),
-                                    "Adem\u00E1s se realizaron tareas de DevOps, actualizando una plataforma de integraci\u00F3n con Jenkins y creando un cliente web para un servicio REST destinado a posibilitar a cualquier desarrollador su uso sin conocimientos del funcionamiento interno de la misma.")) }),
-                        React.createElement(rc_steps_1.Step, { title: "Desarrollador de Big Data y metaheur\u00EDstica (Universidad de M\u00E1laga)", subtitle: "[Sept 2016 - Ene 2018]", description: React.createElement("div", { className: "paragraph" },
-                                React.createElement("p", null,
-                                    "Programador Full Stack perteneciente a un grupo de investigaci\u00F3n en la Universidad de M\u00E1laga en el equipo de desarrollo.",
-                                    React.createElement("br", null),
-                                    "El trabajo se organiz\u00F3 utilizando Scrum como puesta en pr\u00E1ctica de las metodolog\u00EDas de desarrollo \u00E1giles.",
-                                    React.createElement("br", null),
-                                    "La participaci\u00F3n se ha realizado a lo largo de diferentes proyectos creando la arquitectura de los mismo desde cero. Todos los proyectos han estado orientados a su desarrollo haciendo uso de patrones de dise\u00F1o, arquitecturas J2EE y orientados a microservicios garantizamdo la eficiencia y estabilidad de los mismos.",
-                                    React.createElement("br", null),
-                                    "Los proyectos se han desarrollado realizando una diferenciaci\u00F3n entre el back-end y el front-end con la interacci\u00F3n conjunta entre ambos permitiendo un mayor grado de control sobre ambas. Adem\u00E1s se orientaron realizando un control de versiones con Git, una virtualizaci\u00F3n de los sistemas usando Docker y una perspectiva de integraci\u00F3n continua.",
-                                    React.createElement("br", null),
-                                    "Se ha hecho uso de diferentes tecnolog\u00EDas y herramientas como Apache Spark, React o Redux para producir aplicaciones webs que realizasen el an\u00E1lisis de grandes vol\u00FAmenes de datos.")) }))))));
+        return (React.createElement(React.Fragment, null,
+            React.createElement(react_device_detect_1.BrowserView, null,
+                React.createElement("div", { className: "central-div" },
+                    React.createElement(react_md_1.Paper, { className: "title-paper", zDepth: 2 },
+                        React.createElement("div", { className: "academic-titles" },
+                            React.createElement("h4", null, "Experiencia profesional")),
+                        React.createElement(Dividers_1.default, null),
+                        React.createElement("div", { className: "steps-style" },
+                            React.createElement(rc_steps_1.default, { direction: "vertical", current: this.state.currentStep, onChange: (current) => this.setState({ currentStep: current }) },
+                                React.createElement(rc_steps_1.Step, { title: "Desarrollador Full-Stack (GSL)", subtitle: "[Abr 2018 - Actualidad]", description: React.createElement("div", { className: "paragraph" },
+                                        React.createElement("p", null,
+                                            "Desarrollo de una aplicaci\u00F3n web de gesti\u00F3n cl\u00EDnica. Desarrollo del sistema al completo incluyendo gesti\u00F3n de servidores usando Docker Swarm y de las bases de datos con el motor MySQL.",
+                                            React.createElement("br", null),
+                                            "Un backend y frontend diferenciados, usando en ambos casos JavaScript y Rest. El frontend se desarroll\u00F3 usando React, Redux y Webpack. El backend usando nodeJS con un servidor express y webpack.")) }),
+                                React.createElement(rc_steps_1.Step, { title: "Desarrollador (Grupo AL)", subtitle: "[Ene 2017 - Abr 2018]", description: React.createElement("div", { className: "paragraph" },
+                                        React.createElement("p", null,
+                                            "Se han desarrollado proyectos en colaboraci\u00F3n con el Ayuntamiento de Alicante. La creaci\u00F3n de dichos proyectos tiene como objetivo la refactorizaci\u00F3n de servicios ya existentes del Portal de Administrinaci\u00F3n Electr\u00F3nica pudiendo migrar su uso a un entorno tecnol\u00F3gico m\u00E1s actualizado y accesible. Se migraron servicios SOAP a servicios REST haciendo uso de J2EE, autenticaci\u00F3n con JWT, base de datos MySQL y gesti\u00F3n de certificados electr\u00F3nicos en servidores de aplicaciones Wildfly.",
+                                            React.createElement("br", null),
+                                            "Adem\u00E1s se realizaron tareas de DevOps, actualizando una plataforma de integraci\u00F3n con Jenkins y creando un cliente web para un servicio REST destinado a posibilitar a cualquier desarrollador su uso sin conocimientos del funcionamiento interno de la misma.")) }),
+                                React.createElement(rc_steps_1.Step, { title: "Desarrollador de Big Data y metaheur\u00EDstica (Universidad de M\u00E1laga)", subtitle: "[Sept 2016 - Ene 2018]", description: React.createElement("div", { className: "paragraph" },
+                                        React.createElement("p", null,
+                                            "Programador Full Stack perteneciente a un grupo de investigaci\u00F3n en la Universidad de M\u00E1laga en el equipo de desarrollo.",
+                                            React.createElement("br", null),
+                                            "El trabajo se organiz\u00F3 utilizando Scrum como puesta en pr\u00E1ctica de las metodolog\u00EDas de desarrollo \u00E1giles.",
+                                            React.createElement("br", null),
+                                            "La participaci\u00F3n se ha realizado a lo largo de diferentes proyectos creando la arquitectura de los mismo desde cero. Todos los proyectos han estado orientados a su desarrollo haciendo uso de patrones de dise\u00F1o, arquitecturas J2EE y orientados a microservicios garantizamdo la eficiencia y estabilidad de los mismos.",
+                                            React.createElement("br", null),
+                                            "Los proyectos se han desarrollado realizando una diferenciaci\u00F3n entre el back-end y el front-end con la interacci\u00F3n conjunta entre ambos permitiendo un mayor grado de control sobre ambas. Adem\u00E1s se orientaron realizando un control de versiones con Git, una virtualizaci\u00F3n de los sistemas usando Docker y una perspectiva de integraci\u00F3n continua.",
+                                            React.createElement("br", null),
+                                            "Se ha hecho uso de diferentes tecnolog\u00EDas y herramientas como Apache Spark, React o Redux para producir aplicaciones webs que realizasen el an\u00E1lisis de grandes vol\u00FAmenes de datos.")) })))))),
+            React.createElement(react_device_detect_1.MobileView, null,
+                React.createElement("div", { className: "central-div" },
+                    React.createElement(react_md_1.Paper, { className: "title-paper", zDepth: 2 },
+                        React.createElement("div", { className: "academic-titles" },
+                            React.createElement("h4", null, "Experiencia profesional")),
+                        React.createElement(Dividers_1.default, null),
+                        React.createElement("div", { className: "steps-style" },
+                            React.createElement(rc_steps_1.default, { direction: "vertical", current: this.state.currentStep, onChange: (current) => this.setState({ currentStep: current }) },
+                                React.createElement(rc_steps_1.Step, { title: "Desarrolladora Full-Stack en GSL Servicio de Prevenci\u00F3n", subtitle: "[Abr 2018 - Actualidad]" }),
+                                React.createElement(rc_steps_1.Step, { title: "Desarrolladora Full-Stack en Grupo AL", subtitle: "[Ene 2017 - Abr 2018]" }),
+                                React.createElement(rc_steps_1.Step, { title: "Desarrolladora Full-Stack en la Universidad de M\u00E1laga", subtitle: "[Sept 2016 - Ene 2018]" }))))))));
     }
 }
 exports.ExperiencePage = ExperiencePage;
