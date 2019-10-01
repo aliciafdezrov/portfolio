@@ -53,7 +53,7 @@ export class MyDocument extends React.Component<{}, {}> {
 
     public render() {
         return (
-            <div style={{display: "flex", justifyContent: "center"}}>
+            <div style={{display: "flex", marginLeft: "30vw"}}>
                 <div>
                     <div>
                         <ToastContainer containerId={'Download'}
