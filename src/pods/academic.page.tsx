@@ -5,6 +5,7 @@ import Steps, {Step} from 'rc-steps';
 import 'rc-steps/assets/index.css';
 import 'rc-steps/assets/iconfont.css';
 import {BrowserView, MobileView} from "react-device-detect";
+import * as classes from "../scss/academic.scss";
 
 export class AcademicPage extends React.Component<{}, {}> {
     public constructor(props) {
@@ -24,7 +25,7 @@ export class AcademicPage extends React.Component<{}, {}> {
                     <div className="central-div">
                         <Paper className="title-paper" zDepth={2}>
                             <div>
-                                <div className="academic-titles">
+                                <div className={classes.academicTitles}>
                                     <h4>Estudios</h4>
                                 </div>
                                 <Divider/>
@@ -38,7 +39,7 @@ export class AcademicPage extends React.Component<{}, {}> {
                             </div>
 
                             <div>
-                                <div className="academic-titles">
+                                <div className={classes.academicTitles}>
                                     <h4>Proyectos académicos</h4>
                                 </div>
                                 <Divider/>
@@ -65,7 +66,7 @@ A partir de la Beca realizada surgió el diseño, desarrollo y mantenimiento d
                             </div>
 
                             <div>
-                                <div className="academic-titles">
+                                <div className={classes.academicTitles}>
                                     <h4>Idiomas</h4>
                                 </div>
                                 <Divider/>
@@ -87,7 +88,7 @@ A partir de la Beca realizada surgió el diseño, desarrollo y mantenimiento d
                     <div className="central-div">
                         <Paper className="title-paper" zDepth={2}>
                             <div>
-                                <div className="academic-titles">
+                                <div className={classes.academicTitles}>
                                     <h4>Estudios</h4>
                                 </div>
                                 <Divider/>
@@ -101,7 +102,7 @@ A partir de la Beca realizada surgió el diseño, desarrollo y mantenimiento d
                             </div>
 
                             <div>
-                                <div className="academic-titles">
+                                <div className={classes.academicTitles}>
                                     <h4>Proyectos académicos</h4>
                                 </div>
                                 <Divider/>
@@ -121,7 +122,7 @@ A partir de la Beca realizada surgió el diseño, desarrollo y mantenimiento d
                             </div>
 
                             <div>
-                                <div className="academic-titles">
+                                <div className={classes.academicTitles}>
                                     <h4>Idiomas</h4>
                                 </div>
                                 <Divider/>

@@ -1,27 +1,29 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "lib": ["es6", "dom"],
     "target": "es6",
-    "module": "commonjs",
+    "module": "esnext",
+    "moduleResolution": "node",
     "declaration": false,
     "noImplicitAny": false,
-    "removeComments": true,
-    "sourceMap": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "noLib": false,
-    "preserveConstEnums": true,
     "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "noLib": false,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
     "suppressImplicitAnyIndexErrors": true,
-    "types": [
-      "webpack-env",
-      "core-js"
-    ]
+    "baseUrl": "./src/",
+    "paths": {
+      "layout": ["layout"],
+      "scenes": ["scenes"],
+      "core": ["core"],
+      "pods": ["pods"],
+      "common": ["common"],
+      "styles": ["scss"],
+      "saga": ["saga"]
+    }
   },
-  "include": [
-    "./src/"
-  ],
   "compileOnSave": false,
   "exclude": [
     "node_modules"
