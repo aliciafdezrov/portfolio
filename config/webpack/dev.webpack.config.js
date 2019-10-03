@@ -15,29 +15,8 @@ module.exports = merge(common, {
     output: {
         path: helpers.resolveFromRootPath('dist'),
         filename: '[name].js',
-        //chunkFilename: '[name].chunk.js',
         publicPath: '/',
     },
-
-    /*optimization: {
-      splitChunks: {
-        name: false,
-        cacheGroups: {
-          vendors: {
-            name: 'vendor',
-            test: /vendor$/,
-            chunks: 'initial',
-            enforce: true,
-          },
-          default: {
-            minChunks: 2,
-            priority: -20,
-            reuseExistingChunk: true,
-          },
-        },
-      },
-    },*/
-
 
     devServer: {
         historyApiFallback: true,

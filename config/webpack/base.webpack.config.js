@@ -24,9 +24,6 @@ module.exports = {
     styles: './scss/index.scss',
     app: [
       '../index.tsx',
-    ],
-    vendorStyles: [
-      '../node_modules/bootstrap/dist/css/bootstrap-grid.css'
     ]
   },
 
