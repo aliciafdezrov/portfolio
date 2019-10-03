@@ -6,13 +6,6 @@ import {Divider, FlexboxGrid, Icon, List} from "rsuite";
 const photo = require("../../../assets/avatars/repository-open-graph-template.png"); //require("../../../assets/avatars/photo.jpg");
 
 export const ContactPage = () => {
-
-    function openLink(linkDestination: string) {
-        let link = document.createElement('a');
-        link.href = linkDestination;
-        link.click();
-    }
-
     return (
         <>
             <BrowserView>
@@ -156,7 +149,7 @@ export const ContactPage = () => {
                                             <div className={classes.titleStyle}>
                                                 <a href="https://www.linkedin.com/in/alicia-fernández-rovira-70885811a"
                                                    target="_blank">
-                                                    https://www.linkedin.com/in/alicia-fernández-rovira-70885811a
+                                                    linkedin.com/alicia-fernández-rovira
                                                 </a>
                                             </div>
                                         </FlexboxGrid.Item>

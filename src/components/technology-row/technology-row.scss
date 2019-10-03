@@ -7,6 +7,12 @@
   min-width: 40vw;
 }
 
+@media (max-width: 479px) {
+  .technology-container {
+    min-width: 80vw;
+  }
+}
+
 .technology-label {
   display: flex;
   align-self: flex-start;
