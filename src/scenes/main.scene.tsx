@@ -1,13 +1,12 @@
 import * as React from "react";
 import {useState} from "react";
-import {AcademicPage, ContactPage, DashboardPage, ExperiencePage, HomePage, KnowledgesPage, PDF} from "pods";
-import {FontIcon} from "react-md";
+import {AcademicPage, ContactPage, ExperiencePage, HomePage, KnowledgesPage, PDF} from "pods";
 import {SwitchComponent} from "../components/switch.component";
 
 const themes = ['home', 'academic', 'experience', 'knowledge', 'contact', 'cv'];
 
 export const MainScene = () => {
-    const [activeIndex, setActiveIndex] = useState(4);
+    const [activeIndex, setActiveIndex] = useState(5);
     const [transition, setTransition] = useState('slide-forward');
 
     function onChangeIndex(newIndex) {

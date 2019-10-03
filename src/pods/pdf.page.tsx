@@ -1,7 +1,7 @@
 import * as React from "react";
 import {BrowserView, MobileView} from "react-device-detect";
 import {MyDocument} from "../components";
-import Button from "react-md/lib/Buttons";
+import {Icon, Button} from "rsuite";
 const cv = require('../../assets/CV.pdf');
 
 export const PDF = () => {
@@ -20,8 +20,8 @@ export const PDF = () => {
                     height: '100vh',
                     width: '100vw'
                 }}>
-                    <Button primary raised href={cv} download>
-                        ¡Pulsa para descargar!
+                    <Button color="yellow" href={cv} download>
+                        <Icon icon="file-download"  /> ¡Pulsa para descargar!
                     </Button>
                 </div>
             </MobileView>
