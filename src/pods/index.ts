@@ -3,4 +3,4 @@ export * from './contact';
 export * from './experience';
 export * from './home';
 export * from './knowledges';
-export * from './pdf.page';
+export * from './pdf/pdf.page';

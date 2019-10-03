@@ -1,11 +1,8 @@
 import * as React from "react";
-import Steps, {Step} from 'rc-steps';
-import 'rc-steps/assets/index.css';
-import 'rc-steps/assets/iconfont.css';
 import {BrowserView, MobileView} from 'react-device-detect';
 import {useState} from "react";
 import * as classes from './experience.scss';
-import {Divider} from "rsuite";
+import {Divider, Steps} from "rsuite";
 
 export const ExperiencePage = () => {
     const [currentStep, setCurrentStep] = useState(0);
@@ -19,11 +16,11 @@ export const ExperiencePage = () => {
                         <Divider/>
 
                         <div className={classes.stepsStyle}>
-                            <Steps direction="vertical" current={currentStep}
-                                   onChange={(current) => setCurrentStep(current)}>
+                            <Steps vertical current={currentStep}>
 
-                                <Step title="Desarrollador Full-Stack (GSL)"
+                                <Steps.Item title="Desarrollador Full-Stack (GSL)"
                                       subtitle="[Abr 2018 - Actualidad]"
+                                            onClick={() => setCurrentStep(0)}
                                       description={
                                           <div className="paragraph">
                                               <p>
@@ -42,8 +39,9 @@ export const ExperiencePage = () => {
                                           </div>
                                       }/>
 
-                                <Step title="Desarrollador (Grupo AL)"
+                                <Steps.Item title="Desarrollador (Grupo AL)"
                                       subtitle="[Ene 2017 - Abr 2018]"
+                                            onClick={() => setCurrentStep(1)}
                                       description={
                                           <div className="paragraph">
                                               <p>
@@ -66,8 +64,9 @@ export const ExperiencePage = () => {
                                           </div>
                                       }/>
 
-                                <Step title="Desarrollador de Big Data y metaheurística (Universidad de Málaga)"
+                                <Steps.Item title="Desarrollador de Big Data y metaheurística (Universidad de Málaga)"
                                       subtitle="[Sept 2016 - Ene 2018]"
+                                            onClick={() => setCurrentStep(2)}
                                       description={
                                           <div className="paragraph">
                                               <p>
@@ -124,18 +123,20 @@ export const ExperiencePage = () => {
                         <Divider/>
 
                         <div className={classes.stepsStyle}>
-                            <Steps direction="vertical" current={currentStep}
-                                   onChange={(current) => setCurrentStep(current)}>
+                            <Steps vertical current={currentStep}>
 
-                                <Step title="Desarrolladora Full-Stack en GSL Servicio de Prevención"
+                                <Steps.Item title="Desarrolladora Full-Stack en GSL Servicio de Prevención"
+                                            onClick={() => setCurrentStep(0)}
                                       subtitle="[Abr 2018 - Actualidad]"
                                 />
 
-                                <Step title="Desarrolladora Full-Stack en Grupo AL"
+                                <Steps.Item title="Desarrolladora Full-Stack en Grupo AL"
+                                            onClick={() => setCurrentStep(1)}
                                       subtitle="[Ene 2017 - Abr 2018]"
                                 />
 
-                                <Step title="Desarrolladora Full-Stack en la Universidad de Málaga"
+                                <Steps.Item title="Desarrolladora Full-Stack en la Universidad de Málaga"
+                                            onClick={() => setCurrentStep(2)}
                                       subtitle="[Sept 2016 - Ene 2018]"/>
                             </Steps>
                         </div>

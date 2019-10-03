@@ -91,6 +91,15 @@ module.exports = merge(common, {
                     loader: "less-loader",
                     options: {
                         javascriptEnabled: true,
+                        modifyVars: {
+                            "@body-bg": "#2c2c2c",
+                            "@text-color": "#f1f1f1",
+                            "@text-primary": "#f1f1f1",
+                            "@primary-bg-color": "#2c2c2c",
+                            "@list-item-drag-bg-color": "#2c2c2c",
+                            "@list-item-placeholder-bg-color": "#2c2c2c",
+                            "@list-item-placeholder-border-color": "#2c2c2c",
+                        }
                     }
                 }]
             }
@@ -103,4 +112,5 @@ module.exports = merge(common, {
         }),
         new CleanTerminalPlugin(),
     ],
-});
+})
+;

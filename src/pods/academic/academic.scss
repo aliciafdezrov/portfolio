@@ -1,9 +1,8 @@
-@import "../../scss/bootstrapResponds";
-
 .container {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  color: #f1f1f1;
 
   h4 {
     font-weight: bold;
@@ -16,12 +15,11 @@
   transition: 0.3s;
   text-align: center;
   align-self: center;
-  height: 100vh;
-  min-width: 100vh;
+  height: 100%;
+  min-width: 100vw;
   align-items: center;
   justify-content: center;
   padding: 5vh;
-  position: fixed;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -32,4 +30,5 @@
 .stepsStyle {
   text-align: left;
   align-content: flex-start;
+  color: #f1f1f1 !important;
 }

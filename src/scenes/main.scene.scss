@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: 1;
+  align-items: stretch;
+  position: relative;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}

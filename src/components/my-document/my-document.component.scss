@@ -1,0 +1,18 @@
+.document-wrapper {
+  display: flex;
+  align-items: stretch;
+  max-height: 90vh;
+  -webkit-tap-highlight-color: snow !important;
+  justify-content: space-around;
+  padding-top: 2vh;
+  width: 100vw;
+}
+
+.page-wrapper {
+  height: 90vh !important;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}

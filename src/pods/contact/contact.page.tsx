@@ -3,7 +3,7 @@ import {BrowserView, MobileView} from 'react-device-detect';
 import * as classes from "./contact.scss";
 import {Divider, FlexboxGrid, Icon, List} from "rsuite";
 
-const photo = require("../../../assets/avatars/repository-open-graph-template.png");//require("../../../assets/avatars/photo.jpg");
+const photo = require("../../../assets/avatars/repository-open-graph-template.png"); //require("../../../assets/avatars/photo.jpg");
 
 export const ContactPage = () => {
 
@@ -17,8 +17,8 @@ export const ContactPage = () => {
         <>
             <BrowserView>
                 <div className={classes.container}>
-                    <div className={classes.card && classes.wrapper}>
-                        <div >
+                    <div className={classes.wrapper}>
+                        <div className={classes.card}>
                             <h4>Información de contacto</h4>
                             <List hover>
                                 <List.Item key={0} index={0}>
