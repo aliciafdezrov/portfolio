@@ -15,13 +15,12 @@
     "suppressImplicitAnyIndexErrors": true,
     "baseUrl": "./src/",
     "paths": {
-      "layout": ["layout"],
+      "components": ["components"],
       "scenes": ["scenes"],
       "core": ["core"],
       "pods": ["pods"],
       "common": ["common"],
-      "styles": ["scss"],
-      "saga": ["saga"]
+      "styles": ["scss"]
     }
   },
   "compileOnSave": false,

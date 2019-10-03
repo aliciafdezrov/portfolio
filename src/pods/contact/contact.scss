@@ -72,3 +72,41 @@
   }
 }
 
+
+.white-background {
+  background: #ffffff;
+}
+
+@include respond-above(lg) {
+  .central-div {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
+@include respond-below(md) {
+  .central-div {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 10vh;
+  }
+}
+
+.title-paper {
+  height: auto;
+  background: #ffffff;
+}
+
+@include respond-above(md) {
+  .title-paper {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@include respond-below(md) {
+  .title-paper {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+}

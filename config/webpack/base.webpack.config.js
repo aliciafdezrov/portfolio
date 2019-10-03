@@ -8,13 +8,11 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.scss'],
     alias: {
-      typings: path.resolve(__dirname, '../../src/typings/'),
+      scenes: path.resolve(__dirname, '../../src/scenes/'),
       pods: path.resolve(__dirname, '../../src/pods/'),
-      components: path.resolve(__dirname, '../../src/components/'),
       common: path.resolve(__dirname, '../../src/common/'),
       styles: path.resolve(__dirname, '../../src/scss/'),
-      actions: path.resolve(__dirname, '../../src/actions/'),
-      scenes: path.resolve(__dirname, '../../src/scenes/'),
+      components: path.resolve(__dirname, '../../src/components'),
     },
   },
   target: 'web',
@@ -27,6 +25,9 @@ module.exports = {
     app: [
       '../index.tsx',
     ],
+    vendorStyles: [
+      '../node_modules/bootstrap/dist/css/bootstrap-grid.css'
+    ]
   },
 
   module: {
@@ -57,9 +58,9 @@ module.exports = {
         loader: 'url-loader?limit=10000',
       },
       {
-        test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.mp4$|\.wav$|\.mp3$|\.pdf$/,
-        use: 'file-loader?name=[name].[ext]'
-      }
+        test: /\.(pdf)?$/,
+        loader: 'file-loader',
+      },
     ],
   },
   plugins: [

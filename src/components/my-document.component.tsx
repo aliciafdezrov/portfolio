@@ -15,7 +15,7 @@ const notify = () => toast('⚠️ ¿Te gustaría descargarlo? ', {
     containerId: 'Download'
 });
 
-export class MyDocument extends React.Component<{}, {}> {
+export class MyDocumentComponent extends React.Component<{}, {}> {
     public constructor(props) {
         super(props);
     }
