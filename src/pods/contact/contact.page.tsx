@@ -1,14 +1,9 @@
 import * as React from "react";
-import {Paper} from "react-md";
-import {Avatar} from "react-md/lib/Avatars";
-import List from "react-md/lib/Lists";
-import ListItem from "react-md/lib/Lists/ListItem";
-import FontIcon from "react-md/lib/FontIcons";
-import {Divider} from "react-md/lib/Dividers";
 import {BrowserView, MobileView} from 'react-device-detect';
-import * as classes from "../scss/contact.scss";
+import * as classes from "./contact.scss";
+import {Divider, FlexboxGrid, Icon, List} from "rsuite";
 
-const photo = require("../../assets/avatars/photo.jpg");
+const photo = require("../../../assets/avatars/repository-open-graph-template.png");//require("../../../assets/avatars/photo.jpg");
 
 export const ContactPage = () => {
 
@@ -21,99 +16,153 @@ export const ContactPage = () => {
     return (
         <>
             <BrowserView>
-                <div className={classes.centralDiv}>
-                    <Paper className={classes.titlePaper && classes.whiteBackground && classes.contactPageContainer}
-                           zDepth={2}>
-                        <div>
-                            <>
-                                <div className={classes.contactTextDiv}>
-                                    <h4>Información de contacto</h4>
-                                    <Divider/>
-                                </div>
+                <div className={classes.container}>
+                    <div className={classes.card && classes.wrapper}>
+                        <div >
+                            <h4>Información de contacto</h4>
+                            <List hover>
+                                <List.Item key={0} index={0}>
+                                    <FlexboxGrid>
+                                        {/*icon*/}
+                                        <FlexboxGrid.Item colspan={2} className={classes.styleCenter}>
+                                            <Icon icon={'at'} className={classes.listIcon}/>
+                                        </FlexboxGrid.Item>
+                                        {/*base info*/}
+                                        <FlexboxGrid.Item colspan={6}
+                                                          className={classes.styleCenter && classes.dataItem}>
+                                            <div className={classes.titleStyle}>
+                                                <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Petición%20desde%20cv&to=aliciafdezrov@gmail.com&body=Cuerpo+del+mensaje"
+                                                   target="_blank">
+                                                    aliciafdezrov@gmail.com
+                                                </a>
+                                            </div>
+                                        </FlexboxGrid.Item>
+                                    </FlexboxGrid>
+                                </List.Item>
 
-                                <div className={classes.contactList}>
-                                    <List>
-                                        <ListItem primaryText="aliciafdezrov@gmail.com"
-                                                  onClick={() => this.openLink("https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Petición%20desde%20cv&to=aliciafdezrov@gmail.com&body=Cuerpo+del+mensaje")}
-                                                  leftIcon={<FontIcon>mail</FontIcon>}>
-                                        </ListItem>
+                                <List.Item key={0} index={0}>
+                                    <FlexboxGrid>
+                                        {/*icon*/}
+                                        <FlexboxGrid.Item colspan={2} className={classes.styleCenter}>
+                                            <Icon icon={'github-square'} className={classes.listIcon}/>
+                                        </FlexboxGrid.Item>
+                                        {/*base info*/}
+                                        <FlexboxGrid.Item colspan={6}
+                                                          className={classes.styleCenter && classes.dataItem}>
+                                            <div className={classes.titleStyle}>
+                                                <a href="https://github.com/aliciafdezrov"
+                                                   target="_blank">
+                                                    github.com/aliciafdezrov
+                                                </a>
+                                            </div>
+                                        </FlexboxGrid.Item>
+                                    </FlexboxGrid>
+                                </List.Item>
 
-                                        <ListItem primaryText="Málaga, 29012 (Spain)"
-                                                  leftIcon={<FontIcon>place</FontIcon>}>
-                                        </ListItem>
-                                    </List>
-
-                                    <div style={{paddingTop: '2vh'}}>
-                                        <a href="https://www.linkedin.com/in/alicia-fernández-rovira-70885811a"
-                                           target="_blank">
-                                            https://www.linkedin.com/in/alicia-fernández-rovira-70885811a
-                                        </a>
-                                    </div>
-                                    <div style={{paddingTop: '2vh'}}>
-                                        <a href="https://github.com/aliciafdezrov"
-                                           target="_blank">
-                                            https://github.com/aliciafdezrov
-                                        </a>
-                                    </div>
-                                </div>
-                            </>
-
-                            <>
-                                <div>
-                                    <h4>Un poco más sobre mi</h4>
-                                    <Divider/>
-                                    <p>Llevo desde 2016 trabajando, primero con una beca compaginándolo con mis
-                                        estudios y
-                                        más tarde contratada.Desde ese momento he estado trabajando como
-                                        Desarrolladora
-                                        Full-Stack. Siempre participando activamente en el diseño, creación y
-                                        gestión de
-                                        bases de datos, backend y frontend.</p>
-                                </div>
-                            </>
+                                <List.Item key={0} index={0}>
+                                    <FlexboxGrid>
+                                        {/*icon*/}
+                                        <FlexboxGrid.Item colspan={2} className={classes.styleCenter}>
+                                            <Icon icon={'linkedin-square'} className={classes.listIcon}/>
+                                        </FlexboxGrid.Item>
+                                        {/*base info*/}
+                                        <FlexboxGrid.Item colspan={6}
+                                                          className={classes.styleCenter && classes.dataItem}>
+                                            <div className={classes.titleStyle}>
+                                                <a href="https://www.linkedin.com/in/alicia-fernández-rovira-70885811a"
+                                                   target="_blank">
+                                                    https://www.linkedin.com/in/alicia-fernández-rovira-70885811a
+                                                </a>
+                                            </div>
+                                        </FlexboxGrid.Item>
+                                    </FlexboxGrid>
+                                </List.Item>
+                            </List>
+                            <div>
+                                <h4>Un poco más sobre mi</h4>
+                                <Divider/>
+                                <p>Llevo desde 2016 trabajando, primero con una beca compaginándolo con mis
+                                    estudios y
+                                    más tarde contratada.Desde ese momento he estado trabajando como
+                                    Desarrolladora
+                                    Full-Stack. Siempre participando activamente en el diseño, creación y
+                                    gestión de
+                                    bases de datos, backend y frontend.</p>
+                            </div>
                         </div>
 
-                        <div className={classes.avatarStyle}>
-                            <Avatar
+                        <div className={classes.avatar}>
+                            <img
                                 alt="Me"
                                 src={photo}
-                                className={classes.avatar}
                             />
                         </div>
-                    </Paper>
+                    </div>
                 </div>
             </BrowserView>
             <MobileView>
-                <div className={classes.centralDiv}>
-                    <Paper className={classes.titlePaper && classes.whiteBackground && classes.contactPageContainer}
-                           zDepth={2}>
+                <div className={classes.container}>
+                    <div className={classes.card && classes.wrapper}>
                         <div>
-                            <div className={classes.contactTextDiv}>
-                                <h4>Información de contacto</h4>
-                                <Divider/>
-                            </div>
+                            <h4>Información de contacto</h4>
+                            <List hover>
+                                <List.Item key={0} index={0}>
+                                    <FlexboxGrid>
+                                        {/*icon*/}
+                                        <FlexboxGrid.Item colspan={2} className={classes.styleCenter}>
+                                            <Icon icon={'at'} className={classes.listIcon}/>
+                                        </FlexboxGrid.Item>
+                                        {/*base info*/}
+                                        <FlexboxGrid.Item colspan={6}
+                                                          className={classes.styleCenter && classes.dataItem}>
+                                            <div className={classes.titleStyle}>
+                                                <a href="mailto:aliciafdezrov@gmail.com?subject=Petición%20desde%20cv"
+                                                   target="_blank">
+                                                    aliciafdezrov@gmail.com
+                                                </a>
+                                            </div>
+                                        </FlexboxGrid.Item>
+                                    </FlexboxGrid>
+                                </List.Item>
 
-                            <div className={classes.contactList}>
-                                <List>
-                                    <ListItem primaryText="aliciafdezrov@gmail.com"
-                                              onClick={() => this.openLink("mailto:aliciafdezrov@gmail.com?subject=Petición%20desde%20cv")}
-                                              leftIcon={<FontIcon>mail</FontIcon>}>
-                                    </ListItem>
-                                </List>
+                                <List.Item key={0} index={0}>
+                                    <FlexboxGrid>
+                                        {/*icon*/}
+                                        <FlexboxGrid.Item colspan={2} className={classes.styleCenter}>
+                                            <Icon icon={'github-square'} className={classes.listIcon}/>
+                                        </FlexboxGrid.Item>
+                                        {/*base info*/}
+                                        <FlexboxGrid.Item colspan={6}
+                                                          className={classes.styleCenter && classes.dataItem}>
+                                            <div className={classes.titleStyle}>
+                                                <a href="https://github.com/aliciafdezrov"
+                                                   target="_blank">
+                                                    github.com/aliciafdezrov
+                                                </a>
+                                            </div>
+                                        </FlexboxGrid.Item>
+                                    </FlexboxGrid>
+                                </List.Item>
 
-                                <div style={{paddingTop: '1vh'}}>
-                                    <a href="https://www.linkedin.com/in/alicia-fernández-rovira-70885811a"
-                                       target="_blank">
-                                        linkedin/alicia-fernández-rovira
-                                    </a>
-                                </div>
-                                <div style={{paddingTop: '1vh'}}>
-                                    <a href="https://github.com/aliciafdezrov"
-                                       target="_blank">
-                                        github.com/aliciafdezrov
-                                    </a>
-                                </div>
-                            </div>
+                                <List.Item key={0} index={0}>
+                                    <FlexboxGrid>
+                                        {/*icon*/}
+                                        <FlexboxGrid.Item colspan={2} className={classes.styleCenter}>
+                                            <Icon icon={'linkedin-square'} className={classes.listIcon}/>
+                                        </FlexboxGrid.Item>
+                                        {/*base info*/}
+                                        <FlexboxGrid.Item colspan={6}
+                                                          className={classes.styleCenter && classes.dataItem}>
+                                            <div className={classes.titleStyle}>
+                                                <a href="https://www.linkedin.com/in/alicia-fernández-rovira-70885811a"
+                                                   target="_blank">
+                                                    https://www.linkedin.com/in/alicia-fernández-rovira-70885811a
+                                                </a>
+                                            </div>
+                                        </FlexboxGrid.Item>
+                                    </FlexboxGrid>
+                                </List.Item>
+                            </List>
 
                             <div className={classes.contactTextDiv}>
                                 <h4>Un poco más sobre mi</h4>
@@ -126,14 +175,13 @@ export const ContactPage = () => {
                             </div>
                         </div>
 
-                        <div className={classes.avatarStyle}>
-                            <Avatar
+                        <div className={classes.avatar}>
+                            <img
                                 alt="Me"
                                 src={photo}
-                                className={classes.avatar}
                             />
                         </div>
-                    </Paper>
+                    </div>
                 </div>
             </MobileView>
         </>

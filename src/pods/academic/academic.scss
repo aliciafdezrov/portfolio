@@ -1,5 +1,35 @@
-.academic-titles {
+@import "../../scss/bootstrapResponds";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  h4 {
+    font-weight: bold;
+  }
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
   text-align: center;
-  font-weight: bold;
-  padding-top: 2vh;
+  align-self: center;
+  height: 100vh;
+  min-width: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh;
+  position: fixed;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.04);
+}
+
+.stepsStyle {
+  text-align: left;
+  align-content: flex-start;
 }

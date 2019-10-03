@@ -1,5 +1,6 @@
 import 'rc-progress/assets/index.css';
 import * as React from "react";
+import {useEffect, useState} from "react";
 import {Line} from 'rc-progress';
 import * as chroma from "chroma-js";
 import {BrowserView, MobileView} from "react-device-detect";
@@ -8,48 +9,42 @@ export interface IProgressComponentProps {
     percent: number
 }
 
-export class ProgressComponent extends React.Component<IProgressComponentProps, {}> {
-    public constructor(props: IProgressComponentProps) {
-        super(props);
-        this.increase();
-    }
+export const ProgressComponent = (props: IProgressComponentProps) => {
+    const [percent, setPercent] = useState(0);
+    const [color, setColor] = useState('#108ee9');
 
-    state = {
-        percent: 0,
-        color: '#108ee9'
-    };
+    useEffect(() => {
+        increase()
+    }, []);
 
-    private increase() {
-        let newPercent = this.state.percent + 4;
+    function increase() {
+        let newPercent = percent + 4;
         let scale = chroma.scale(['#108ee9', '#87d068']);
-        this.setState({color: scale(this.state.percent / 100).hex()});
-        if (newPercent >= this.props.percent) {
+        setColor(scale(percent / 100).hex());
+        if (newPercent >= props.percent) {
             clearTimeout();
             return;
         }
-        this.setState({percent: newPercent});
+        setPercent(newPercent);
         setTimeout(() => {
-            this.increase()
+            increase()
         }, 0);
     }
 
-
-    public render() {
-        return (
-            <div>
-                <BrowserView>
-                <Line percent={this.state.percent}
+    return (
+        <div>
+            <BrowserView>
+                <Line percent={percent}
                       strokeLinecap="round"
                       strokeWidth={2}
-                      strokeColor={this.state.color}/>
-                </BrowserView>
-                <MobileView>
-                    <Line percent={this.state.percent}
-                          strokeLinecap="round"
-                          strokeWidth={4}
-                          strokeColor={this.state.color}/>
-                </MobileView>
-            </div>
-        );
-    }
+                      strokeColor={color}/>
+            </BrowserView>
+            <MobileView>
+                <Line percent={percent}
+                      strokeLinecap="round"
+                      strokeWidth={4}
+                      strokeColor={color}/>
+            </MobileView>
+        </div>
+    );
 }

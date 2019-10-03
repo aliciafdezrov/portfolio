@@ -2,10 +2,10 @@ import * as React from "react";
 import Steps, {Step} from 'rc-steps';
 import 'rc-steps/assets/index.css';
 import 'rc-steps/assets/iconfont.css';
-import {Paper} from "react-md";
-import Divider from "react-md/lib/Dividers";
 import {BrowserView, MobileView} from 'react-device-detect';
 import {useState} from "react";
+import * as classes from './experience.scss';
+import {Divider} from "rsuite";
 
 export const ExperiencePage = () => {
     const [currentStep, setCurrentStep] = useState(0);
@@ -13,14 +13,12 @@ export const ExperiencePage = () => {
     return (
         <>
             <BrowserView>
-                <div className="central-div">
-                    <Paper className="title-paper" zDepth={2}>
-                        <div className="academic-titles">
-                            <h4>Experiencia profesional</h4>
-                        </div>
+                <div className={classes.container}>
+                    <div className={classes.card}>
+                        <h4>Experiencia profesional</h4>
                         <Divider/>
 
-                        <div className="steps-style">
+                        <div className={classes.stepsStyle}>
                             <Steps direction="vertical" current={currentStep}
                                    onChange={(current) => setCurrentStep(current)}>
 
@@ -114,18 +112,18 @@ export const ExperiencePage = () => {
                                       }/>
                             </Steps>
                         </div>
-                    </Paper>
+                    </div>
                 </div>
             </BrowserView>
             <MobileView>
-                <div className="central-div">
-                    <Paper className="title-paper" zDepth={2}>
+                <div className={classes.container}>
+                    <div className={classes.card}>
                         <div className="academic-titles">
                             <h4>Experiencia profesional</h4>
                         </div>
                         <Divider/>
 
-                        <div className="steps-style">
+                        <div className={classes.stepsStyle}>
                             <Steps direction="vertical" current={currentStep}
                                    onChange={(current) => setCurrentStep(current)}>
 
@@ -141,7 +139,7 @@ export const ExperiencePage = () => {
                                       subtitle="[Sept 2016 - Ene 2018]"/>
                             </Steps>
                         </div>
-                    </Paper>
+                    </div>
                 </div>
             </MobileView>
         </>

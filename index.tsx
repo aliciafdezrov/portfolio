@@ -1,11 +1,10 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import {DashboardPage} from "./src/pods/dashboard.page";
+import {MainScene} from "scenes";
 
 class Index {
     public constructor() {
-
-        ReactDOM.render((<DashboardPage/>),
+        ReactDOM.render((<MainScene/>),
             document.getElementById('root')
         );
     }

@@ -1,17 +1,16 @@
 import * as React from "react";
-import {Paper} from "react-md";
-import Divider from "react-md/lib/Dividers";
-import {TechnologyRow} from "../components";
+import {TechnologyRow} from "components";
+import {Divider} from "rsuite";
+import * as classes from "./knowledges.scss";
 
 export const KnowledgesPage = () => {
     return (
-        <div className="central-div">
-            <Paper className="title-paper" zDepth={2}>
-                <div className="knowledges-title">
-                    <h4>Tecnologías y herramientas</h4>
-                    <Divider/>
-                </div>
-                <div className="blocks-container">
+        <div className={classes.container}>
+            <div className={classes.card}>
+                <h4>Tecnologías y herramientas</h4>
+                <Divider/>
+
+                <div className={classes.blocksContainer}>
                     <div>
                         <h3>MERN Stack</h3>
                         <TechnologyRow percent={90} label="React"/>
@@ -53,7 +52,7 @@ export const KnowledgesPage = () => {
                         <TechnologyRow percent={90} label="Clean Code"/>
                     </div>
                 </div>
-            </Paper>
+            </div>
         </div>
     );
 }

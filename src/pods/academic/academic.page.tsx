@@ -1,12 +1,11 @@
 import * as React from "react";
-import {Paper} from "react-md";
-import Divider from "react-md/lib/Dividers";
 import Steps, {Step} from 'rc-steps';
 import 'rc-steps/assets/index.css';
 import 'rc-steps/assets/iconfont.css';
 import {BrowserView, MobileView} from "react-device-detect";
-import * as classes from "../scss/academic.scss";
+import * as classes from "./academic.scss";
 import {useState} from "react";
+import {Divider} from "rsuite";
 
 export const AcademicPage = () => {
     const [currentStudiesStep, setCurrentStudiesStep] = useState(0);
@@ -16,14 +15,12 @@ export const AcademicPage = () => {
     return (
         <>
             <BrowserView>
-                <div className="central-div">
-                    <Paper className="title-paper" zDepth={2}>
+                <div className={classes.container}>
+                    <div className={classes.card}>
                         <div>
-                            <div className={classes.academicTitles}>
-                                <h4>Estudios</h4>
-                            </div>
+                            <h4>Estudios</h4>
                             <Divider/>
-                            <div className="steps-style">
+                            <div className={classes.stepsStyle}>
                                 <Steps direction="vertical" current={currentStudiesStep}
                                        onChange={(current) => setCurrentStudiesStep(current)}>
                                     <Step title="Sept 2013 - Sept 2017"
@@ -33,11 +30,9 @@ export const AcademicPage = () => {
                         </div>
 
                         <div>
-                            <div className={classes.academicTitles}>
-                                <h4>Proyectos académicos</h4>
-                            </div>
+                            <h4>Proyectos académicos</h4>
                             <Divider/>
-                            <div className="steps-style">
+                            <div className={classes.stepsStyle}>
                                 <Steps direction="vertical" current={currentProjectStep}
                                        onChange={(current) => setCurrentProjectStep(current)}>
                                     <Step
@@ -60,11 +55,9 @@ A partir de la Beca realizada surgió el diseño, desarrollo y mantenimiento d
                         </div>
 
                         <div>
-                            <div className={classes.academicTitles}>
-                                <h4>Idiomas</h4>
-                            </div>
+                            <h4>Idiomas</h4>
                             <Divider/>
-                            <div className="steps-style">
+                            <div className={classes.stepsStyle}>
                                 <Steps direction="vertical" current={currentLanguageStep}
                                        onChange={(current) => setCurrentLanguageStep(current)}>
                                     <Step title="Español"
@@ -75,18 +68,16 @@ A partir de la Beca realizada surgió el diseño, desarrollo y mantenimiento d
                                 </Steps>
                             </div>
                         </div>
-                    </Paper>
+                    </div>
                 </div>
             </BrowserView>
             <MobileView>
-                <div className="central-div">
-                    <Paper className="title-paper" zDepth={2}>
+                <div className={classes.container}>
+                    <div className={classes.card}>
                         <div>
-                            <div className={classes.academicTitles}>
-                                <h4>Estudios</h4>
-                            </div>
+                            <h4>Estudios</h4>
                             <Divider/>
-                            <div className="steps-style">
+                            <div className={classes.stepsStyle}>
                                 <Steps direction="vertical" current={currentStudiesStep}
                                        onChange={(current) => setCurrentStudiesStep(current)}>
                                     <Step title="Sept 2013 - Sept 2017"
@@ -96,11 +87,9 @@ A partir de la Beca realizada surgió el diseño, desarrollo y mantenimiento d
                         </div>
 
                         <div>
-                            <div className={classes.academicTitles}>
-                                <h4>Proyectos académicos</h4>
-                            </div>
+                            <h4>Proyectos académicos</h4>
                             <Divider/>
-                            <div className="steps-style">
+                            <div className={classes.stepsStyle}>
                                 <Steps direction="vertical" current={currentProjectStep}
                                        onChange={(current) => setCurrentProjectStep(current)}>
                                     <Step
@@ -117,11 +106,9 @@ A partir de la Beca realizada surgió el diseño, desarrollo y mantenimiento d
                         </div>
 
                         <div>
-                            <div className={classes.academicTitles}>
-                                <h4>Idiomas</h4>
-                            </div>
+                            <h4>Idiomas</h4>
                             <Divider/>
-                            <div className="steps-style">
+                            <div className={classes.stepsStyle}>
                                 <Steps direction="vertical" current={currentLanguageStep}
                                        onChange={(current) => setCurrentLanguageStep(current)}>
                                     <Step title="Español"
@@ -132,7 +119,7 @@ A partir de la Beca realizada surgió el diseño, desarrollo y mantenimiento d
                                 </Steps>
                             </div>
                         </div>
-                    </Paper>
+                    </div>
                 </div>
             </MobileView>
         </>

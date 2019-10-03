@@ -1,6 +1,6 @@
 import * as React from "react";
 import {BottomNavigation} from "react-md/lib/BottomNavigations";
-import * as classes from "../scss/dashboard.scss";
+import * as classes from "./dashboard.scss";
 
 export interface Props {
     activeIndex: number,
