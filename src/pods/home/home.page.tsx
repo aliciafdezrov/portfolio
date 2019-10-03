@@ -9,8 +9,8 @@ export const HomePage = () => {
 
                 <div className={classes.card}>
                     <div className={classes.title}>
-                        {/*<h1>Alicia Fernández Rovira</h1>
-                        <h4>Desarrolladora Full-Stack en Málaga</h4>*/}
+                        <h1>Alicia Fernández Rovira</h1>
+                        <h4>Desarrolladora Full-Stack en Málaga</h4>
                     </div>
                 </div>
             </div>
