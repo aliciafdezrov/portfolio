@@ -78,6 +78,7 @@ module.exports = merge(common, {
                             "@list-item-drag-bg-color": "#2c2c2c",
                             "@list-item-placeholder-bg-color": "#2c2c2c",
                             "@list-item-placeholder-border-color": "#2c2c2c",
+                            "@steps-icon-process-bg": "#bc7bd4"
                         }
                     }
                 }]

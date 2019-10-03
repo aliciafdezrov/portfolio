@@ -20,7 +20,7 @@ export const ProgressComponent = (props: IProgressComponentProps) => {
     function increase() {
         console.log("INCREASEEEE")
         let newPercent = percent + 4;
-        let scale = chroma.scale(['#108ee9', '#87d068']);
+        let scale = chroma.scale(['#108ee9', '#bc7bd4']);
         setColor(scale(percent / 100).hex());
         if (newPercent < props.percent) {
             setPercent(newPercent);
