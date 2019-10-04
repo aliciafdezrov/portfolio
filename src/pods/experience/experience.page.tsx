@@ -18,7 +18,7 @@ export const ExperiencePage = () => {
                         <div className={classes.stepsStyle}>
                             <Steps vertical current={currentStep}>
 
-                                <Steps.Item title="Desarrollador Full-Stack (GSL)"
+                                <Steps.Item title={<h5 style={{color: 'white'}}>Desarrolladora Full-Stack en GSL Servicios de Prevención</h5>}
                                       subtitle="[Abr 2018 - Actualidad]"
                                             onClick={() => setCurrentStep(0)}
                                       description={
@@ -39,7 +39,7 @@ export const ExperiencePage = () => {
                                           </div>
                                       }/>
 
-                                <Steps.Item title="Desarrollador (Grupo AL)"
+                                <Steps.Item title={<h5 style={{color: 'white'}}>Desarrolladora Full-Stack en Grupo AL</h5>}
                                       subtitle="[Ene 2017 - Abr 2018]"
                                             onClick={() => setCurrentStep(1)}
                                       description={
@@ -64,7 +64,7 @@ export const ExperiencePage = () => {
                                           </div>
                                       }/>
 
-                                <Steps.Item title="Desarrollador de Big Data y metaheurística (Universidad de Málaga)"
+                                <Steps.Item title={<h5 style={{color: 'white'}}>Desarrolladora Full-Stack en Universidad de Málaga</h5>}
                                       subtitle="[Sept 2016 - Ene 2018]"
                                             onClick={() => setCurrentStep(2)}
                                       description={
@@ -127,17 +127,17 @@ export const ExperiencePage = () => {
 
                                 <Steps.Item title="Desarrolladora Full-Stack en GSL Servicio de Prevención"
                                             onClick={() => setCurrentStep(0)}
-                                      subtitle="[Abr 2018 - Actualidad]"
+                                      description="[Abr 2018 - Actualidad]"
                                 />
 
                                 <Steps.Item title="Desarrolladora Full-Stack en Grupo AL"
                                             onClick={() => setCurrentStep(1)}
-                                      subtitle="[Ene 2017 - Abr 2018]"
+                                      description="[Ene 2017 - Abr 2018]"
                                 />
 
                                 <Steps.Item title="Desarrolladora Full-Stack en la Universidad de Málaga"
                                             onClick={() => setCurrentStep(2)}
-                                      subtitle="[Sept 2016 - Ene 2018]"/>
+                                      description="[Sept 2016 - Ene 2018]"/>
                             </Steps>
                         </div>
                     </div>
