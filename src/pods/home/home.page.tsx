@@ -10,8 +10,6 @@ export const HomePage = () => {
 								blur={10}
 								bgImage={require("../../../assets/ash-edmonds-510566-unsplash-min.jpg")}
 								bgImageAlt="the cat">
-				<div className={classes.wrapper}>
-					<div className={classes.slide}/>
 					<div className={classes.card}>
 						<div className={classes.title}>
 							<AnimatedTitle style={{
@@ -37,7 +35,6 @@ export const HomePage = () => {
 								}}>Y esto es texto de prueba</AnimatedTitle>
 						</div>
 					</div>
-				</div>
 			</Parallax>
 		</>
 	);

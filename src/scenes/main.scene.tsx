@@ -26,11 +26,11 @@ export const MainScene = () => {
                 </Reveal>
 
                 <Divider>
+                    <IconButton
+                        icon={<Icon icon="chevron-up"/>}
+                        color={"violet"}
+                        onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}/>
                 </Divider>
-                <div style={{display: "flex", justifyContent: "flex-end", width: '90vw'}}><IconButton
-                    icon={<Icon icon="chevron-up"/>}
-                    color={"violet"}
-                    onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}/></div>
             </div>
         </>
     );
