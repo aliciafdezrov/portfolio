@@ -12,7 +12,6 @@ export const HomePage = () => {
 								bgImageAlt="the cat">
 				<div className={classes.wrapper}>
 					<div className={classes.slide}/>
-
 					<div className={classes.card}>
 						<div className={classes.title}>
 							<AnimatedTitle style={{

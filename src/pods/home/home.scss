@@ -23,7 +23,6 @@
 }
 
 .card {
-  /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12);
   transition: 0.3s;
   text-align: center;
@@ -34,10 +33,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10vh;
 }
 
-/* On mouse-over, add a deeper shadow */
+@media (min-width: 479px) {
+  .card {
+    padding: 10vh;
+  }
+}
+
+@media (max-width: 479px) {
+  .card {
+    padding-top: 30vh;
+    width: 60vw;
+  }
+}
+
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.04);
 }
@@ -58,5 +68,15 @@
   h1, h4 {
     color: white;
     font-weight: bold;
+  }
+}
+
+@media (max-width: 479px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    alignItems: 'stretch';
   }
 }
