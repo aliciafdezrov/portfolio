@@ -2,6 +2,7 @@ import * as React from "react";
 import {TechnologyRow} from "components";
 import {Divider} from "rsuite";
 import * as classes from "./knowledges.scss";
+import { Animation, Reveal } from "react-genie";
 
 export const KnowledgesPage = () => {
     return (
@@ -11,6 +12,7 @@ export const KnowledgesPage = () => {
                 <Divider/>
 
                 <div className={classes.blocksContainer}>
+                    <Reveal delay={100} animation={Animation.FadeInUp}>
                     <div>
                         <h3>MERN Stack</h3>
                         <TechnologyRow percent={90} label="React"/>
@@ -22,7 +24,9 @@ export const KnowledgesPage = () => {
                         <TechnologyRow percent={75} label="Express"/>
                         <TechnologyRow percent={75} label="Nginx"/>
                     </div>
+                    </Reveal>
 
+                    <Reveal delay={200} animation={Animation.FadeInUp}>
                     <div>
                         <h3>J2EE Stack</h3>
                         <TechnologyRow percent={95} label="J2EE"/>
@@ -32,7 +36,9 @@ export const KnowledgesPage = () => {
                         <TechnologyRow percent={90} label="Maven"/>
                         <TechnologyRow percent={90} label="Wildfly"/>
                     </div>
+                    </Reveal>
 
+                    <Reveal delay={300} animation={Animation.FadeInUp}>
                     <div>
                         <h3>Devops</h3>
                         <TechnologyRow percent={80} label="Docker"/>
@@ -40,7 +46,9 @@ export const KnowledgesPage = () => {
                         <TechnologyRow percent={80} label="Docker Swarm"/>
                         <TechnologyRow percent={80} label="Jenkins"/>
                     </div>
+                    </Reveal>
 
+                    <Reveal delay={400} animation={Animation.FadeInUp}>
                     <div>
                         <h3>Otros</h3>
                         <TechnologyRow percent={45} label="GraphQL"/>
@@ -51,6 +59,7 @@ export const KnowledgesPage = () => {
                         <TechnologyRow percent={90} label="MongoDB"/>
                         <TechnologyRow percent={90} label="Clean Code"/>
                     </div>
+                    </Reveal>
                 </div>
             </div>
         </div>
