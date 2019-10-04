@@ -11,7 +11,7 @@ export const ContactPage = () => {
             <BrowserView>
                 <div className={classes.container}>
                     <div className={classes.wrapper}>
-                        <div className={classes.card}>
+                        <div>
                             <h4>Información de contacto</h4>
                             <List>
                                 <List.Item key={0} index={0}>
@@ -96,7 +96,7 @@ export const ContactPage = () => {
             </BrowserView>
             <MobileView>
                 <div className={classes.container}>
-                    <div className={classes.card && classes.wrapper}>
+                    <div className={classes.wrapper}>
                         <div>
                             <h4>Información de contacto</h4>
 
