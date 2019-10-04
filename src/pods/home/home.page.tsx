@@ -24,7 +24,7 @@ export const HomePage = () => {
 								marginLeft: '0',
 								marginRight: '0'
 							}}>
-								Alicia Fernández Rovira
+								Esto es una prueba
 							</AnimatedTitle>
 							<AnimatedTitle
 								style={{
@@ -35,7 +35,7 @@ export const HomePage = () => {
 									marginBottom: '1.33em',
 									marginLeft: '0',
 									marginRight: '0'
-								}}>Desarrolladora Full-Stack en Málaga</AnimatedTitle>
+								}}>Y esto es texto de prueba</AnimatedTitle>
 						</div>
 					</div>
 				</div>
@@ -43,3 +43,6 @@ export const HomePage = () => {
 		</>
 	);
 }
+
+//Alicia Fernández Rovira
+//Desarrolladora Full-Stack en Málaga
