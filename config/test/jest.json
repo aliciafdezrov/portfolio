@@ -4,12 +4,9 @@
   "restoreMocks": true,
   "transformIgnorePatterns": ["<rootDir>/node_modules/"],
   "moduleNameMapper": {
-    "^common/(.*)$": "<rootDir>/src/common/$1",
-    "^core/(.*)$": "<rootDir>/src/core",
-    "^layout/(.*)$": "<rootDir>/src/layout/$1",
+    "^components/(.*)$": "<rootDir>/src/components/$1",
     "^pods/(.*)$": "<rootDir>/src/pods/$1",
     "^scenes/(.*)$": "<rootDir>/src/scenes/$1",
-    "^saga/(.*)$": "<rootDir>/src/saga/$1",
     "\\.(jpg|jpeg|png|svg)$": "<rootDir>/config/test/fileMock.js",
     "^.+\\.(s?css|less)$": "<rootDir>/config/test/fileMock.js"
   },
