@@ -34,7 +34,7 @@ export const ContactPage = () => {
                                     </FlexboxGrid>
                                 </List.Item>
 
-                                <List.Item key={0} index={0}>
+                                <List.Item key={1} index={1}>
                                     <FlexboxGrid>
                                         {/*icon*/}
                                         <FlexboxGrid.Item colspan={2} className={classes.styleCenter}>
@@ -53,7 +53,7 @@ export const ContactPage = () => {
                                     </FlexboxGrid>
                                 </List.Item>
 
-                                <List.Item key={0} index={0}>
+                                <List.Item key={2} index={2}>
                                     <FlexboxGrid>
                                         {/*icon*/}
                                         <FlexboxGrid.Item colspan={2} className={classes.styleCenter}>
