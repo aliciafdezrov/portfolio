@@ -39,6 +39,7 @@ export const MyDocument = (props: Props) => {
         <div className={classes.container}>
             <div>
                 <ToastContainer containerId={'Download'}
+                                toastClassName={classes.toast}
                                 onClick={() => downloadFile()}
                                 position={toast.POSITION.TOP_LEFT}/>
             </div>
