@@ -34,14 +34,7 @@
   }
 }
 
-@media (max-width: 479px) {
-  .title {
-    left: 40%;
-    margin-bottom: 10vh;
-  }
-}
-
-@media (min-width: 479px) {
+@media (min-width: 1024px) {
   .title {
     left: 25%;
     width: 50%;
@@ -55,5 +48,14 @@
     flex-wrap: wrap;
     justify-content: center;
     alignItems: 'stretch';
+    left: 40%;
+    margin-bottom: 10vh;
+  }
+}
+
+@media(max-width: 1024px) and (min-width: 479px) {
+  .title {
+    left: 30%;
+    margin-top: 10vh;
   }
 }
