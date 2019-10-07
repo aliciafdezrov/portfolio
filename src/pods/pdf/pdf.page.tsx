@@ -5,11 +5,15 @@ import {Icon, Button} from "rsuite";
 import * as classes from "./pdf.scss";
 const cv = require('../../../assets/CV.pdf');
 
-export const PDF = () => {
+export interface Props {
+    showDialog: boolean;
+}
+
+export const PDF = (props: Props) => {
     return (
         <>
             <BrowserView>
-                <MyDocument key="cv"/>
+                <MyDocument key="cv" showDialog={props.showDialog}/>
             </BrowserView>
             <MobileView>
                 <div className={classes.mobileButtonWrapper}>
@@ -20,4 +24,5 @@ export const PDF = () => {
             </MobileView>
         </>
     );
-}
+};
+

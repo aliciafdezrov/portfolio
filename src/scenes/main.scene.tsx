@@ -3,8 +3,10 @@ import {AcademicPage, ContactPage, ExperiencePage, HomePage, KnowledgesPage, PDF
 import * as classes from "./main.scene.scss";
 import {Animation, Reveal} from "react-genie";
 import {Divider, Icon, IconButton} from "rsuite";
+import {useState} from "react";
 
 export const MainScene = () => {
+    const [showDialog, setShowDialog] = useState(false);
 
     return (
         <>
@@ -21,8 +23,8 @@ export const MainScene = () => {
 
                 <ContactPage/>
 
-                <Reveal animation={Animation.FadeIn}>
-                    <PDF/>
+                <Reveal animation={Animation.FadeIn} onShowDone={() => setShowDialog(true)}>
+                    <PDF showDialog={showDialog}/>
                 </Reveal>
 
                 <Divider>

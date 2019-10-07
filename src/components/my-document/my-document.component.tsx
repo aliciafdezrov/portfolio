@@ -3,23 +3,30 @@ import {Document, Page} from 'react-pdf';
 import {toast, ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import * as classes from './my-document.component.scss';
+import {useEffect} from "react";
 
 const file = require("../../../assets/CV.pdf");
 
 const notify = () => toast('⚠️ ¿Te gustaría descargarlo? ', {
     position: "top-right",
-    autoClose: 15000,
     hideProgressBar: false,
+    autoClose: false,
     closeOnClick: true,
     pauseOnHover: true,
     draggable: true,
     containerId: 'Download'
 });
 
-export const MyDocument = () => {
-    const onDocumentLoadSuccess = ({numPages}) => {
-        notify();
-    };
+export interface Props {
+    showDialog: boolean;
+}
+
+export const MyDocument = (props: Props) => {
+    useEffect(() => {
+        if (props.showDialog) {
+            notify()
+        }
+    }, [props.showDialog]);
 
     function downloadFile() {
         let link = document.createElement('a');
@@ -40,11 +47,14 @@ export const MyDocument = () => {
                     file={file}
                     error="Algo fue mal al cargar el cv. Envíame un correo al email de contacto y puedo enviartelo personalmente."
                     loading="Cargando el archivo..."
-                    onLoadSuccess={onDocumentLoadSuccess}
                 >
                     <Page className={classes.pageWrapper} renderMode='svg' pageNumber={1}/>
                 </Document>
             </div>
         </div>
     );
-}
+};
+
+MyDocument.defaultProps = {
+    showDialog: false
+};
