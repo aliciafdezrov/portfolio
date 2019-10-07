@@ -48,7 +48,7 @@
     flex-wrap: wrap;
     justify-content: center;
     alignItems: 'stretch';
-    left: 40%;
+    left: 43%;
     margin-bottom: 10vh;
   }
 }
@@ -57,5 +57,38 @@
   .title {
     left: 30%;
     margin-top: 10vh;
+  }
+}
+
+
+.title-text {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0
+}
+
+.subtitle-text {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (max-width: 479px) {
+  .title-text {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 479px) {
+  .subtitle-text {
+    font-size: 1em;
   }
 }

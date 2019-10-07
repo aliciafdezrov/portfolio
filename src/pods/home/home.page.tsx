@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as classes from './home.scss';
-import { Parallax } from 'react-parallax';
-import { AnimatedTitle } from 'react-genie';
+import {Parallax} from 'react-parallax';
+import {AnimatedTitle} from 'react-genie';
 
 export const HomePage = () => {
 	return (
@@ -12,33 +12,16 @@ export const HomePage = () => {
 								bgImageAlt="...">
 					<div className={classes.card}>
 						<div className={classes.title}>
-							<AnimatedTitle style={{
-								color: 'white',
-								fontWeight: 'bold',
-								fontSize: '2em',
-								marginTop: '0.67em',
-								marginBottom: '0.67em',
-								marginLeft: '0',
-								marginRight: '0'
-							}}>
-								Esto es una prueba
+							<AnimatedTitle className={classes.titleText}>
+                                Alicia Fernández Rovira
 							</AnimatedTitle>
 							<AnimatedTitle
-								style={{
-									color: 'white',
-									fontWeight: 'bold',
-									fontSize: '1.2em',
-									marginTop: '1.33em',
-									marginBottom: '1.33em',
-									marginLeft: '0',
-									marginRight: '0'
-								}}>Y esto es texto de prueba</AnimatedTitle>
+								className={classes.subtitleText}>
+                                Desarrolladora Full-Stack en Málaga
+							</AnimatedTitle>
 						</div>
 					</div>
 			</Parallax>
 		</>
 	);
 }
-
-//Alicia Fernández Rovira
-//Desarrolladora Full-Stack en Málaga
