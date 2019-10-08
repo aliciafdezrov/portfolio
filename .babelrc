@@ -9,7 +9,10 @@
       }
     ],
     "@babel/preset-typescript",
-    ["rsuite", {"style":  true}]
+    ["rsuite", { "style": true }]
   ],
-  "plugins": ["@babel/plugin-proposal-class-properties", ["@babel/transform-runtime"]]
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-transform-runtime"
+  ]
 }

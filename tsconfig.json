@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "esnext",
+    "module": "es6",
     "moduleResolution": "node",
     "declaration": false,
     "noImplicitAny": false,
@@ -10,8 +10,8 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "noLib": false,
-    "strictNullChecks": true,
-    "strictPropertyInitialization": true,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
     "suppressImplicitAnyIndexErrors": true,
     "baseUrl": "./src/",
     "paths": {

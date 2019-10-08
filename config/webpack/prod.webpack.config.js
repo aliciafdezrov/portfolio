@@ -12,35 +12,8 @@ module.exports = merge(common, {
 	output: {
 		path: helpers.resolveFromRootPath('dist'),
 		filename: '[hash].[name].js',
-		publicPath: '/portfolio/'
-	},
-
-	performance: {
-		hints: false,
-	},
-	optimization: {
-		minimize: true,
-		//https://hackernoon.com/the-100-correct-way-to-split-your-chunks-with-webpack-f8a9df5b7758
-		runtimeChunk: 'single',
-		splitChunks: {
-			chunks: 'all',
-			maxInitialRequests: Infinity,
-			minSize: 0,
-			cacheGroups: {
-				vendor: {
-					test: /[\\/]node_modules[\\/]/,
-					name(module) {
-						const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
-						return `${packageName.replace('@', '')}`;
-					},
-				},
-				default: {
-					minChunks: 2,
-					priority: -20,
-					reuseExistingChunk: true,
-				},
-			},
-		},
+		publicPath: '/'
+		//publicPath: '/portfolio/'
 	},
 
 	module: {
@@ -84,14 +57,12 @@ module.exports = merge(common, {
 								"@text-color": "#ffffff",
 								"@text-primary": "#ffffff",
 								"@primary-bg-color": "#2c2c2c",
-								"@list-item-drag-bg-color": "#2c2c2c",
-								"@list-item-placeholder-bg-color": "#2c2c2c",
-								"@list-item-placeholder-border-color": "#2c2c2c",
 								"@steps-icon-process-bg": "#bc7bd4",
 								"@steps-default-color": "#ffffff",
 								"@steps-content-process-color": "#ffffff",
 								"@steps-icon-process-color": "#bc7bd4",
-								"@steps-icon-finish-color": "#bc7bd4"
+								"@steps-icon-finish-color": "#bc7bd4",
+								"@steps-bg": "#2c2c2c"
 							}
 						}
 					}
