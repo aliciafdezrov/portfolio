@@ -12,7 +12,7 @@ module.exports = merge(common, {
 	output: {
 		path: helpers.resolveFromRootPath('dist'),
 		filename: '[hash].[name].js',
-		publicPath: '/signin-user'
+		publicPath: '/'
 	},
 
 	performance: {
@@ -80,22 +80,18 @@ module.exports = merge(common, {
 						options: {
 							javascriptEnabled: true,
 							modifyVars: {
-								"body-bg": "#EEEFF4",
-								"H050": "#fff2f2",
-								"H100": "#fccfcf",
-								"H200": "#faa9a7",
-								"H300": "#fa8682",
-								"H400": "#f7635c",
-								"H500": "#f44336",
-								"H600": "#eb3626",
-								"H700": "#d62915",
-								"H800": "#b81c07",
-								"H900": "#8f1300",
-								"B050": "#f0fbff",
-								"B200": "#b0c8d1",
-								"B300": "#93aeba",
-								"B400": "#7996a3",
-								"B600": "#48738a"
+								"@body-bg": "#2c2c2c",
+								"@text-color": "#ffffff",
+								"@text-primary": "#ffffff",
+								"@primary-bg-color": "#2c2c2c",
+								"@list-item-drag-bg-color": "#2c2c2c",
+								"@list-item-placeholder-bg-color": "#2c2c2c",
+								"@list-item-placeholder-border-color": "#2c2c2c",
+								"@steps-icon-process-bg": "#bc7bd4",
+								"@steps-default-color": "#ffffff",
+								"@steps-content-process-color": "#ffffff",
+								"@steps-icon-process-color": "#bc7bd4",
+								"@steps-icon-finish-color": "#bc7bd4"
 							}
 						}
 					}
