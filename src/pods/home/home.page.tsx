@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as classes from './home.scss';
 import {Parallax} from 'react-parallax';
-import {AnimatedTitle, Animation, Reveal} from 'react-genie';
+import {Animation, Reveal} from 'react-genie';
 
 export const HomePage = () => {
     return (
