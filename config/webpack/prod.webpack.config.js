@@ -12,8 +12,7 @@ module.exports = merge(common, {
 	output: {
 		path: helpers.resolveFromRootPath('dist'),
 		filename: '[hash].[name].js',
-		publicPath: '/'
-		//publicPath: '/portfolio/'
+		publicPath: '/portfolio/'
 	},
 
 	module: {
