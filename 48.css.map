@@ -1,1 +1,0 @@
-{"version":3,"file":"48.css","sources":["webpack:///./scss/index.scss"],"sourcesContent":["html,\nbody {\n  margin: 0;\n  height: 100%;\n  width: 100%;\n  background-color: #2c2c2c !important;\n}"],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;","sourceRoot":""}
