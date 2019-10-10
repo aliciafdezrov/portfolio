@@ -30,7 +30,7 @@ export const MainScene = () => {
                 <Divider>
                     <IconButton
                         name="scroll-to-top"
-                        label="scroll-to-top"
+                        aria-label="scroll-to-top"
                         icon={<Icon icon="chevron-up"/>}
                         color={"violet"}
                         onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}/>
