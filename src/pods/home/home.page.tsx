@@ -8,7 +8,7 @@ export const HomePage = () => {
         <>
             <Parallax strength={-200}
                       blur={10}
-                      bgImage={require("../../../assets/ash-edmonds-510566-unsplash-min.jpg")}
+                      bgImage={require("../../../assets/ash-edmonds-510566-unsplash-min.webp")}
                       bgImageAlt="...">
                 <div className={classes.card}>
                     <div className={classes.title}>

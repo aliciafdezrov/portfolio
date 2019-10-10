@@ -51,7 +51,7 @@ module.exports = {
         loader: 'url-loader?limit=10000&mimetype=image/svg+xml',
       },
       {
-        test: /\.(png|jpg|ico|gif)?$/,
+        test: /\.(png|jpg|ico|gif|webp)?$/,
         loader: 'url-loader?limit=10000',
       },
       {
