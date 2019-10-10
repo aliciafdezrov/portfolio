@@ -20,9 +20,9 @@ export const ContactPage = () => {
                                     </FlexboxGrid.Item>
                                     <FlexboxGrid.Item colspan={6} className={classes.styleCenter && classes.dataItem}>
                                         <div className={classes.titleStyle}>
-                                            <a
-                                                href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Petición%20desde%20cv&to=aliciafdezrov@gmail.com&body=Cuerpo+del+mensaje"
-                                                target="_blank">
+                                            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Petición%20desde%20cv&to=aliciafdezrov@gmail.com&body=Cuerpo+del+mensaje"
+                                                target="_blank"
+                                                rel="noopener">
                                                 aliciafdezrov@gmail.com
                                             </a>
                                         </div>
@@ -36,6 +36,7 @@ export const ContactPage = () => {
                                     <FlexboxGrid.Item colspan={6} className={classes.styleCenter && classes.dataItem}>
                                         <div className={classes.titleStyle}>
                                             <a href="https://github.com/aliciafdezrov"
+                                               rel="noopener"
                                                target="_blank">
                                                 github.com/aliciafdezrov
                                             </a>
@@ -50,6 +51,7 @@ export const ContactPage = () => {
                                     <FlexboxGrid.Item colspan={6} className={classes.styleCenter && classes.dataItem}>
                                         <div className={classes.titleStyle}>
                                             <a href="https://www.linkedin.com/in/alicia-fernández-rovira-70885811a"
+                                               rel="noopener"
                                                target="_blank">
                                                 https://www.linkedin.com/in/alicia-fernández-rovira-70885811a
                                             </a>
@@ -94,6 +96,7 @@ export const ContactPage = () => {
                                     <FlexboxGrid.Item colspan={6} className={classes.styleCenter && classes.dataItem}>
                                         <div className={classes.titleStyle}>
                                             <a href="mailto:aliciafdezrov@gmail.com?subject=Petición%20desde%20cv"
+                                               rel="noopener"
                                                target="_blank">
                                                 aliciafdezrov@gmail.com
                                             </a>
@@ -108,6 +111,7 @@ export const ContactPage = () => {
                                     <FlexboxGrid.Item colspan={6} className={classes.styleCenter && classes.dataItem}>
                                         <div className={classes.titleStyle}>
                                             <a href="https://github.com/aliciafdezrov"
+                                               rel="noopener"
                                                target="_blank">
                                                 github.com/aliciafdezrov
                                             </a>
@@ -122,6 +126,7 @@ export const ContactPage = () => {
                                     <FlexboxGrid.Item colspan={6} className={classes.styleCenter && classes.dataItem}>
                                         <div className={classes.titleStyle}>
                                             <a href="https://www.linkedin.com/in/alicia-fernández-rovira-70885811a"
+                                               rel="noopener"
                                                target="_blank">
                                                 linkedin.com/alicia-fernández-rovira
                                             </a>
