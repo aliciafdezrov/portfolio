@@ -29,6 +29,7 @@ export const MainScene = () => {
 
                 <Divider>
                     <IconButton
+                        name="scroll-top-button"
                         icon={<Icon icon="chevron-up"/>}
                         color={"violet"}
                         onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}/>

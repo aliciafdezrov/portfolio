@@ -17,7 +17,7 @@ export const PDF = (props: Props) => {
             </BrowserView>
             <MobileView>
                 <div className={classes.mobileButtonWrapper}>
-                    <Button color="violet" href={cv} download="aliciafdezrovCV">
+                    <Button name="download-cv-pdf-button" color="violet" href={cv} download="aliciafdezrovCV">
                         <Icon icon="file-download"/> ¡Pulsa para descargar el cv en pdf!
                     </Button>
                 </div>
