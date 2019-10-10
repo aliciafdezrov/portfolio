@@ -31,7 +31,7 @@ export const MyDocument = (props: Props) => {
     function downloadFile() {
         let link = document.createElement('a');
         link.href = file;
-        link.download = file;
+        link.download = "aliciafdezrovCV";
         link.click();
     }
 
