@@ -20,7 +20,7 @@ export const KnowledgesPage = () => {
                         <TechnologyRow percent={75} label="Webpack"/>
                         <TechnologyRow percent={80} label="NodeJS"/>
                         <TechnologyRow percent={90} label="Jest"/>
-                        <TechnologyRow percent={90} label="ES6"/>
+                        <TechnologyRow percent={90} label="ES9"/>
                         <TechnologyRow percent={75} label="Express"/>
                         <TechnologyRow percent={75} label="Nginx"/>
                     </div>

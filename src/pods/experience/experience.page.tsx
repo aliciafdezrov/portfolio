@@ -19,7 +19,7 @@ export const ExperiencePage = () => {
                             <Steps vertical current={currentStep}>
 
                                 <Steps.Item title={<h5 style={{color: 'white'}}>Desarrolladora Full-Stack en GSL Servicios de Prevención</h5>}
-                                      subtitle="[Abr 2018 - Actualidad]"
+                                      subtitle="[Abr 2018 - Nov 2019]"
                                             onClick={() => setCurrentStep(0)}
                                       description={
                                           <div className="paragraph">

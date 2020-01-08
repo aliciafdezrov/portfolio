@@ -62,11 +62,9 @@ export const ContactPage = () => {
                             <div>
                                 <h4>Un poco más sobre mi</h4>
                                 <Divider/>
-                                <p>Llevo desde 2016 trabajando, primero con una beca compaginándolo con mis
+                                <p>Llevo desde 2016 formándome como desarrolladora, primero con una beca compaginándolo con mis
                                     estudios y
-                                    más tarde contratada.Desde ese momento he estado trabajando como
-                                    Desarrolladora
-                                    Full-Stack. Siempre participando activamente en el diseño, creación y
+                                    más tarde contratada. Actualmente, estoy realizando un máster frontend UX. Siempre participando activamente en el diseño, creación y
                                     gestión de
                                     bases de datos, backend y frontend.</p>
                             </div>
