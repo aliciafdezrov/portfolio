@@ -24,10 +24,7 @@ export const AcademicPage = () => {
                                            onChange={(current) => setCurrentStudiesStep(current)}>
                                         <Steps.Item title={<h5 style={{color: 'white'}}>Máster Frontend UX (Lemoncode)</h5>}
                                                     description="Oct 2019 - Actualidad"/>
-                                    </Steps>
-                                </div>
-                                <div className={classes.stepsStyle}>
-                                    <Steps vertical current={currentStudiesStep}
+
                                            onChange={(current) => setCurrentStudiesStep(current)}>
                                         <Steps.Item title={<h5 style={{color: 'white'}}>Grado Ingeniería de la Salud (Universidad de Málaga)</h5>}
                                                     description="Sept 2013 - Sept 2017"/>
@@ -100,6 +97,7 @@ A partir de la Beca realizada surgió el diseño, desarrollo y mantenimiento d
                             <Divider/>
                             <div className={classes.stepsStyle}>
                                 <Steps vertical current={currentStudiesStep}>
+                                    <Steps.Item title={"Máster Frontend UX (Lemoncode)"}/>
                                     <Steps.Item title="Grado Ingeniería de la Salud (Universidad de Málaga)"/>
                                 </Steps>
                             </div>

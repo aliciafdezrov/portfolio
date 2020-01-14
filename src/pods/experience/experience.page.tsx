@@ -127,7 +127,7 @@ export const ExperiencePage = () => {
 
                                 <Steps.Item title="Desarrolladora Full-Stack en GSL Servicio de Prevención"
                                             onClick={() => setCurrentStep(0)}
-                                      description="[Abr 2018 - Actualidad]"
+                                      description="[Abr 2018 - Nov 2019]"
                                 />
 
                                 <Steps.Item title="Desarrolladora Full-Stack en Grupo AL"
