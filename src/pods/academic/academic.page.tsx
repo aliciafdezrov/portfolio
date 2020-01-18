@@ -20,13 +20,12 @@ export const AcademicPage = () => {
                                 <h4>Estudios</h4>
                                 <Divider/>
                                 <div className={classes.stepsStyle}>
-                                    <Steps vertical current={currentStudiesStep}
-                                           onChange={(current) => setCurrentStudiesStep(current)}>
+                                    <Steps vertical current={currentStudiesStep}>
                                         <Steps.Item title={<h5 style={{color: 'white'}}>Máster Frontend UX (Lemoncode)</h5>}
+                                                    onClick={() => setCurrentStudiesStep(0)}
                                                     description="Oct 2019 - Actualidad"/>
-
-                                           onChange={(current) => setCurrentStudiesStep(current)}>
                                         <Steps.Item title={<h5 style={{color: 'white'}}>Grado Ingeniería de la Salud (Universidad de Málaga)</h5>}
+                                                    onClick={() => setCurrentStudiesStep(1)}
                                                     description="Sept 2013 - Sept 2017"/>
                                     </Steps>
                                 </div>
@@ -97,8 +96,10 @@ A partir de la Beca realizada surgió el diseño, desarrollo y mantenimiento d
                             <Divider/>
                             <div className={classes.stepsStyle}>
                                 <Steps vertical current={currentStudiesStep}>
-                                    <Steps.Item title={"Máster Frontend UX (Lemoncode)"}/>
-                                    <Steps.Item title="Grado Ingeniería de la Salud (Universidad de Málaga)"/>
+                                    <Steps.Item title={"Máster Frontend UX (Lemoncode)"}
+                                                onClick={() => setCurrentStudiesStep(0)}/>
+                                    <Steps.Item title="Grado Ingeniería de la Salud (Universidad de Málaga)"
+                                                onClick={() => setCurrentStudiesStep(1)}/>
                                 </Steps>
                             </div>
                         </div>
