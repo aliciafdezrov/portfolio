@@ -79,7 +79,7 @@ A partir de la Beca realizada surgió el diseño, desarrollo y mantenimiento d
 
                                         <Steps.Item title={<h5 style={{color: 'white'}}>Inglés</h5>}
                                                     onClick={() => setCurrentLanguageStep(1)}
-                                                    description="En proceso de obtención del certificado B2 de Cambridge"/>
+                                                    description="Nivel B2 (Cambridge)"/>
                                     </Steps>
                                 </div>
                             </Reveal>
@@ -141,7 +141,7 @@ A partir de la Beca realizada surgió el diseño, desarrollo y mantenimiento d
 
                                     <Steps.Item title="Inglés"
                                                 onClick={() => setCurrentLanguageStep(1)}
-                                                description="En proceso de obtención del certificado B2 de Cambridge"/>
+                                                description="Nivel B2 (Cambridge)"/>
                                 </Steps>
                             </div>
                         </div>

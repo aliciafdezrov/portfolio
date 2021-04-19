@@ -16,11 +16,22 @@ export const ExperiencePage = () => {
                         <Divider/>
 
                         <div className={classes.stepsStyle}>
-                            <Steps vertical current={currentStep}>
+                            <Steps vertical current={currentStep} onKeyDown={(prevStep) => setCurrentStep(prevStep+1)}>
+
+                                <Steps.Item title={<h5 style={{color: 'white'}}>Desarrolladora Front-end en Itrs Group</h5>}
+                                            subtitle="[Feb 2020 - Actualidad]"
+                                            onClick={() => setCurrentStep(0)}
+                                            description={
+                                                <div className="paragraph">
+                                                    <p>
+                                                        Desarrollo front-end de herramientas de monitorización usando React, (con Redux en casos puntuales y necesarios) y javascript.
+                                                    </p>
+                                                </div>
+                                            }/>
 
                                 <Steps.Item title={<h5 style={{color: 'white'}}>Desarrolladora Full-Stack en GSL Servicios de Prevención</h5>}
                                       subtitle="[Abr 2018 - Nov 2019]"
-                                            onClick={() => setCurrentStep(0)}
+                                            onClick={() => setCurrentStep(1)}
                                       description={
                                           <div className="paragraph">
                                               <p>
@@ -41,7 +52,7 @@ export const ExperiencePage = () => {
 
                                 <Steps.Item title={<h5 style={{color: 'white'}}>Desarrolladora Full-Stack en Grupo AL</h5>}
                                       subtitle="[Ene 2017 - Abr 2018]"
-                                            onClick={() => setCurrentStep(1)}
+                                            onClick={() => setCurrentStep(2)}
                                       description={
                                           <div className="paragraph">
                                               <p>
@@ -66,7 +77,7 @@ export const ExperiencePage = () => {
 
                                 <Steps.Item title={<h5 style={{color: 'white'}}>Desarrolladora Full-Stack en Universidad de Málaga</h5>}
                                       subtitle="[Sept 2016 - Ene 2018]"
-                                            onClick={() => setCurrentStep(2)}
+                                            onClick={() => setCurrentStep(3)}
                                       description={
                                           <div className="paragraph">
                                               <p>
@@ -125,19 +136,24 @@ export const ExperiencePage = () => {
                         <div className={classes.stepsStyle}>
                             <Steps vertical current={currentStep}>
 
-                                <Steps.Item title="Desarrolladora Full-Stack en GSL Servicio de Prevención"
+                                <Steps.Item title="Desarrolladora Front-end en Itrs Group"
                                             onClick={() => setCurrentStep(0)}
+                                            description="[Feb 2020 - Actualidad]"/>
+
+                                <Steps.Item title="Desarrolladora Full-Stack en GSL Servicio de Prevención"
+                                            onClick={() => setCurrentStep(1)}
                                       description="[Abr 2018 - Nov 2019]"
                                 />
 
                                 <Steps.Item title="Desarrolladora Full-Stack en Grupo AL"
-                                            onClick={() => setCurrentStep(1)}
+                                            onClick={() => setCurrentStep(2)}
                                       description="[Ene 2017 - Abr 2018]"
                                 />
 
                                 <Steps.Item title="Desarrolladora Full-Stack en la Universidad de Málaga"
-                                            onClick={() => setCurrentStep(2)}
+                                            onClick={() => setCurrentStep(3)}
                                       description="[Sept 2016 - Ene 2018]"/>
+
                             </Steps>
                         </div>
                     </div>

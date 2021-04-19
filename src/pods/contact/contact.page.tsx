@@ -3,7 +3,7 @@ import {BrowserView, MobileView} from 'react-device-detect';
 import * as classes from "./contact.scss";
 import {Divider, FlexboxGrid, Icon} from "rsuite";
 
-const photo = require("../../../assets/avatars/photo.webp");
+const photo = require("../../../assets/avatars/photo2.webp");
 
 export const ContactPage = () => {
     return (
