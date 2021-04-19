@@ -56,12 +56,8 @@ module.exports = merge(common, {
 								"@text-color": "#ffffff",
 								"@text-primary": "#ffffff",
 								"@primary-bg-color": "#2c2c2c",
-								"@steps-icon-process-bg": "#bc7bd4",
-								"@steps-default-color": "#ffffff",
-								"@steps-content-process-color": "#ffffff",
-								"@steps-icon-process-color": "#bc7bd4",
-								"@steps-icon-finish-color": "#bc7bd4",
-								"@steps-bg": "#2c2c2c"
+								'@base-color': "#bc7bd4",
+								'@B300':"#bc7bd4",
 							}
 						}
 					}

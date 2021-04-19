@@ -12,9 +12,23 @@ export const ContactPage = () => {
                 <div className={classes.container}>
                     <div className={classes.wrapper}>
                         <div>
-                            <h4>Información de contacto</h4>
                             <div>
-                                <FlexboxGrid>
+                                <h4>Un poco más sobre mi</h4>
+                                <Divider/>
+                                <p>Llevo desde 2016 formándome como desarrolladora. A lo largo de estos años he aprendido un poco más sobre que busco profesionalmente y estos son mis mandamientos:
+                                    <ul>
+                                        <li>Es enriquecedor trabajar con más gente, sobretodo cuando hay pautas y reglas que facilitan ese trabajo en equipo.</li>
+                                        <li>Conocer la importancia de tener buenas pautas de programación pero también ser consciente de que no siempre se puede ser completamente estricto.</li>
+                                        <li>Las reuniones diarias pueden acortar un atasco de 2 dias con una tarea a un par de horas con sólo 10 minutos de conversación. </li>
+                                        <li>Las PR son necesarias, no sólo como revisión, sino para conocer código ajeno al tuyo. </li>
+                                        <li>Tengo muchas más cosas que decir, por eso dejo mis datos de contacto por aquí... </li>
+                                    </ul>
+                                </p>
+                            </div>
+
+                            <br/>
+                                <h4>Información de contacto</h4>
+                                <FlexboxGrid align={"middle"}>
                                     <FlexboxGrid.Item colspan={3} className={classes.styleCenter}>
                                         <Icon icon={'at'} className={classes.listIcon}/>
                                     </FlexboxGrid.Item>
@@ -29,7 +43,7 @@ export const ContactPage = () => {
                                     </FlexboxGrid.Item>
                                 </FlexboxGrid>
 
-                                <FlexboxGrid>
+                                <FlexboxGrid align={"middle"}>
                                     <FlexboxGrid.Item colspan={3} className={classes.styleCenter}>
                                         <Icon icon={'github-square'} className={classes.listIcon}/>
                                     </FlexboxGrid.Item>
@@ -44,7 +58,7 @@ export const ContactPage = () => {
                                     </FlexboxGrid.Item>
                                 </FlexboxGrid>
 
-                                <FlexboxGrid>
+                                <FlexboxGrid align={"middle"}>
                                     <FlexboxGrid.Item colspan={3} className={classes.styleCenter}>
                                         <Icon icon={'linkedin-square'} className={classes.listIcon}/>
                                     </FlexboxGrid.Item>
@@ -59,16 +73,6 @@ export const ContactPage = () => {
                                     </FlexboxGrid.Item>
                                 </FlexboxGrid>
                             </div>
-                            <div>
-                                <h4>Un poco más sobre mi</h4>
-                                <Divider/>
-                                <p>Llevo desde 2016 formándome como desarrolladora, primero con una beca compaginándolo con mis
-                                    estudios y
-                                    más tarde contratada. Actualmente, estoy realizando un máster frontend UX. Siempre participando activamente en el diseño, creación y
-                                    gestión de
-                                    bases de datos, backend y frontend.</p>
-                            </div>
-                        </div>
 
                         <div className={classes.avatar}>
                             <img
@@ -82,6 +86,20 @@ export const ContactPage = () => {
             <MobileView>
                 <div className={classes.container}>
                     <div className={classes.wrapper}>
+                        <div className={classes.contactTextDiv}>
+                            <h4>Un poco más sobre mi</h4>
+                            <Divider/>
+                            <p>Llevo desde 2016 formándome como desarrolladora. A lo largo de estos años he aprendido un poco más sobre que busco profesionalmente y estos son mis mandamientos:
+                                <ul>
+                                    <li>Es enriquecedor trabajar con más gente, sobretodo cuando hay pautas y reglas que facilitan ese trabajo en equipo.</li>
+                                    <li>Conocer la importancia de tener buenas pautas de programación pero también ser consciente de que no siempre se puede ser completamente estricto.</li>
+                                    <li>Las reuniones diarias pueden acortar un atasco de 2 dias con una tarea a un par de horas con sólo 10 minutos de conversación. </li>
+                                    <li>Las PR son necesarias, no sólo como revisión, sino para conocer código ajeno al tuyo. </li>
+                                    <li>Tengo muchas más cosas que decir, por eso dejo mis datos de contacto por aquí... </li>
+                                </ul>
+                            </p>
+                        </div>
+
                         <div>
                             <h4>Información de contacto</h4>
 
@@ -126,21 +144,11 @@ export const ContactPage = () => {
                                             <a href="https://www.linkedin.com/in/alicia-fernández-rovira-70885811a"
                                                rel="noopener noreferrer"
                                                target="_blank">
-                                                linkedin.com/alicia-fernández-rovira
+                                                linkedin.com/aliciafdezrov
                                             </a>
                                         </div>
                                     </FlexboxGrid.Item>
                                 </FlexboxGrid>
-                            </div>
-
-                            <div className={classes.contactTextDiv}>
-                                <h4>Un poco más sobre mi</h4>
-                                <Divider/>
-                                <p>Llevo desde 2016 formándome como desarrolladora, primero con una beca compaginándolo con mis
-                                    estudios y
-                                    más tarde contratada. Actualmente, estoy realizando un máster frontend UX. Siempre participando activamente en el diseño, creación y
-                                    gestión de
-                                    bases de datos, backend y frontend.</p>
                             </div>
                         </div>
 
