@@ -1,9 +1,10 @@
-import 'rc-progress/assets/index.css';
 import * as React from "react";
 import {useEffect, useState} from "react";
-import {Line} from 'rc-progress';
+import Progress from 'rsuite/Progress';
 import * as chroma from "chroma-js";
 import {BrowserView, MobileView} from "react-device-detect";
+
+const Line = Progress.Line;
 
 export interface IProgressComponentProps {
     percent: number;
@@ -20,16 +21,10 @@ export const ProgressComponent = (props: IProgressComponentProps) => {
     return (
         <div>
             <BrowserView>
-                <Line percent={props.percent}
-                      strokeLinecap="round"
-                      strokeWidth={2}
-                      strokeColor={color}/>
+                <Line percent={props.percent} strokeColor={color}/>
             </BrowserView>
             <MobileView>
-                <Line percent={props.percent}
-                      strokeLinecap="round"
-                      strokeWidth={2}
-                      strokeColor={color}/>
+                <Line percent={props.percent} strokeColor={color}/>
             </MobileView>
         </div>
     );
