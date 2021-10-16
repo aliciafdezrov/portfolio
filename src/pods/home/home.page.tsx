@@ -1,26 +1,21 @@
 import * as React from "react";
 import classes from './home.scss';
-import {Parallax} from 'react-parallax';
 import {Animation, Reveal} from 'react-genie';
+import {CenteredLayout} from "../../layout/centered.layout";
 
 export const HomePage = () => (
-    <Parallax strength={-200}
-              blur={10}
-              bgImage={require("../../../assets/ash-edmonds-510566-unsplash-min.webp")}
-              bgImageAlt="...">
-        <div className={classes.card}>
-            <div className={classes.title}>
-                <Reveal animation={Animation.FadeIn}>
-                    <div className={classes.titleText}>
-                        Alicia Fernández Rovira
-                    </div>
-                </Reveal>
-                <Reveal animation={Animation.FadeIn}>
-                    <div className={classes.subtitleText}>
-                        Desarrolladora Full-Stack en Málaga
-                    </div>
-                </Reveal>
-            </div>
+    <CenteredLayout>
+        <div className={classes.content}>
+            <Reveal animation={Animation.FadeIn}>
+                <div className={classes.title}>
+                    Alicia Fernández Rovira
+                </div>
+            </Reveal>
+            <Reveal animation={Animation.FadeIn}>
+                <div className={classes.subtitle}>
+                    Desarrolladora Full-Stack en Málaga
+                </div>
+            </Reveal>
         </div>
-    </Parallax>
+    </CenteredLayout>
 );

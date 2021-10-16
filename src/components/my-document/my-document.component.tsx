@@ -1,6 +1,4 @@
 import * as React from "react";
-import {useEffect} from "react";
-import {Document, Page} from 'react-pdf';
 import {toast, ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import classes from './my-document.component.scss';
@@ -22,9 +20,9 @@ export interface Props {
 }
 
 export const MyDocument = (props: Props) => {
-    useEffect(() => {
+    React.useEffect(() => {
         if (props.showDialog) {
-            notify()
+            notify();
         }
     }, [props.showDialog]);
 
@@ -43,7 +41,7 @@ export const MyDocument = (props: Props) => {
                                 onClick={() => downloadFile()}
                                 position={toast.POSITION.TOP_LEFT}/>
             </div>
-            <div className={classes.documentWrapper}>
+            {/*<div className={classes.documentWrapper}>
                 <Document
                     file={file}
                     error="Algo fue mal al cargar el cv. Envíame un correo al email de contacto y puedo enviartelo personalmente."
@@ -51,7 +49,7 @@ export const MyDocument = (props: Props) => {
                 >
                     <Page className={classes.pageWrapper} renderMode='svg' pageNumber={1}/>
                 </Document>
-            </div>
+            </div>*/}
         </div>
     );
 };

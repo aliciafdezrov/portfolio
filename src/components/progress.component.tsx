@@ -2,7 +2,6 @@ import * as React from "react";
 import {useEffect, useState} from "react";
 import Progress from 'rsuite/Progress';
 import * as chroma from "chroma-js";
-import {BrowserView, MobileView} from "react-device-detect";
 
 const Line = Progress.Line;
 
@@ -19,14 +18,7 @@ export const ProgressComponent = (props: IProgressComponentProps) => {
     }, [props.percent]);
 
     return (
-        <div>
-            <BrowserView>
-                <Line percent={props.percent} strokeColor={color}/>
-            </BrowserView>
-            <MobileView>
-                <Line percent={props.percent} strokeColor={color}/>
-            </MobileView>
-        </div>
+        <Line percent={props.percent} strokeColor={color} showInfo={false}/>
     );
 };
 

@@ -54,12 +54,14 @@ module.exports = merge(common, {
                             javascriptEnabled: true,
                             modifyVars: {
                                 '@enable-css-reset': false,
+                                "@primary-color": "#bc7bd4",
                                 "@body-bg": "#2c2c2c",
                                 "@text-color": "#ffffff",
                                 "@text-primary": "#ffffff",
                                 "@primary-bg-color": "#2c2c2c",
                                 '@base-color': "#bc7bd4",
                                 '@B300': "#bc7bd4",
+                                "@violet": "#bc7bd4",
                             },
                         }
                     },

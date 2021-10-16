@@ -2,9 +2,10 @@ import * as React from "react";
 import {useState} from "react";
 import {AcademicPage, ContactPage, ExperiencePage, HomePage, KnowledgesPage, PDF} from "pods";
 import classes from "./main.scene.scss";
+import IconButton from "rsuite/IconButton";
+import ArrowUpLineIcon from "@rsuite/icons/ArrowUpLine";
+import Divider from "rsuite/Divider";
 import {Animation, Reveal} from "react-genie";
-import {Divider, IconButton} from "rsuite";
-import ArrowUpLineIcon from '@rsuite/icons/ArrowUpLine';
 
 export const MainScene = () => {
     const [showDialog, setShowDialog] = useState(false);
