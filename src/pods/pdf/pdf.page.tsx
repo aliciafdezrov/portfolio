@@ -1,8 +1,10 @@
 import * as React from "react";
 import {BrowserView, MobileView} from "react-device-detect";
 import {MyDocument} from "components";
-import {Icon, Button} from "rsuite";
-import * as classes from "./pdf.scss";
+import IconButton from "rsuite/IconButton";
+import FileDownloadIcon from '@rsuite/icons/FileDownload';
+import classes from "./pdf.scss";
+
 const cv = require('../../../assets/CV.pdf');
 
 export interface Props {
@@ -17,9 +19,9 @@ export const PDF = (props: Props) => {
             </BrowserView>
             <MobileView>
                 <div className={classes.mobileButtonWrapper}>
-                    <Button name="download-cv-pdf-button" color="violet" href={cv} download="aliciafdezrovCV">
-                        <Icon icon="file-download"/> ¡Pulsa para descargar el cv en pdf!
-                    </Button>
+                    <IconButton color="violet" href={cv} icon={<FileDownloadIcon/>}>
+                        ¡Pulsa para descargar el cv en pdf!
+                    </IconButton>
                 </div>
             </MobileView>
         </>

@@ -1,7 +1,7 @@
 import * as React from "react";
 import {TechnologyRow} from "components";
 import {Divider} from "rsuite";
-import * as classes from "./knowledges.scss";
+import classes from "./knowledges.scss";
 import {Animation, Reveal} from "react-genie";
 
 export const KnowledgesPage = () => (

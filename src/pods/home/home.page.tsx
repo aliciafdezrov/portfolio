@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as classes from './home.scss';
+import classes from './home.scss';
 import {Parallax} from 'react-parallax';
 import {Animation, Reveal} from 'react-genie';
 

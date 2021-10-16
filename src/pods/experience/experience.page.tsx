@@ -1,6 +1,6 @@
 import * as React from "react";
 import {BrowserView, MobileView} from 'react-device-detect';
-import * as classes from './experience.scss';
+import classes from './experience.scss';
 import {Divider, Timeline} from "rsuite";
 
 export const ExperiencePage = () => (

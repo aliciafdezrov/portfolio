@@ -1,9 +1,10 @@
 import * as React from "react";
-import {AcademicPage, ContactPage, ExperiencePage, HomePage, KnowledgesPage, PDF} from "pods";
-import * as classes from "./main.scene.scss";
-import {Animation, Reveal} from "react-genie";
-import {Divider, Icon, IconButton} from "rsuite";
 import {useState} from "react";
+import {AcademicPage, ContactPage, ExperiencePage, HomePage, KnowledgesPage, PDF} from "pods";
+import classes from "./main.scene.scss";
+import {Animation, Reveal} from "react-genie";
+import {Divider, IconButton} from "rsuite";
+import ArrowUpLineIcon from '@rsuite/icons/ArrowUpLine';
 
 export const MainScene = () => {
     const [showDialog, setShowDialog] = useState(false);
@@ -29,9 +30,8 @@ export const MainScene = () => {
 
                 <Divider>
                     <IconButton
-                        name="scroll-to-top"
                         aria-label="scroll-to-top"
-                        icon={<Icon icon="chevron-up"/>}
+                        icon={<ArrowUpLineIcon/>}
                         color={"violet"}
                         onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}/>
                 </Divider>

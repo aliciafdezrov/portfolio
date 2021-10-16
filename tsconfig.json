@@ -5,25 +5,29 @@
     "moduleResolution": "node",
     "declaration": false,
     "noImplicitAny": false,
-    "jsx": "react",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
+    "jsx": "react",
     "noLib": false,
-    "strictNullChecks": false,
-    "strictPropertyInitialization": false,
     "suppressImplicitAnyIndexErrors": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "baseUrl": "./src/",
     "paths": {
-      "components": ["components"],
-      "scenes": ["scenes"],
-      "core": ["core"],
-      "pods": ["pods"],
-      "common": ["common"],
-      "styles": ["scss"]
+      "components": [
+        "components"
+      ],
+      "scenes": [
+        "scenes"
+      ],
+      "pods": [
+        "pods"
+      ]
     }
   },
-  "compileOnSave": false,
+  "include": [
+    "src/**/*"
+  ],
   "exclude": [
     "node_modules"
   ]

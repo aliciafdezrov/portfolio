@@ -1,7 +1,7 @@
 import 'rc-progress/assets/index.css';
 import * as React from "react";
 import {ProgressComponent} from "../progress.component";
-import * as classes from './technology-row.scss';
+import classes from './technology-row.scss';
 
 export interface ITechnologyRowProps {
     percent: number;

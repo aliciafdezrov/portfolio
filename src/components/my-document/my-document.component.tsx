@@ -1,9 +1,9 @@
 import * as React from "react";
+import {useEffect} from "react";
 import {Document, Page} from 'react-pdf';
 import {toast, ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import * as classes from './my-document.component.scss';
-import {useEffect} from "react";
+import classes from './my-document.component.scss';
 
 const file = require("../../../assets/CV.pdf");
 
