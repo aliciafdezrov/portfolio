@@ -10,6 +10,7 @@ export interface Props {
 
 export const TimeLineItem = (props: Props) => {
     const {title, subtitle, description, isMobile} = props;
+
     return (
         <Timeline.Item>
             <h5 style={{color: 'white'}}>{title}</h5>

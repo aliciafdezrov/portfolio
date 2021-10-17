@@ -1,8 +1,9 @@
 import * as React from "react";
 import classes from "./timeline.component.scss";
-import {Divider, Timeline} from "rsuite";
+import {Divider} from "rsuite";
 import {Reveal} from "react-genie";
 import {TimeSectionItem} from "./time-section.vm";
+import Timeline from "rsuite/Timeline";
 import {TimeLineItem} from "./timeline-item.component";
 
 export interface Props {
@@ -24,7 +25,8 @@ export const TimeLine = (props: Props) => {
                     <Timeline>
                         {
                             items.map((item: TimeSectionItem) => (
-                                <TimeLineItem key={item.title} title={item.title} subtitle={item.subtitle}
+                                <TimeLineItem key={item.title} title={item.title}
+                                              subtitle={item.subtitle}
                                               description={item.description} isMobile={isMobile}/>
                             ))
                         }

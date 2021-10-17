@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr;
   grid-template-rows: auto;
-  row-gap: 100px;
+  row-gap: 10px;
   grid-template-areas:
     "title title title title"
     ". main main ."
