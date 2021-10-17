@@ -1,13 +1,14 @@
 {
     "academic": {
         "degrees": [{
-            "name": "Máster Frontend UX (Lemoncode)",
+            "name": "Máster Frontend UX",
             "location": "Lemoncode",
             "date": "Septiembre 2021 - Actualidad"
         }, {
-            "name": "Grado Ingeniería de la Salud (Universidad de Málaga)",
+            "name": "Grado Ingeniería de la Salud",
             "location": "Universidad de Málaga",
-            "date": "Septiembre 2013 - Septiembre 2017"
+            "date": "Septiembre 2013 - Septiembre 2017",
+            "description": "Mención en Bioinformática"
         }],
         "languages": [
             {
@@ -52,22 +53,22 @@
                 "role": "Desarrolladora Front-end",
                 "date": "Feb 2020 - Actualidad",
                 "company": "Itrs Group",
-                "description": "Desarrollo front-end de herramientas de monitorización usando React, (con Redux en casos puntuales y necesarios) y javascript."
+                "description": "Frontend: React aplicado con patrón Redux usando Javascript y jest, enzyme y react-testing-library para las pruebas unitarias."
             }, {
                 "role": "Desarrolladora Full-Stack",
                 "date": "Abr 2018 - Nov 2019",
                 "company": "GSL Servicios de Prevención",
-                "description": "Desarrollo de una aplicación web de gestión clínica. Desarrollo del sistema al completo incluyendo gestión de servidores usando Docker Swarm y de las bases de datos con el motor MySQL. Un backend y frontend diferenciados, usando en ambos casos JavaScript y Rest. El frontend se desarrolló usando React, Redux y Webpack. El backend usando nodeJS con un servidor express y webpack."
+                "description": "Frontend: React aplicado con patrón Redux generalmente usando Typescript, webpack y jest para las pruebas unitarias. Servidor de aplicaciones: Express o Nginx. Backend: NodeJS usando typescript, webpack y mocha para las prue- bas unitarias. API’s con REST."
             }, {
                 "role": "Desarrolladora Full-Stack",
                 "date": "Ene 2017 - Abr 2018",
                 "company": "Grupo AL",
-                "description": "Creación de proyectos cuyo objetivo era la refactorización de servicios ya existentes del Portal de Administrinación Electrónica pudiendo migrar su uso a un entorno tecnológico más actualizado y accesible. Se migraron servicios SOAP a servicios REST haciendo uso de J2EE, autenticación con JWT, base de datos MySQL y gestión de certificados electrónicos en servidores de aplicaciones Wildfly. Además se realizaron tareas de DevOps, actualizando una plataforma de integración con Jenkins y creando un cliente web para un servicio REST destinado a posibilitar a cualquier desarrollador su uso sin conocimientos del funcionamiento interno de la misma."
+                "description": "Frontend: React aplicado con patrón Redux generalmente usando Typescript, webpack. Backend: J2EE aplicado con diversos patrones de diseño. Maven como compilador y gestor de dependencias. Servidor de aplica- ciones: Wildfly. Pruebas unitarias con JUnit + Mockito."
             }, {
                 "role": "Desarrolladora Full-Stack",
                 "date": "Sept 2016 - Ene 2018",
                 "company": "Universidad de Málaga",
-                "description": ""
+                "description": "Frontend: React aplicado con patrón Redux usando Typescript, webpack. \n Backend: J2EE aplicado con diversos patrones de diseño (Single- ton, IoC, DAO, DTO). Maven como compilador y gestor de dependen- cias. Servidor de aplicaciones: Wildfly. Pruebas unitarias con JUnit + Mockito."
             }
         ]
     }
