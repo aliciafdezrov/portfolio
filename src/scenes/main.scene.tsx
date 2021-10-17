@@ -1,10 +1,7 @@
 import * as React from "react";
 import {useState} from "react";
-import {AcademicPage, ContactPage, ExperiencePage, HomePage, SkillsPage} from "pods";
+import {AcademicContainer, ContactPage, ExperienceContainer, HomePage, SkillsPage} from "pods";
 import classes from "./main.scene.scss";
-import IconButton from "rsuite/IconButton";
-import ArrowUpLineIcon from "@rsuite/icons/ArrowUpLine";
-import Divider from "rsuite/Divider";
 import {Animation, Reveal} from "react-genie";
 import {Toast} from "components/toastify/toast.component";
 import {DownloadButton} from "components/download-button";
@@ -30,24 +27,14 @@ export const MainScene = () => {
     return (
         <div className={classes.wrapper}>
             <HomePage/>
-            <AcademicPage/>
-            <Reveal animation={Animation.SlideInRight}>
-                <ExperiencePage/>
-            </Reveal>
-
+            <AcademicContainer/>
+            <ExperienceContainer/>
+            
             <Reveal animation={Animation.FadeInUp}>
                 <SkillsPage/>
             </Reveal>
 
             <ContactPage/>
-
-            <Divider>
-                <IconButton
-                    aria-label="scroll-to-top"
-                    icon={<ArrowUpLineIcon/>}
-                    color={"violet"}
-                    onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}/>
-            </Divider>
 
             <Toast showDialog={showDialog} message={message} containerId={containerId} onClick={downloadFile}/>
             <DownloadButton onClick={downloadFile} placeholder="¡Pulsa para descargar el cv en pdf!"/>

@@ -1,1 +1,1 @@
-export * from './academic.page';
+export * from './academic.container';
