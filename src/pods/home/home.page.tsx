@@ -3,7 +3,7 @@ import classes from './home.scss';
 import {Animation, Reveal} from 'react-genie';
 import {CenteredLayout} from "layout/centered.layout";
 
-const bgImgSource = "../../../assets/ash-edmonds-510566-unsplash-min.webp";
+const bgImgSource = require("../../../assets/ash-edmonds-510566-unsplash-min.webp");
 
 export const HomePage = () => (
     <CenteredLayout>

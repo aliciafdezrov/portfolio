@@ -1,6 +1,6 @@
 import {AcademicApiInfo} from "./academic.api-model";
 
-const filePath = "../../../../assets/info.json"
+const filePath = require("../../../../assets/info.json");
 
 export const getAcademicInfo = async (): Promise<AcademicApiInfo> => {
     try {

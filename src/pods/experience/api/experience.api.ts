@@ -1,6 +1,6 @@
 import {ExperienceApiInfo} from "./experience.api-model";
 
-const filePath = "../../../../assets/info.json"
+const filePath = require("../../../../assets/info.json");
 
 export const getExperienceInfo = async (): Promise<ExperienceApiInfo> => {
     try {
