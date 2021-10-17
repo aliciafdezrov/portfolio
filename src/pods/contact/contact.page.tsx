@@ -116,25 +116,34 @@ export const ContactPage = () => {
                         <div className={classes.contactTextDiv}>
                             <h4>Un poco más sobre mi</h4>
                             <Divider/>
-                            <p>Llevo desde 2016 formándome como desarrolladora. A lo largo de estos años he aprendido un
-                                poco más sobre que busco profesionalmente y estos son mis mandamientos:</p>
-                            <ul>
-                                <li>Es enriquecedor trabajar con más gente, sobretodo cuando hay pautas y reglas que
-                                    facilitan ese trabajo en equipo.
-                                </li>
-                                <li>Conocer la importancia de tener buenas pautas de programación pero también ser
-                                    consciente de que no siempre se puede ser completamente estricto.
-                                </li>
-                                <li>Las reuniones diarias pueden acortar un atasco de 2 dias con una tarea a un par
-                                    de horas con sólo 10 minutos de conversación.
-                                </li>
-                                <li>Las PR son necesarias, no sólo como revisión, sino para conocer código ajeno al
-                                    tuyo.
-                                </li>
-                                <li>Tengo muchas más cosas que decir, por eso dejo mis datos de contacto por
-                                    aquí...
-                                </li>
-                            </ul>
+                            <h6>
+                                Llevo trabajando como desarrolladora desde 2018, aunque siempre he trabajado como
+                                FullStack
+                                actualmente mi posición es como desarrolladora Frontend. Sin embargo, al tener
+                                experience
+                                como desarrolladora FullStack,
+                                entiendo como funciona un backend y no me importa trabajar ocasionalmente como
+                                desarrolladora backend
+                                aunque el frontend es mi pasión.
+                                <br/>
+                                <br/>
+                                Me gustaría un rol que me permitiese crecer como desarrolladora sin estar atada a
+                                ninguna
+                                tecnología ya que creo que es la mejor forma
+                                para formarme continuamente profesionalmente. Conozco la importancia de tener buenas
+                                pautas
+                                de programación pero también
+                                soy consciente de que no siempre se puede ser completamente estricto respecto a la forma
+                                de
+                                proceder.
+                                <br/>
+                                <br/>
+                                Estoy acostumbrada y prefiero trabajar formando equipo ya que siempre ha sido
+                                beneficioso
+                                para compartir conocimientos con mis compañeros. Tengo muchas más cosas que compartir,
+                                por
+                                eso dejo mis datos de contacto por aquí...
+                            </h6>
                         </div>
 
                         <div>
