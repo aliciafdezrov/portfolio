@@ -1,0 +1,75 @@
+{
+    "academic": {
+        "degrees": [{
+            "name": "Máster Frontend UX",
+            "location": "Lemoncode",
+            "date": "Septiembre 2021 - Actualidad"
+        }, {
+            "name": "Grado Ingeniería de la Salud",
+            "location": "Universidad de Málaga",
+            "date": "Septiembre 2013 - Septiembre 2017",
+            "description": "Mención en Bioinformática"
+        }],
+        "languages": [
+            {
+                "name": "Español",
+                "description": "Lengua materna"
+            }, {
+                "name":"B2 First - Score 177",
+                "description": "Cambridge Assessment English",
+                "date": "Jul 2021"
+            }
+
+        ],
+        "projects": [
+            {
+               "name": "Seminario en optimización para la reconstrucción de redes génicas",
+               "fecha": "2015",
+               "location": "Universidad de Málaga",
+                "description": "Asistencia a un seminario proporcionado por la Universidad de Málaga Seminario realizado con una duración de tres meses relacionado con la optimización en la reconstrucción de redes génicas haciendo uso de metaheurística"
+                    
+            }, {
+                "name": "Desarrollo de una aplicación Android",
+                "fecha": "2016",
+                "location": "Universidad de Málaga",
+                "description": "Aplicación Android para pacientes con EPOC 2016(4 meses) Se participó en el desarrollo de una aplicación Android destinada a mejorar la adhesión al tratamiento en paciente con Enfermedad Pulmonar Obstructiva Crónica (EPOC). Posteriormente se presentó dicha aplicación en el Reto Salud Andalucía."
+            },
+            {
+                "name": "Proyecto Innovación educativa en Biología y Ciencias Ómicas",
+                "fecha": "2016",
+                "location": "Universidad de Málaga",
+                "description": "Estudio sobre problemas de inferencia filogenética realizado para la Universidad de Málaga 2016"
+            }, {
+                "name": "Aplicación para la generación de mapas de calor",
+                "fecha": "2017-2018",
+                "location": "Universidad de Málaga",
+                "description": "Desarrollo de una aplicación iniciado a partir de un Proyecto de Investigación. A partir de la Beca realizada surgió el diseño, desarrollo y mantenimiento de una aplicación destinada a la generación de mapas de calor a partir de datos de expresión génica para cualquier tipo de análisis clínico posterior a realizar."
+            }
+        ]
+    },
+    "experience": {
+        "jobs": [
+            {
+                "role": "Desarrolladora Front-end",
+                "date": "Feb 2020 - Actualidad",
+                "company": "Itrs Group",
+                "description": "Frontend: React aplicado con patrón Redux usando Javascript y jest, enzyme y react-testing-library para las pruebas unitarias."
+            }, {
+                "role": "Desarrolladora Full-Stack",
+                "date": "Abr 2018 - Nov 2019",
+                "company": "GSL Servicios de Prevención",
+                "description": "Frontend: React aplicado con patrón Redux generalmente usando Typescript, webpack y jest para las pruebas unitarias. Servidor de aplicaciones: Express o Nginx. Backend: NodeJS usando typescript, webpack y mocha para las prue- bas unitarias. API’s con REST."
+            }, {
+                "role": "Desarrolladora Full-Stack",
+                "date": "Ene 2017 - Abr 2018",
+                "company": "Grupo AL",
+                "description": "Frontend: React aplicado con patrón Redux generalmente usando Typescript, webpack. Backend: J2EE aplicado con diversos patrones de diseño. Maven como compilador y gestor de dependencias. Servidor de aplica- ciones: Wildfly. Pruebas unitarias con JUnit + Mockito."
+            }, {
+                "role": "Desarrolladora Full-Stack",
+                "date": "Sept 2016 - Ene 2018",
+                "company": "Universidad de Málaga",
+                "description": "Frontend: React aplicado con patrón Redux usando Typescript, webpack. \n Backend: J2EE aplicado con diversos patrones de diseño (Single- ton, IoC, DAO, DTO). Maven como compilador y gestor de dependen- cias. Servidor de aplicaciones: Wildfly. Pruebas unitarias con JUnit + Mockito."
+            }
+        ]
+    }
+}
