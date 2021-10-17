@@ -11,32 +11,30 @@ export const MainScene = () => {
     const [showDialog, setShowDialog] = useState(false);
 
     return (
-        <>
-            <div className={classes.wrapper}>
-                <HomePage/>
-                <AcademicPage/>
-                <Reveal animation={Animation.SlideInRight}>
-                    <ExperiencePage/>
-                </Reveal>
+        <div className={classes.wrapper}>
+            <HomePage/>
+            <AcademicPage/>
+            <Reveal animation={Animation.SlideInRight}>
+                <ExperiencePage/>
+            </Reveal>
 
-                <Reveal animation={Animation.FadeInUp}>
-                    <KnowledgesPage/>
-                </Reveal>
+            <Reveal animation={Animation.FadeInUp}>
+                <KnowledgesPage/>
+            </Reveal>
 
-                <ContactPage/>
+            <ContactPage/>
 
-                <Reveal animation={Animation.FadeIn} onShowDone={() => setShowDialog(true)}>
-                    <PDF showDialog={showDialog}/>
-                </Reveal>
+            <Reveal animation={Animation.FadeIn} onShowDone={() => setShowDialog(true)}>
+                <PDF showDialog={showDialog}/>
+            </Reveal>
 
-                <Divider>
-                    <IconButton
-                        aria-label="scroll-to-top"
-                        icon={<ArrowUpLineIcon/>}
-                        color={"violet"}
-                        onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}/>
-                </Divider>
-            </div>
-        </>
+            <Divider>
+                <IconButton
+                    aria-label="scroll-to-top"
+                    icon={<ArrowUpLineIcon/>}
+                    color={"violet"}
+                    onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}/>
+            </Divider>
+        </div>
     );
 }

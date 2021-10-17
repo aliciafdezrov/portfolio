@@ -11,6 +11,7 @@ module.exports = {
             pods: helpers.resolveFromRootPath('src/pods'),
             scenes: helpers.resolveFromRootPath('src/scenes'),
             components: helpers.resolveFromRootPath('src/components'),
+            layout: helpers.resolveFromRootPath('/src/layout'),
         },
     },
     entry: {

@@ -1,14 +1,14 @@
 const {merge} = require("webpack-merge");
 const common = require("./base.js");
 const helpers = require('./helpers');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = merge(common, {
     mode: "development",
     devtool: "eval-source-map",
     devServer: {
-        port: 8080,
+        port: 3002,
         stats: "errors-only",
-        historyApiFallback: true,
     },
     output: {
         filename: "[name].js",
