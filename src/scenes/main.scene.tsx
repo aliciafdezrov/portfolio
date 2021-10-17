@@ -1,6 +1,6 @@
 import * as React from "react";
 import {useState} from "react";
-import {AcademicPage, ContactPage, ExperiencePage, HomePage, KnowledgesPage, PDF} from "pods";
+import {AcademicPage, ContactPage, ExperiencePage, HomePage, PDF, SkillsPage} from "pods";
 import classes from "./main.scene.scss";
 import IconButton from "rsuite/IconButton";
 import ArrowUpLineIcon from "@rsuite/icons/ArrowUpLine";
@@ -19,7 +19,7 @@ export const MainScene = () => {
             </Reveal>
 
             <Reveal animation={Animation.FadeInUp}>
-                <KnowledgesPage/>
+                <SkillsPage/>
             </Reveal>
 
             <ContactPage/>

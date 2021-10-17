@@ -1,10 +1,10 @@
 import * as React from "react";
 import {TechnologyRow} from "components";
 import {Divider} from "rsuite";
-import classes from "./knowledges.scss";
+import classes from "./skills.scss";
 import {Animation, Reveal} from "react-genie";
 
-export const KnowledgesPage = () => (
+export const SkillsPage = () => (
     <div className={classes.container}>
         <div className={classes.card}>
             <h4>Tecnologías y herramientas</h4>
