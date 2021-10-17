@@ -10,9 +10,9 @@
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch",
     "start:dev": "webpack serve --config ./config/webpack/dev.js",
-    "start:prod": "webpack serve --config ./config/webpack/pro.js",
+    "start:prod": "webpack serve --config ./config/webpack/prod.js",
     "build:dev": "rimraf dist && npm run type-check && webpack --config ./config/webpack/dev.js",
-    "build:prod": "rimraf dist && npm run type-check && webpack --config ./config/webpack/pro.js",
+    "build:prod": "rimraf dist && npm run type-check && webpack --config ./config/webpack/prod.js",
     "build:perf": "rimraf dist && npm run type-check && webpack --config ./config/webpack/perf.js",
     "predeploy": "npm run build:prod",
     "deploy": "gh-pages -d dist"
