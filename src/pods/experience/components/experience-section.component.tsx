@@ -5,6 +5,8 @@ import {Animation} from "react-genie";
 import {TimeLine} from "components/time-section/timeline.component";
 import {ExperienceInfo} from "../experience.vm";
 
+const JOBS_TITLE = 'Experiencia profesional';
+
 export interface Props {
     experienceInfo: ExperienceInfo;
 }
@@ -16,7 +18,7 @@ export const ExperienceSection = (props: Props) => {
             <BrowserView>
                 <div className={classes.container}>
                     <div className={classes.card}>
-                        <TimeLine title={'Experiencia profesional'} items={experienceInfo.jobs} animationDelay={100}
+                        <TimeLine title={JOBS_TITLE} items={experienceInfo.jobs} animationDelay={100}
                                   animationTransition={Animation.SlideInRight} isMobile={false}/>
                     </div>
                 </div>
@@ -24,7 +26,7 @@ export const ExperienceSection = (props: Props) => {
             <MobileView>
                 <div className={classes.container}>
                     <div className={classes.card}>
-                        <TimeLine title={'Estudios'} items={experienceInfo.jobs} animationDelay={100}
+                        <TimeLine title={JOBS_TITLE} items={experienceInfo.jobs} animationDelay={100}
                                   animationTransition={Animation.SlideInRight} isMobile={true}/>
                     </div>
                 </div>

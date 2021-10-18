@@ -5,6 +5,10 @@ import {Animation} from "react-genie";
 import {AcademicInfo} from "../../academic.vm";
 import {TimeLine} from "components/time-section/timeline.component";
 
+const DEGREES_TITLE = "Estudios";
+const PROJECTS_TITLE = "Proyectos Académicos";
+const LANGUAGES_TITLE = "Idiomas";
+
 export interface Props {
     academicInfo: AcademicInfo;
 }
@@ -16,11 +20,11 @@ export const AcademicSection = (props: Props) => {
             <BrowserView>
                 <div className={classes.container}>
                     <div className={classes.card}>
-                        <TimeLine title={'Estudios'} items={academicInfo.degrees} animationDelay={100}
+                        <TimeLine title={DEGREES_TITLE} items={academicInfo.degrees} animationDelay={100}
                                   animationTransition={Animation.SlideInRight} isMobile={false}/>
-                        <TimeLine title={'Proyectos Académicos'} items={academicInfo.projects} animationDelay={200}
+                        <TimeLine title={PROJECTS_TITLE} items={academicInfo.projects} animationDelay={200}
                                   animationTransition={Animation.SlideInRight} isMobile={false}/>
-                        <TimeLine title={'Idiomas'} items={academicInfo.languages} animationDelay={200}
+                        <TimeLine title={LANGUAGES_TITLE} items={academicInfo.languages} animationDelay={200}
                                   animationTransition={Animation.SlideInRight} isMobile={false}/>
                     </div>
                 </div>
@@ -28,11 +32,11 @@ export const AcademicSection = (props: Props) => {
             <MobileView>
                 <div className={classes.container}>
                     <div className={classes.card}>
-                        <TimeLine title={'Estudios'} items={academicInfo.degrees} animationDelay={100}
+                        <TimeLine title={DEGREES_TITLE} items={academicInfo.degrees} animationDelay={100}
                                   animationTransition={Animation.SlideInRight} isMobile={true}/>
-                        <TimeLine title={'Proyectos Académicos'} items={academicInfo.projects} animationDelay={200}
+                        <TimeLine title={PROJECTS_TITLE} items={academicInfo.projects} animationDelay={200}
                                   animationTransition={Animation.SlideInRight} isMobile={true}/>
-                        <TimeLine title={'Idiomas'} items={academicInfo.languages} animationDelay={200}
+                        <TimeLine title={LANGUAGES_TITLE} items={academicInfo.languages} animationDelay={200}
                                   animationTransition={Animation.SlideInRight} isMobile={true}/>
                     </div>
                 </div>
