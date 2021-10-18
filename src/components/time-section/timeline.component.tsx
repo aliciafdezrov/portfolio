@@ -17,22 +17,24 @@ export interface Props {
 export const TimeLine = (props: Props) => {
     const {title, items, animationDelay, animationTransition, isMobile} = props;
     return (
-        <Reveal delay={animationDelay} animation={animationTransition}>
-            <div>
-                <h4>{title}</h4>
-                <Divider/>
-                <div className={classes.stepsStyle}>
-                    <Timeline>
-                        {
-                            items.map((item: TimeSectionItem) => (
-                                <TimeLineItem key={item.title} title={item.title}
-                                              subtitle={item.subtitle}
-                                              description={item.description} isMobile={isMobile}/>
-                            ))
-                        }
-                    </Timeline>
+        <div className={classes.timelineContainer}>
+            <Reveal delay={animationDelay} animation={animationTransition}>
+                <div>
+                    <h4>{title}</h4>
+                    <Divider/>
+                    <div className={classes.stepsStyle}>
+                        <Timeline>
+                            {
+                                items.map((item: TimeSectionItem) => (
+                                    <TimeLineItem key={item.title} title={item.title}
+                                                  subtitle={item.subtitle}
+                                                  description={item.description} isMobile={isMobile}/>
+                                ))
+                            }
+                        </Timeline>
+                    </div>
                 </div>
-            </div>
-        </Reveal>
+            </Reveal>
+        </div>
     )
 };
