@@ -3,7 +3,7 @@ import {BrowserView, MobileView} from "react-device-detect";
 import classes from "./experience-section.component.scss";
 import {Animation} from "react-genie";
 import {TimeLine} from "components/time-section/timeline.component";
-import {ExperienceInfo} from "../experience.vm";
+import {ExperienceInfo} from "../../experience.vm";
 
 const JOBS_TITLE = 'Experiencia profesional';
 

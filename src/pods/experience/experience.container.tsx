@@ -1,5 +1,5 @@
 import * as React from "react";
-import {ExperienceSection} from "./components/experience-section.component";
+import {ExperienceSection} from "./components/experience-section/experience-section.component";
 import {createInitialExperienceInfo} from "./experience.vm";
 import {useLoad} from "./experience.hooks";
 
