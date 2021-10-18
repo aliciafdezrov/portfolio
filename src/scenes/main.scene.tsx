@@ -27,9 +27,9 @@ export const MainScene = () => {
     return (
         <div className={classes.wrapper}>
             <HomePage/>
-            <AcademicContainer/>
             <ExperienceContainer/>
-            
+            <AcademicContainer/>
+
             <Reveal animation={Animation.FadeInUp}>
                 <SkillsPage/>
             </Reveal>
