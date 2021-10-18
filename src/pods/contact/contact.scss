@@ -46,20 +46,8 @@
 
 @media (min-width: 768px) {
   .container {
-    h4 {
-      font-size: 1.2vw;
-    }
-
-    h5 {
-      font-size: 1vw;
-    }
-
-    p {
-      font-size: 0.8vw;
-    }
-
     a {
-      font-size: 0.8vw;
+      font-size: 0.8rem;
     }
   }
 }
@@ -88,12 +76,6 @@
   align-items: flex-start;
   overflow: hidden;
   width: auto !important;
-}
-
-@media (max-width: 479px) {
-  .dataItem {
-    padding-top: 2.5vh;
-  }
 }
 
 @media(max-width: 1024px) and (min-width: 768px) {
@@ -132,7 +114,6 @@
     }
   }
 }
-
 
 @media(max-width: 1024px) and (min-width: 768px) {
   .avatar {

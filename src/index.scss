@@ -1,6 +1,6 @@
 html,
 body {
-  //scroll-behavior: smooth;
+  scroll-behavior: smooth;
   margin: 0;
   height: 100%;
   width: 100%;
@@ -15,18 +15,18 @@ body {
 
 @media (min-width: 768px) {
   h4 {
-    font-size: 1.2vw;
+    font-size: 1.5rem;
   }
 
-  /*h5 {
-    font-size: 1vw;
-  }*/
+  h5 {
+    font-size: 1.2rem;
+  }
 
   h6 {
-    font-size: 0.9vw
+    font-size: 1rem;
   }
 
   p {
-    font-size: 0.8vw;
+    font-size: 0.8rem;
   }
 }

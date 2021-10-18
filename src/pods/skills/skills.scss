@@ -9,22 +9,6 @@
   }
 }
 
-@media (min-width: 768px) {
-  .container {
-    h4 {
-      font-size: 1.2vw;
-    }
-
-    h5 {
-      font-size: 1vw;
-    }
-
-    p {
-      font-size: 0.8vw;
-    }
-  }
-}
-
 .card {
   text-align: center;
   padding: 5vh;
@@ -36,11 +20,10 @@
     padding: 0vh;
   }
 
-  h4{
+  h4 {
     padding-top: 5vh;
   }
 }
-
 
 .blocks-container {
   display: flex;
