@@ -1,8 +1,8 @@
 import * as React from "react";
 import {BrowserView, MobileView} from "react-device-detect";
-import classes from "./experience-section.component.scss";
 import {Animation} from "react-genie";
 import {TimeLine} from "components/time-section/timeline.component";
+import classes from "./experience-section.component.scss";
 import {ExperienceInfo} from "../../experience.vm";
 
 const JOBS_TITLE = 'Experiencia profesional';

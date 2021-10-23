@@ -1,17 +1,16 @@
 import * as React from "react";
-import {useState} from "react";
-import {AcademicContainer, ContactPage, ExperienceContainer, HomePage, SkillsPage} from "pods";
-import classes from "./main.scene.scss";
 import {Animation, Reveal} from "react-genie";
+import {AcademicContainer, ContactPage, ExperienceContainer, HomePage, SkillsPage} from "pods";
 import {Toast} from "components/toastify/toast.component";
 import {DownloadButton} from "components/download-button";
+import classes from "./main.scene.scss";
 
 const cv = require('../../assets/CV.pdf');
 export const containerId = 'Download';
 export const message = '⚠️ ¿Te gustaría descargarlo? ';
 
 export const MainScene = () => {
-    const [showDialog, setShowDialog] = useState(false);
+    const [showDialog, setShowDialog] = React.useState(false);
 
     React.useEffect(() => {
         setShowDialog(true);

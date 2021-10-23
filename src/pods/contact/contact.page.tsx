@@ -1,10 +1,13 @@
 import * as React from "react";
 import {BrowserView, MobileView} from 'react-device-detect';
-import classes from "./contact.scss";
-import {Divider, FlexboxGrid} from "rsuite";
+import Divider from "rsuite/Divider";
+import "rsuite/Divider/styles/index.less";
+import FlexboxGrid from "rsuite/FlexboxGrid";
+import "rsuite/FlexboxGrid/styles/index.less";
 import EmailIcon from '@rsuite/icons/Email';
 import * as GithubSquare from '@fortawesome/free-brands-svg-icons/faGithubSquare';
 import * as LinkedinSquare from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
+import classes from "./contact.scss";
 
 const photo = require("../../../assets/avatars/photo2.webp");
 

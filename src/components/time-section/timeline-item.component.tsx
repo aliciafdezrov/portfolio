@@ -1,5 +1,6 @@
 import * as React from "react";
-import {Timeline} from "rsuite";
+import Timeline from "rsuite/Timeline";
+import "rsuite/Timeline/styles/index.less";
 
 export interface Props {
     title: string;

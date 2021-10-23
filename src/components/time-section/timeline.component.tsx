@@ -1,9 +1,11 @@
 import * as React from "react";
-import classes from "./timeline.component.scss";
-import {Divider} from "rsuite";
-import {Reveal} from "react-genie";
-import {TimeSectionItem} from "./time-section.vm";
+import Divider from "rsuite/Divider";
+import "rsuite/Divider/styles/index.less"
 import Timeline from "rsuite/Timeline";
+import "rsuite/Timeline/styles/index.less";
+import {Reveal} from "react-genie";
+import classes from "./timeline.component.scss";
+import {TimeSectionItem} from "./time-section.vm";
 import {TimeLineItem} from "./timeline-item.component";
 
 export interface Props {
