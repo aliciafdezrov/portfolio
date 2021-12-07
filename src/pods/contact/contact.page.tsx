@@ -119,34 +119,17 @@ export const ContactPage = () => {
                         <div className={classes.contactTextDiv}>
                             <h4>Un poco más sobre mi</h4>
                             <Divider/>
-                            <h6>
-                                Llevo trabajando como desarrolladora desde 2018, aunque siempre he trabajado como
+                            <h5>
+                                Llevo trabajando como desarrolladora desde 2017, aunque siempre he trabajado como
                                 FullStack
-                                actualmente mi posición es como desarrolladora Frontend. Sin embargo, al tener
-                                experience
-                                como desarrolladora FullStack,
-                                entiendo como funciona un backend y no me importa trabajar ocasionalmente como
-                                desarrolladora backend
-                                aunque el frontend es mi pasión.
-                                <br/>
-                                <br/>
-                                Me gustaría un rol que me permitiese crecer como desarrolladora sin estar atada a
-                                ninguna
-                                tecnología ya que creo que es la mejor forma
-                                para formarme continuamente profesionalmente. Conozco la importancia de tener buenas
-                                pautas
-                                de programación pero también
-                                soy consciente de que no siempre se puede ser completamente estricto respecto a la forma
-                                de
-                                proceder.
-                                <br/>
+                                actualmente mi posición es como desarrolladora Frontend.
                                 <br/>
                                 Estoy acostumbrada y prefiero trabajar formando equipo ya que siempre ha sido
                                 beneficioso
                                 para compartir conocimientos con mis compañeros. Tengo muchas más cosas que compartir,
                                 por
                                 eso dejo mis datos de contacto por aquí...
-                            </h6>
+                            </h5>
                         </div>
 
                         <div>
@@ -154,7 +137,7 @@ export const ContactPage = () => {
 
                             <Divider/>
                             <div>
-                                <FlexboxGrid>
+                                <FlexboxGrid align="middle">
                                     <FlexboxGrid.Item colspan={3} className={classes.styleCenter}>
                                         <EmailIcon className={classes.listIcon}/>
                                     </FlexboxGrid.Item>
@@ -169,7 +152,7 @@ export const ContactPage = () => {
                                     </FlexboxGrid.Item>
                                 </FlexboxGrid>
 
-                                <FlexboxGrid>
+                                <FlexboxGrid align="middle">
                                     <FlexboxGrid.Item colspan={3} className={classes.styleCenter}>
                                         <FaSvgIcon faIcon={GithubSquare} className={classes.listIcon}/>
                                     </FlexboxGrid.Item>
@@ -184,11 +167,12 @@ export const ContactPage = () => {
                                     </FlexboxGrid.Item>
                                 </FlexboxGrid>
 
-                                <FlexboxGrid>
+                                <FlexboxGrid align="middle">
                                     <FlexboxGrid.Item colspan={3} className={classes.styleCenter}>
                                         <FaSvgIcon faIcon={LinkedinSquare} className={classes.listIcon}/>
                                     </FlexboxGrid.Item>
-                                    <FlexboxGrid.Item colspan={6} className={classes.styleCenter && classes.dataItem}>
+                                    <FlexboxGrid.Item colspan={6}
+                                                      className={classes.styleCenter && classes.dataItem}>
                                         <div className={classes.titleStyle}>
                                             <a href="https://www.linkedin.com/in/alicia-fernández-rovira-70885811a"
                                                rel="noopener noreferrer"
