@@ -31,7 +31,7 @@ export const ContactPage = () => {
                     </div>
                     <div className={classes.main}>
                         <h6>
-                            Llevo trabajando como desarrolladora desde 2018, aunque siempre he trabajado como FullStack
+                            Llevo trabajando como desarrolladora desde 2017, aunque siempre he trabajado como FullStack
                             actualmente mi posición es como desarrolladora Frontend. Sin embargo, al tener experience
                             como desarrolladora FullStack,
                             entiendo como funciona un backend y no me importa trabajar ocasionalmente como
