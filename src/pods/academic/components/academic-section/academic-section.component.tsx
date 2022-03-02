@@ -1,9 +1,9 @@
 import * as React from "react";
 import {BrowserView, MobileView} from "react-device-detect";
 import {Animation} from "react-genie";
-import {TimeLine} from "components/time-section/timeline.component";
 import classes from "./academic-section.component.scss";
 import {AcademicInfo} from "../../academic.vm";
+import {TimeLine} from "components";
 
 const DEGREES_TITLE = "Estudios";
 const PROJECTS_TITLE = "Proyectos Académicos";

@@ -4,7 +4,7 @@ import 'rsuite/Button/styles/index.less';
 import FileDownloadIcon from '@rsuite/icons/FileDownload';
 import classes from "./download-button.component.scss";
 
-export interface Props {
+interface Props {
     placeholder?: string;
     onClick: () => void;
 }

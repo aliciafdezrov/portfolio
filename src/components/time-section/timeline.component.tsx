@@ -8,7 +8,7 @@ import classes from "./timeline.component.scss";
 import {TimeSectionItem} from "./time-section.vm";
 import {TimeLineItem} from "./timeline-item.component";
 
-export interface Props {
+interface Props {
     title: string;
     items: Array<TimeSectionItem>;
     animationDelay: number;

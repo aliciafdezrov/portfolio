@@ -2,8 +2,8 @@ import * as React from "react";
 import {Animation, Reveal} from "react-genie";
 import Divider from "rsuite/Divider";
 import "rsuite/Divider/styles/index.less";
-import {TechnologyRow} from "components";
 import classes from "./skills.scss";
+import {TechnologyRow} from "./components/technology-row/technology-row.component";
 
 export const SkillsPage = () => (
     <div className={classes.container}>

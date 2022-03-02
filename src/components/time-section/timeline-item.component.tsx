@@ -2,7 +2,7 @@ import * as React from "react";
 import Timeline from "rsuite/Timeline";
 import "rsuite/Timeline/styles/index.less";
 
-export interface Props {
+interface Props {
     title: string;
     subtitle: string;
     description: string;

@@ -13,7 +13,7 @@ const notify = (message, containerId) => toast(message, {
     containerId: containerId
 });
 
-export interface Props {
+interface Props {
     showDialog: boolean;
     message: string;
     containerId: string;

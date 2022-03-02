@@ -1,9 +1,8 @@
 import * as React from "react";
 import {Animation, Reveal} from "react-genie";
 import {AcademicContainer, ContactPage, ExperienceContainer, HomePage, SkillsPage} from "pods";
-import {Toast} from "components/toastify/toast.component";
-import {DownloadButton} from "components/download-button";
 import classes from "./main.scene.scss";
+import {DownloadButton, Toast} from "components";
 
 const cv = require('../../assets/CV.pdf');
 export const containerId = 'Download';
