@@ -19,7 +19,7 @@ export const HomePage = () => (
             </Reveal>
             <Reveal animation={Animation.FadeIn}>
                 <div className={classes.subtitle}>
-                    Desarrolladora Full-Stack en Málaga
+                    Front-end Developer
                 </div>
             </Reveal>
         </div>
