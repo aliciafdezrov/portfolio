@@ -16,29 +16,6 @@ module.exports = merge(common, {
     module: {
         rules: [
             {
-                test: /\.scss$/,
-                exclude: /node_modules/,
-                use: [
-                    "style-loader",
-                    {
-                        loader: "css-loader",
-                        options: {
-                            modules: {
-                                exportLocalsConvention: "camelCase",
-                                localIdentName: "[path][name]__[local]",
-                                localIdentContext: helpers.resolveFromRootPath("src"),
-                            },
-                        },
-                    },
-                    {
-                        loader: "sass-loader",
-                        options: {
-                            implementation: require("sass"),
-                        },
-                    },
-                ],
-            },
-            {
                 test: /\.css$/,
                 use: ["style-loader", "css-loader"],
             }, {

@@ -1,4 +1,6 @@
-.container {
+import {css} from "@emotion/css";
+
+export const container = css`
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr;
   grid-template-rows: auto;
@@ -10,9 +12,15 @@
   max-width: 100vw;
   padding: 5vh;
   color: #f1f1f1;
-}
 
-.title {
+  @media (min-width: 768px) {
+    a {
+      font-size: 0.8rem;
+    }
+  }
+`;
+
+export const title = css`
   grid-area: title;
 
   h4 {
@@ -20,9 +28,9 @@
     text-align: center;
     padding-bottom: 3vh;
   }
-}
+`;
 
-.contact {
+export const contact = css`
   grid-area: contact;
   width: 100%;
   align-content: center;
@@ -38,29 +46,21 @@
   tr {
     height: 50px
   }
-}
+`;
 
-.main {
+export const main = css`
   grid-area: main;
-}
+`;
 
-@media (min-width: 768px) {
-  .container {
-    a {
-      font-size: 0.8rem;
-    }
-  }
-}
-
-.styleCenter {
+export const styleCenter = css`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
   padding-left: 2vw;
-}
+`;
 
-.titleStyle {
+export const titleStyle = css`
   white-space: nowrap;
   font-weight: 500;
   margin-left: 1vw;
@@ -69,22 +69,21 @@
   a {
     color: #ffffff;
   }
-}
+`;
 
-.dataItem {
+export const dataItem = css`
   flex-direction: column;
   align-items: flex-start;
   overflow: hidden;
   width: auto !important;
-}
+`;
 
-.listIcon {
+export const listIcon = css`
   color: darkgrey;
   font-size: 1.5em;
-}
+`;
 
-//Avatar styles
-.avatar {
+export const avatar = css`
   grid-area: avatar;
   vertical-align: middle;
   padding-left: 2vw;
@@ -93,10 +92,8 @@
     width: 20vw;
     border-radius: 50%;
   }
-}
 
-@media(max-width: 479px) {
-  .avatar {
+  @media (max-width: 479px) {
     vertical-align: middle;
     padding-top: 2vh;
     align-self: center;
@@ -107,10 +104,7 @@
       border-radius: 50%;
     }
   }
-}
-
-@media(max-width: 1024px) and (min-width: 768px) {
-  .avatar {
+  @media (max-width: 1024px) and (min-width: 768px) {
     padding-top: 2vh;
 
     img {
@@ -119,10 +113,4 @@
       border-radius: 50%;
     }
   }
-}
-
-.flex-row {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-}
+`;

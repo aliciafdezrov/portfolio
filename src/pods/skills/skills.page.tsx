@@ -2,7 +2,7 @@ import * as React from "react";
 import {Animation, Reveal} from "react-genie";
 import Divider from "rsuite/Divider";
 import "rsuite/Divider/styles/index.less";
-import classes from "./skills.scss";
+import * as classes from "./skills.page.styles";
 import {TechnologyRow} from "./components/technology-row/technology-row.component";
 
 export const SkillsPage = () => (

@@ -7,7 +7,7 @@ import "rsuite/FlexboxGrid/styles/index.less";
 import EmailIcon from '@rsuite/icons/Email';
 import * as GithubSquare from '@fortawesome/free-brands-svg-icons/faGithubSquare';
 import * as LinkedinSquare from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
-import classes from "./contact.scss";
+import * as classes from "./contact.page.styles";
 
 const photo = require("../../../assets/avatars/photo2.webp");
 
@@ -115,8 +115,8 @@ export const ContactPage = () => {
             </BrowserView>
             <MobileView>
                 <div className={classes.container}>
-                    <div className={classes.wrapper}>
-                        <div className={classes.contactTextDiv}>
+                    <div>
+                        <div>
                             <h4>Un poco más sobre mi</h4>
                             <Divider/>
                             <h5>

@@ -1,7 +1,7 @@
 import * as React from "react";
 import {Animation, Reveal} from "react-genie";
 import {AcademicContainer, ContactPage, ExperienceContainer, HomePage, SkillsPage} from "pods";
-import classes from "./main.scene.scss";
+import * as classes from "./main.scene.styles";
 import {DownloadButton, Toast} from "components";
 
 const cv = require('../../assets/CV.pdf');

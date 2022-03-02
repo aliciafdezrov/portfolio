@@ -4,7 +4,7 @@ import "rsuite/Divider/styles/index.less"
 import Timeline from "rsuite/Timeline";
 import "rsuite/Timeline/styles/index.less";
 import {Reveal} from "react-genie";
-import classes from "./timeline.component.scss";
+import * as classes from "./timeline.component.styles";
 import {TimeSectionItem} from "./time-section.vm";
 import {TimeLineItem} from "./timeline-item.component";
 

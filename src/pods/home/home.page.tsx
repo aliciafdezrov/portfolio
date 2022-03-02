@@ -1,7 +1,7 @@
 import * as React from "react";
 import {Animation, Reveal} from 'react-genie';
 import {CenteredLayout} from "layout/centered.layout";
-import classes from './home.scss';
+import * as classes from './home.page.styles';
 
 const bgImgSource = require("../../../assets/ash-edmonds-510566-unsplash-min.webp");
 

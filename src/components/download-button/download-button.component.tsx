@@ -2,7 +2,7 @@ import * as React from "react";
 import Button from "rsuite/Button";
 import 'rsuite/Button/styles/index.less';
 import FileDownloadIcon from '@rsuite/icons/FileDownload';
-import classes from "./download-button.component.scss";
+import * as classes from "./download-button.component.styles";
 
 interface Props {
     placeholder?: string;

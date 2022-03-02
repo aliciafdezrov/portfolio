@@ -1,7 +1,7 @@
 import * as React from "react";
 import {toast, ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import classes from "./toast.component.scss";
+import * as classes from "./toast.component.styles";
 
 const notify = (message, containerId) => toast(message, {
     position: "top-right",

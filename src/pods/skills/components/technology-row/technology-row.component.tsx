@@ -1,5 +1,5 @@
 import * as React from "react";
-import classes from './technology-row.scss';
+import * as classes from './technology-row.component.styles';
 import {ProgressComponent} from "../progress/progress.component";
 
 export interface ITechnologyRowProps {

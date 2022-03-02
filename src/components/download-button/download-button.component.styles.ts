@@ -1,4 +1,6 @@
-.button-wrapper {
+import {css} from "@emotion/css";
+
+export const buttonWrapper = css`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -6,4 +8,4 @@
   align-content: center;
   height: 10vh;
   width: 100vw;
-}
+`;

@@ -1,7 +1,7 @@
 import * as React from "react";
 import {BrowserView, MobileView} from "react-device-detect";
 import {Animation} from "react-genie";
-import classes from "./academic-section.component.scss";
+import * as classes from "./academic-section.component.styles";
 import {AcademicInfo} from "../../academic.vm";
 import {TimeLine} from "components";
 

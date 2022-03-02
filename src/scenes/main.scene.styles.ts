@@ -1,5 +1,9 @@
-html,
-body {
+import {css} from "@emotion/css";
+
+export const wrapper = css`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   scroll-behavior: smooth;
   margin: 0;
   height: 100%;
@@ -29,4 +33,4 @@ body {
   p {
     font-size: 0.8rem;
   }
-}
+`;

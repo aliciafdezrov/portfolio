@@ -16,7 +16,6 @@ module.exports = {
     },
     entry: {
         app: ['regenerator-runtime/runtime', './index.tsx'],
-        styles: './index.scss',
     },
     output: {
         path: path.resolve(process.cwd(), "dist"),
